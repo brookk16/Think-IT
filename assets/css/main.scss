@@ -1,0 +1,153 @@
+$xs-devices: 376px;
+$sm-devices: 576px;
+$md-devices: 768px;
+$lg-devices: 992px;
+$xl-devices: 1200px;
+
+
+$bg-grey: rgba(55, 63, 72, 0.43);
+%logo {
+    color: black;
+    font: {
+        family: "Pacifico", sans-serif;
+        size: 25px;
+    }
+    margin: 0px;
+    padding: 16px 0px 16px 26px;
+}
+
+
+main {
+    background-color: red;
+    height: 1005px;
+}
+
+.navbar {
+    background-color: $bg-grey;
+    max-height: 66px;
+    div {
+        width: 100%;
+    }
+}
+
+.logo-header {
+    @extend %logo
+}
+
+#month {
+    font: {
+        family: 'Teko', sans-serif;
+        size: 27px;
+        weight: 400;
+    }
+    ;
+    padding: 17px 0px 0px 0px;
+
+}
+
+.footer {
+    background-color: $bg-grey;
+    width: 100%;
+
+}
+
+.footer-links {
+    margin: 0px;
+    padding: 9px 45px 0px 0px;
+    text-decoration: none;
+    a {
+        color: black;
+        font: {
+            family: 'Teko', sans-serif;
+            size: 22px;
+            weight: 400;
+        }
+        ;
+        padding: 0px 15px 0px 15px;
+    }
+}
+
+
+.logo-footer {
+    @extend %logo;
+    padding: 6px 0px 0px 88px;
+
+}
+
+
+#myBtn {
+    margin: px 0px 0px 90px;
+    border-radius: 50%;
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+    
+}
+
+
+/* Media queries */
+
+
+@media (max-width: $lg-devices) and (min-width: $md-devices) {
+    .logo-footer {
+        padding: 0px 0px 0px 0px;
+    }
+    #myBtn {
+        margin: 0px 0px 0px 0px;
+    }
+    .footer-links {
+        padding: 0px 0px 0px 0px;
+
+    }
+}
+
+@media (max-width: $md-devices) and (min-width: $sm-devices) {
+    .logo-footer {
+        padding: 0px 0px 0px 0px;
+    }
+    #myBtn {
+        margin: 0px 0px 0px 0px;
+        
+    }
+    .footer-links {
+        padding: 0px 0px 0px 0px;
+        a {
+            padding: 0px 10px 0px 10px;
+        }
+        ;
+
+    }
+}
+
+@media (max-width: $sm-devices) {
+    .logo-footer {
+        padding: 0px 0px 0px 0px;
+        font-size: 20px;
+        width: 40%;
+    }
+    #myBtn {
+        margin: 0px 0px 0px 0px;
+        width: 20%;
+        max-width: 20%;
+        
+    }
+    .footer-links {
+        padding: 0px 0px 0px 0px;
+        width: 40%;
+        a {
+            padding: 0px 0px 0px 0px;
+            font-size: 18px;
+        }
+        ;
+
+    }
+}
+
+@media (max-width: $xs-devices) {
+    #month {
+        font-size: 23px;
+        padding: 17px 0px 0px 25px
+    }
+    .logo-header {
+        font-size: 20px;
+    }
+}
