@@ -1,0 +1,1001 @@
+id,first_name,last_name,gender,store_location,leads_generated,appointments_generated,total_amount_earned,Total_amount_lost,Month
+1,Nicola,Hubbocks,Female,Texas,15,16,337446,4714,November
+2,Vaughn,Aspin,Male,Alabama,7,1,22115,8154,November
+3,Haleigh,Absalom,Male,Arkansas,26,11,298777,8153,November
+4,Brandtr,McNeachtain,Male,Iowa,5,4,266058,20053,November
+5,Hamilton,Kop,Male,Ohio,11,9,259052,1414,November
+6,Humberto,Widdowes,Male,Indiana,19,23,241518,27972,November
+7,Horatio,Kirwin,Male,Nevada,36,16,432581,5436,November
+8,Elita,Lyenyng,Female,Illinois,41,7,387284,6205,November
+9,Claudelle,Stubbley,Female,New York,27,7,399178,5112,November
+10,Josefina,Pinxton,Female,Connecticut,28,17,331372,34749,November
+11,Sheri,Conn,Female,South Carolina,20,20,383024,21987,November
+12,Nikolas,Poyser,Male,District of Columbia,45,14,82329,11349,November
+13,Felita,Byneth,Female,New Jersey,10,5,123680,31046,November
+14,Earvin,Steinson,Male,North Carolina,22,8,229911,,November
+15,Toiboid,Oxshott,Male,Oregon,35,6,765,388,November
+16,Tatiania,Lehrian,Female,Arizona,27,22,132219,23235,November
+17,Gussie,Foskin,Female,Massachusetts,13,23,402608,29891,November
+18,Nathalia,Snow,Female,West Virginia,28,23,113312,12011,November
+19,Corene,Minigo,Female,Kentucky,3,14,404530,1359,November
+20,Derward,Pavluk,Male,South Carolina,16,14,478404,1843,November
+21,Merilee,Baurerich,Female,Virginia,22,12,490222,5340,November
+22,Haily,Chippendale,Female,Missouri,37,24,398461,32130,November
+23,Lynn,Gregs,Male,Pennsylvania,33,16,287044,32875,November
+24,Fawne,Carletti,Female,Arizona,13,15,279634,6203,November
+25,Dermot,Skiggs,Male,Louisiana,33,3,454705,26449,November
+26,Rab,Lange,Male,District of Columbia,48,13,51010,2169,November
+27,Amil,Eccles,Female,Maryland,5,9,159136,18708,November
+28,Rafaela,Crabtree,Female,Indiana,11,19,414523,16756,November
+29,Shep,Racine,Male,Minnesota,36,3,467522,34898,November
+30,Serge,Noone,Male,Massachusetts,14,17,51850,4894,November
+31,Merrill,Berrane,Male,West Virginia,25,18,401288,15067,November
+32,Ramsey,Bradwell,Male,Colorado,21,14,228586,7380,November
+33,Ferdinande,O'Quin,Female,Virginia,36,24,260841,32278,November
+34,Antonina,Brameld,Female,California,12,19,292926,13383,November
+35,Ara,Ingrey,Female,South Carolina,37,15,163417,14516,November
+36,Angelle,Doghartie,Female,Connecticut,32,6,301670,4695,November
+37,Kenyon,Bernucci,Male,Georgia,34,14,34123,15569,November
+38,Christy,Headech,Male,Minnesota,35,17,168268,3521,November
+39,Sherri,Lilywhite,Female,Maryland,46,7,23810,14786,November
+40,Rosaleen,Mathevon,Female,California,50,6,136599,26933,November
+41,Demeter,Coil,Female,Nebraska,37,3,31853,25248,November
+42,Dwain,Truelove,Male,District of Columbia,50,7,411006,30962,November
+43,Nigel,Crumbleholme,Male,New York,32,11,372610,2923,November
+44,Orren,Pilmore,Male,California,42,18,271391,16894,November
+45,Amitie,Gooderson,Female,Florida,35,25,303173,21981,November
+46,Emery,Binestead,Male,Connecticut,46,7,102676,15034,November
+47,Peadar,Billo,Male,Massachusetts,22,21,26822,2368,November
+48,Burton,Gillyatt,Male,Michigan,46,25,191660,3300,November
+49,Jerrilyn,Berick,Female,Florida,5,1,66221,2219,November
+50,Gina,Luffman,Female,California,46,7,350083,13112,November
+51,Halette,Gotcliff,Female,Florida,19,23,194984,23851,November
+52,Jeffie,Amiable,Male,Michigan,16,25,138378,15886,November
+53,Darrel,Lempenny,Male,North Carolina,24,19,113648,15478,November
+54,Ulrick,Litster,Male,District of Columbia,47,21,133125,,November
+55,Pierson,Tewnion,Male,Texas,31,25,263280,20660,November
+56,Jan,Szymanowicz,Female,North Dakota,10,24,326005,26072,November
+57,Gibby,Kernan,Male,Pennsylvania,11,13,215754,9450,November
+58,Carlyn,Anderson,Female,California,4,6,36062,13784,November
+59,Adrianne,Jakubovitch,Female,Texas,34,18,458704,737,November
+60,Essa,Beste,Female,California,44,23,58661,13414,November
+61,Galvan,Gomme,Male,Washington,4,17,449126,19567,November
+62,Jerrilee,Catchpole,Female,North Carolina,32,10,434779,32748,November
+63,Frank,Banaszczyk,Male,Utah,3,23,423955,25897,November
+64,Jackqueline,Van der Velde,Female,Kentucky,15,12,465416,17058,November
+65,Fabien,Everix,Male,Arizona,50,9,268618,31034,November
+66,Mae,Matantsev,Female,California,22,20,42327,26404,November
+67,Faye,Burree,Female,New York,7,7,383972,26992,November
+68,Delano,Arnault,Male,California,37,1,163099,,November
+69,Stacee,Enrico,Male,Florida,19,23,207088,3421,November
+70,Arron,Collyns,Male,California,23,18,267967,11417,November
+71,Desmond,Beamiss,Male,Alabama,37,1,21355,5763,November
+72,Wayne,Halcro,Male,North Carolina,18,20,265771,16871,November
+73,Chrystel,Wastie,Female,Ohio,12,7,83923,11707,November
+74,Gratiana,Whitloe,Female,California,36,21,92644,6451,November
+75,Sherm,Winkett,Male,Iowa,49,19,91809,25243,November
+76,Boote,McMorran,Male,New York,48,5,86234,2840,November
+77,Dietrich,Mannock,Male,Washington,38,12,93439,15826,November
+78,Nigel,Garvie,Male,Connecticut,13,1,331006,32237,November
+79,Tracee,Hillin,Female,Missouri,,,368762,12328,November
+80,Pieter,Oby,Male,Maryland,43,9,216857,28417,November
+81,Alick,Gard,Male,Oregon,20,16,78132,11510,November
+82,Rae,Tumilson,Female,Georgia,50,22,62625,,November
+83,Horacio,Deignan,Male,Indiana,14,7,61227,4509,November
+84,Rubie,Ginity,Female,Colorado,5,6,403412,11496,November
+85,Hewet,Moran,Male,Texas,18,17,230151,32170,November
+86,Tedra,Goodred,Female,Georgia,18,25,7967,31337,November
+87,Kelvin,Leverson,Male,Missouri,47,8,361388,28745,November
+88,Cloe,Lansdowne,Female,Pennsylvania,8,17,191270,30912,November
+89,Brendan,Kelley,Male,New Jersey,31,24,395232,11045,November
+90,Janet,Falconar,Female,District of Columbia,45,7,30515,,November
+91,Dorise,Hatherleigh,Female,North Carolina,16,9,195295,16879,November
+92,Edie,Wraith,Female,Florida,12,6,52163,31634,November
+93,Ulrika,MacAnespie,Female,Nevada,12,8,246448,966,November
+94,Shurlocke,Phipard-Shears,Male,Florida,7,15,254375,30391,November
+95,Elinor,Paterno,Female,Kentucky,23,16,197340,9941,November
+96,Kort,Crowne,Male,Michigan,35,3,198455,15629,November
+97,Sean,Deignan,Male,Michigan,45,9,19922,33526,November
+98,Carlynne,O' Timony,Female,South Carolina,18,2,298590,16911,November
+99,Dicky,Narbett,Male,Louisiana,11,16,425642,25917,November
+100,Woody,Domingues,Male,California,13,20,331531,32702,November
+101,Glynnis,Deverose,Female,Tennessee,11,20,72612,31639,November
+102,Rip,Aloigi,Male,Michigan,42,15,483260,,November
+103,Meredeth,Koch,Male,Minnesota,18,17,282,525,November
+104,Freda,Happs,Female,Louisiana,1,8,247439,29472,November
+105,Arabele,Dymock,Female,Arkansas,30,14,158796,1853,November
+106,Marabel,Huglin,Female,New York,32,10,85513,14129,November
+107,Jeni,Wissby,Female,Massachusetts,8,2,295628,7554,November
+108,Humbert,Pietzke,Male,Texas,,,467175,20341,November
+109,Fielding,Moreing,Male,Texas,18,4,230224,33029,November
+110,Katha,Del Checolo,Female,Illinois,5,5,21285,16049,November
+111,Brice,Boor,Male,Maryland,38,6,233192,,November
+112,Marji,Reasce,Female,Texas,36,3,101738,14697,November
+113,Munmro,Murray,Male,Texas,33,3,108642,2932,November
+114,Kippy,Yuranovev,Male,Florida,2,20,367792,34002,November
+115,Darrin,Charrington,Male,Arizona,15,3,359265,31164,November
+116,Florri,Lembrick,Female,California,6,20,468412,2131,November
+117,Brittany,Seiler,Female,Arizona,12,10,238585,15882,November
+118,Ardine,Sporton,Female,Washington,49,19,474241,20054,November
+119,Riley,Glitherow,Male,North Carolina,10,15,177893,32147,November
+120,Ky,Melsome,Male,Louisiana,15,14,478516,23950,November
+121,Arnoldo,Collicott,Male,New York,11,13,170545,2989,November
+122,Rebecca,Kensett,Female,Oklahoma,10,8,143523,11933,November
+123,Homere,Swayton,Male,California,2,16,328349,30730,November
+124,Gearard,Wathey,Male,West Virginia,27,18,435107,34725,November
+125,Wrennie,Fronks,Female,New Jersey,14,25,248411,,November
+126,Obed,Rowswell,Male,Texas,40,24,169698,6218,November
+127,Barry,Liversedge,Male,Alabama,14,3,34341,11303,November
+128,Alva,Breward,Male,Indiana,,,37791,,November
+129,Yvor,Carneck,Male,Arizona,24,24,163919,30740,November
+130,Josselyn,Sandaver,Female,North Carolina,49,25,300513,20885,November
+131,Mildrid,Monument,Female,New York,11,6,263174,18628,November
+132,Izak,Rossin,Male,Kansas,50,1,69281,,November
+133,Noble,Barwis,Male,California,14,3,188402,7634,November
+134,Mariel,Oakwood,Female,Florida,38,4,413487,28840,November
+135,Joseito,Snodin,Male,Nebraska,17,7,350059,830,November
+136,Anton,Olivetta,Male,West Virginia,13,4,83242,19120,November
+137,Rodd,Yanele,Male,Idaho,4,9,713,6445,November
+138,Myca,Restorick,Male,Florida,1,21,71814,32378,November
+139,Elfreda,Moncrefe,Female,Utah,21,22,54989,26897,November
+140,Eustace,Shearwood,Male,Florida,41,7,332888,13287,November
+141,Christiana,Murty,Female,Florida,17,12,40981,33101,November
+142,Tove,Serot,Female,California,17,11,480811,16877,November
+143,Barbie,Baxandall,Female,California,46,16,491691,8937,November
+144,Elvina,Kilmaster,Female,Delaware,12,6,252189,293,November
+145,Patrick,Poon,Male,Montana,16,22,42146,26974,November
+146,Zonda,Franscioni,Female,Nevada,42,8,87619,22593,November
+147,Wilfrid,Royl,Male,Ohio,1,2,422314,32720,November
+148,Bradley,Ogilby,Male,North Carolina,36,7,108211,20665,November
+149,Kinny,Glencrosche,Male,Texas,47,15,36091,32285,November
+150,Byran,Malecky,Male,Wisconsin,11,6,485080,12991,November
+151,Gallard,Jilliss,Male,Ohio,21,21,,32949,November
+152,Jessie,Redit,Female,New York,41,10,338546,26257,November
+153,Lombard,Pape,Male,Virginia,23,1,76817,15037,November
+154,Priscella,Fantone,Female,Oregon,39,19,238623,34111,November
+155,John,Metheringham,Male,Michigan,9,11,336665,22327,November
+156,Violante,Blanchette,Female,Texas,13,11,451260,27871,November
+157,Gloriane,Cosstick,Female,Texas,11,22,440564,18043,November
+158,Norrie,Brecknell,Male,Washington,,,3402,26406,November
+159,Rufe,Cagan,Male,Pennsylvania,33,19,124820,11787,November
+160,Lewie,Wimes,Male,Kansas,41,3,426138,,November
+161,Karel,Peaker,Female,New York,3,3,455969,30326,November
+162,Pincus,Aldin,Male,Utah,11,12,357466,18706,November
+163,Mahmud,Traynor,Male,New Jersey,4,9,443417,19468,November
+164,Elle,Cavie,Female,Mississippi,26,5,9541,10946,November
+165,Tilly,Paolini,Female,Pennsylvania,35,2,97003,14884,November
+166,Walker,Hurley,Male,Kansas,11,25,98646,21570,November
+167,Abbey,Guppy,Female,Missouri,8,8,288551,,November
+168,Amalle,Perigo,Female,Texas,48,24,405200,30163,November
+169,Ewen,Tollow,Male,Florida,47,13,415350,30486,November
+170,Eugene,Botterill,Male,Colorado,23,9,207903,1045,November
+171,Janifer,Adshead,Female,New York,47,5,22032,31375,November
+172,Gert,Godwin,Female,Louisiana,31,20,350534,6769,November
+173,Avram,Lathwood,Male,New Mexico,23,4,291723,16282,November
+174,Dallas,Wolfindale,Female,North Carolina,49,15,299212,16602,November
+175,Kattie,Boullen,Female,Tennessee,24,15,254917,27807,November
+176,Sophia,Rook,Female,North Carolina,14,8,39119,2548,November
+177,Olly,Weakley,Male,Tennessee,9,9,200071,4306,November
+178,Vernice,Wilsey,Female,California,42,23,367809,20312,November
+179,Ilene,Dury,Female,Florida,48,19,131103,6714,November
+180,Brendan,Schiementz,Male,Texas,27,9,254652,635,November
+181,Derwin,Filipputti,Male,Georgia,6,7,10902,27031,November
+182,Libbie,Bartalucci,Female,California,37,6,22013,16054,November
+183,Jarrad,Imrie,Male,Florida,9,11,163862,8746,November
+184,Nissie,McBratney,Female,Oregon,10,7,394915,21511,November
+185,Penny,Meere,Female,Nevada,40,6,311460,11726,November
+186,Trenton,Phippard,Male,California,37,5,319076,,November
+187,Ike,Budleigh,Male,Iowa,47,10,468141,31958,November
+188,Monica,Forson,Female,Illinois,43,21,286373,6929,November
+189,Connor,Ponsford,Male,Texas,32,1,50387,13460,November
+190,Louisette,Hearthfield,Female,North Carolina,46,9,482497,1174,November
+191,Celka,Schukert,Female,Ohio,28,21,431399,11799,November
+192,Lawton,Lyenyng,Male,Texas,3,3,9054,32786,November
+193,Alex,Bartosinski,Male,South Carolina,33,6,493204,24383,November
+194,Frannie,Biss,Male,Iowa,22,4,268888,5834,November
+195,Vince,Guilliatt,Male,Maryland,14,18,138739,21194,November
+196,Misti,Kareman,Female,Connecticut,43,9,423090,24963,November
+197,Karolina,Tuplin,Female,California,42,23,68129,10970,November
+198,Inge,Collyear,Female,New York,10,22,53408,24161,November
+199,Stavro,Pawden,Male,Georgia,48,10,212652,956,November
+200,Gifford,Chace,Male,West Virginia,6,22,235949,6533,November
+201,Cash,Lydiard,Male,Minnesota,43,15,266880,32828,November
+202,Huey,Cawt,Male,Rhode Island,35,13,191622,11173,November
+203,Auguste,Ogbourne,Female,California,34,21,429997,18721,November
+204,Doralyn,Twohig,Female,Alabama,6,22,227300,12162,November
+205,Annadiana,Royce,Female,California,12,18,165763,4036,November
+206,Price,Mordan,Male,New York,25,23,273442,18936,November
+207,Tessy,Petteford,Female,New York,16,8,86318,28433,November
+208,Raddy,Overy,Male,Texas,24,15,242829,,November
+209,Tracy,Elcy,Female,Massachusetts,37,17,382774,5141,November
+210,Abram,Whife,Male,North Carolina,13,20,196497,,November
+211,Roxie,Derham,Female,Florida,36,14,81504,,November
+212,Martainn,Weakley,Male,Maryland,15,25,343433,26376,November
+213,Irvin,Bausmann,Male,Delaware,7,9,463373,6103,November
+214,Kip,Marchent,Female,California,32,25,364069,23887,November
+215,Annabell,Twinbourne,Female,Utah,16,21,359078,20708,November
+216,Emilie,Placidi,Female,Kentucky,18,8,109798,32061,November
+217,Noami,Pelchat,Female,Arizona,8,17,55476,23588,November
+218,Becky,Rosedale,Female,Pennsylvania,35,7,82828,,November
+219,Abbott,Akehurst,Male,California,6,4,355076,13347,November
+220,Omar,Yeandel,Male,Ohio,5,11,164118,1501,November
+221,Gunther,Saiz,Male,Missouri,36,8,60023,9083,November
+222,Tomaso,MacArte,Male,Nevada,13,8,201024,6214,November
+223,Marcella,Orteaux,Female,California,35,7,206272,2069,November
+224,Keith,Ewbanks,Male,Texas,22,25,480422,22854,November
+225,Dre,Boshere,Female,Florida,36,2,74699,11489,November
+226,Leighton,Stelle,Male,Pennsylvania,5,4,179960,12674,November
+227,Maudie,Dils,Female,Connecticut,36,5,286125,16096,November
+228,Raffarty,Leyre,Male,California,21,12,279971,26303,November
+229,Dollie,Bignell,Female,Virginia,40,13,139206,6331,November
+230,Clarie,Castano,Female,California,39,2,38069,33220,November
+231,Murdock,Circuitt,Male,New York,45,3,235899,,November
+232,Edin,Whellams,Female,New York,13,10,153736,15889,November
+233,Welch,Brusin,Male,Massachusetts,3,7,323689,9335,November
+234,Melinde,Lightbourn,Female,Nevada,43,9,20547,28185,November
+235,Daveta,Hofer,Female,Missouri,11,16,136820,6755,November
+236,Marlena,Weatherburn,Female,Texas,31,11,493408,5608,November
+237,Andra,Goulbourne,Female,Virginia,2,23,304487,2771,November
+238,Demetra,Grisenthwaite,Female,Wisconsin,31,6,225213,17233,November
+239,Simeon,Lacy,Male,Utah,16,15,478879,4934,November
+240,Jozef,Kubica,Male,California,38,20,285569,19802,November
+241,Graeme,Gambie,Male,Tennessee,40,3,350791,11631,November
+242,Adoree,Ordelt,Female,Minnesota,12,20,453949,22909,November
+243,Bebe,Grishakin,Female,Vermont,50,4,180173,34142,November
+244,Archie,Dast,Male,Alabama,6,21,428667,31656,November
+245,Milzie,De Maine,Female,California,41,15,317438,10312,November
+246,Christopher,Ancliff,Male,Virginia,17,6,67818,1470,November
+247,Paolo,Duferie,Male,New Mexico,44,17,455870,9122,November
+248,Heddie,Huton,Female,Missouri,17,6,86800,27156,November
+249,Raffarty,Lourens,Male,Texas,19,3,136176,9324,November
+250,Cherey,Clark,Female,Utah,20,4,206267,26211,November
+251,Wendy,Mountcastle,Female,Virginia,15,15,74762,33963,November
+252,Jamill,Kellick,Male,New York,9,10,284074,26040,November
+253,Iorgos,McHardy,Male,California,28,13,362043,12503,November
+254,Una,Pinchbeck,Female,Texas,36,12,284266,11369,November
+255,Jessie,Cawsey,Female,Florida,30,8,364648,17839,November
+256,Baryram,Fairpool,Male,Texas,,,,25938,November
+257,Jermayne,Grix,Male,California,26,13,333967,573,November
+258,Bobbie,Wordesworth,Male,Alabama,1,25,413893,33546,November
+259,Kelley,Harbertson,Male,Texas,5,14,86200,22802,November
+260,Vinny,Leman,Female,West Virginia,39,2,308820,5040,November
+261,Donia,Thredder,Female,Florida,25,23,271453,6397,November
+262,Starlene,Ardy,Female,Florida,28,7,428837,22420,November
+263,Charley,Sharer,Male,Minnesota,3,15,23291,15153,November
+264,Oberon,Milne,Male,Alabama,11,18,262962,,November
+265,Julie,Kedie,Male,Arizona,3,8,140781,1305,November
+266,Codie,Heinecke,Male,Texas,33,24,140522,4608,November
+267,Merissa,Totaro,Female,Texas,,,489933,15323,November
+268,Haily,Fillgate,Male,Michigan,44,4,192040,17639,November
+269,Prentiss,Siaskowski,Male,Colorado,46,5,359715,1186,November
+270,Sharona,Harly,Female,Virginia,42,20,213537,,November
+271,Valencia,Foard,Female,Ohio,38,11,319692,12731,November
+272,Kip,Jancik,Male,California,2,25,366674,34430,November
+273,Karlis,Sebley,Male,Pennsylvania,,,2909,31490,November
+274,Quint,Wogden,Male,New Jersey,26,8,202694,11561,November
+275,Magdalen,Potter,Female,New York,8,7,278250,31118,November
+276,Silvie,Leftly,Female,Oklahoma,8,5,247599,28740,November
+277,Petr,Poley,Male,California,12,12,21943,22101,November
+278,Kane,Loving,Male,Pennsylvania,13,22,338226,3343,November
+279,Humfrid,Messiter,Male,Missouri,41,1,337856,594,November
+280,Vanny,Abrahamsson,Female,Texas,35,25,172942,26896,November
+281,Lusa,Jindacek,Female,Texas,18,17,426832,7727,November
+282,Corina,Velden,Female,California,48,22,35614,3770,November
+283,Kearney,Broz,Male,Iowa,33,8,317093,24433,November
+284,Marley,Ryton,Female,Massachusetts,6,21,402477,29892,November
+285,Brigid,Kincaid,Female,Texas,50,5,430485,31751,November
+286,Elissa,Cavnor,Female,California,19,13,401667,10623,November
+287,Camilla,Stollman,Female,Michigan,23,3,132636,10472,November
+288,Georgeanne,Wigglesworth,Female,Virginia,33,7,75931,12281,November
+289,Nicola,Erricker,Female,North Carolina,20,19,252230,474,November
+290,Dorette,Grundy,Female,North Carolina,40,11,383617,21532,November
+291,Antoinette,Cheverton,Female,Florida,24,2,350568,11707,November
+292,Obadias,Bingall,Male,Alabama,14,2,263641,34948,November
+293,Keane,Baselli,Male,Texas,41,25,236452,9188,November
+294,Bale,Webley,Male,Louisiana,47,7,284116,3855,November
+295,Janenna,Muldoon,Female,Texas,8,18,318754,22881,November
+296,Franciska,O'Bradden,Female,Texas,22,6,249618,5448,November
+297,Fayre,Imesson,Female,Arizona,11,15,107441,307,November
+298,Ronnica,Humpage,Female,Nebraska,15,18,455359,4780,November
+299,Annamarie,Nardi,Female,Texas,47,1,427068,19843,November
+300,Roz,Sarll,Female,Colorado,6,25,47082,,November
+301,Silvie,St Clair,Female,Colorado,29,23,271833,17544,November
+302,Amil,Awton,Female,Alabama,50,12,129268,12749,November
+303,Corney,Borrel,Male,Illinois,4,18,159310,2643,November
+304,Doralyn,Siss,Female,Arizona,15,7,430686,2968,November
+305,Bradford,Klemke,Male,Minnesota,2,15,399497,6413,November
+306,Hedwig,Benoist,Female,California,15,2,332408,5117,November
+307,Shawna,Althrop,Female,Illinois,6,21,58667,22514,November
+308,Virgilio,Rothwell,Male,Florida,15,24,308663,18546,November
+309,Beulah,Thonger,Female,Texas,8,6,391792,26260,November
+310,Jilli,Caple,Female,Ohio,39,6,161656,32913,November
+311,Tricia,Popple,Female,Florida,34,25,324601,7325,November
+312,Rasla,Enochsson,Female,Pennsylvania,11,10,370631,19972,November
+313,Roy,Ralton,Male,Idaho,26,6,39064,30637,November
+314,Jeane,Whitta,Female,Kansas,38,4,426620,22533,November
+315,Doralynne,Sondon,Female,Illinois,17,24,89889,15421,November
+316,Catina,Foxworthy,Female,Washington,6,19,145103,32664,November
+317,Abramo,McLauchlin,Male,Massachusetts,30,24,8889,21255,November
+318,Tiphany,Rimington,Female,Arizona,22,23,214644,8777,November
+319,Donny,Leckey,Female,Tennessee,24,11,191209,23548,November
+320,Barnebas,Brach,Male,Michigan,17,12,435580,7543,November
+321,Justino,August,Male,Arizona,20,7,117184,11646,November
+322,Brocky,Hanratty,Male,Florida,9,14,324693,27728,November
+323,Cord,Newvell,Male,Washington,38,19,343250,31103,November
+324,Julio,Hacket,Male,North Dakota,34,16,243093,23920,November
+325,Boote,Jayes,Male,Kansas,33,20,197752,8843,November
+326,Ashla,Joust,Female,California,6,11,429786,1120,November
+327,Lannie,Thorneloe,Male,Texas,24,25,278220,22584,November
+328,Gerrard,Lemary,Male,Louisiana,44,10,7010,18794,November
+329,Blinny,Tidder,Female,Ohio,29,1,488059,21845,November
+330,Rodolphe,Gellert,Male,Florida,48,11,455770,5731,November
+331,Farah,Edgecombe,Female,Alabama,44,4,279672,6344,November
+332,Simone,Gaynor,Male,Texas,28,25,337699,1578,November
+333,Zarla,Biagioni,Female,Iowa,29,6,66066,5587,November
+334,Mirabel,Oxx,Female,Alabama,27,7,493043,18071,November
+335,Portie,Ygou,Male,Tennessee,29,10,402382,12193,November
+336,Kareem,Broy,Male,Ohio,34,22,,4808,November
+337,Anna,Mattocks,Female,District of Columbia,13,18,251747,3835,November
+338,Ruben,Jenkinson,Male,New Jersey,12,12,147452,8925,November
+339,Ede,Mortlock,Female,Georgia,22,19,9251,8752,November
+340,Jacinta,Alecock,Female,West Virginia,49,8,58169,24527,November
+341,Omar,McGahy,Male,Texas,20,8,314480,18575,November
+342,Charis,Larrett,Female,Alabama,4,12,458097,2033,November
+343,Jaquenetta,Daens,Female,California,11,20,160729,8214,November
+344,Thomasine,Jansie,Female,Montana,37,1,404844,34974,November
+345,Rowen,Jerzycowski,Male,Virginia,5,8,,9523,November
+346,Free,Tweedell,Male,Florida,2,12,26189,13417,November
+347,Cristionna,Waddell,Female,Alabama,48,5,299991,17283,November
+348,Coleman,Dixcey,Male,Connecticut,22,7,441885,18125,November
+349,Celesta,Franck,Female,Washington,36,1,369226,10604,November
+350,Nelli,Fitton,Female,West Virginia,10,16,291727,4418,November
+351,Florie,Freake,Female,Oregon,34,20,189321,10090,November
+352,Wini,McAloren,Female,Oregon,9,18,248856,14492,November
+353,Nelle,Kabos,Female,Mississippi,4,21,71317,13195,November
+354,Gaelan,Aves,Male,Oklahoma,9,8,282931,26785,November
+355,Piggy,Todaro,Male,California,3,19,285362,4407,November
+356,Alonso,Makinson,Male,Arizona,9,19,345305,220,November
+357,Harman,Wolfer,Male,Washington,13,21,335781,9383,November
+358,Arturo,Jackes,Male,Texas,36,8,198168,23160,November
+359,Codee,Lequeux,Female,North Carolina,20,24,,1800,November
+360,Norbert,Eve,Male,Pennsylvania,27,2,97827,22027,November
+361,Lorinda,Risdall,Female,Connecticut,34,1,308947,2209,November
+362,Auberta,Oldam,Female,New York,2,2,188988,13721,November
+363,Jake,Kroch,Male,Florida,12,2,89884,9028,November
+364,Ad,Borrett,Male,Arkansas,39,14,226226,,November
+365,Celestina,Ioannidis,Female,District of Columbia,20,12,346988,9777,November
+366,Evonne,Trobridge,Female,Indiana,38,2,463573,10766,November
+367,Tess,Barford,Female,Minnesota,26,4,494729,31563,November
+368,Rhianna,Hasel,Female,West Virginia,18,20,366526,21509,November
+369,Rance,Bourges,Male,Nevada,28,17,204899,30894,November
+370,Portia,Grix,Female,Alabama,33,11,190409,6467,November
+371,Christophorus,Farriar,Male,Texas,4,2,208655,23671,November
+372,Ruttger,Erskine,Male,Iowa,16,11,403004,29390,November
+373,Diena,Haitlie,Female,Missouri,22,10,449694,33419,November
+374,Joni,Fishley,Female,Texas,25,13,42733,25261,November
+375,Janka,Scarborough,Female,Illinois,1,18,89867,18733,November
+376,Nonnah,Beccera,Female,Texas,20,12,441794,14439,November
+377,Mabelle,Tarbard,Female,Texas,47,8,16801,7847,November
+378,Kellen,Swithenby,Female,Oklahoma,34,5,29149,12212,November
+379,Delphinia,Massot,Female,California,22,3,109018,31168,November
+380,Osbourn,Meadowcroft,Male,Idaho,10,6,250967,,November
+381,Mychal,Fellona,Male,Colorado,11,23,429377,2752,November
+382,Mattie,Debrick,Male,Mississippi,11,1,10228,8228,November
+383,Alix,Ellesworth,Female,Colorado,19,10,91779,14645,November
+384,Jesus,Toopin,Male,Florida,43,19,230841,916,November
+385,Tallie,Holley,Male,Tennessee,3,5,190045,19923,November
+386,Alf,O'Curneen,Male,Arizona,16,23,119627,14983,November
+387,Hersh,Shadbolt,Male,District of Columbia,23,9,168452,7848,November
+388,Odey,Trevaskus,Male,California,37,5,246445,12447,November
+389,Zeke,Freezor,Male,Texas,21,2,429997,5836,November
+390,Ramon,Cockayne,Male,Alabama,49,13,445542,14530,November
+391,Clarisse,Darlow,Female,Texas,6,23,66932,20112,November
+392,Anett,Dewing,Female,Florida,6,2,278084,26564,November
+393,Elladine,Biggerdike,Female,Massachusetts,45,4,138370,30170,November
+394,Gwenora,Rothert,Female,Florida,20,1,270273,1032,November
+395,Dawna,Hayland,Female,Texas,37,25,403739,,November
+396,Mayor,Panton,Male,Mississippi,4,16,255133,8974,November
+397,Denni,Musgrave,Female,New York,10,2,3042,3991,November
+398,Dodi,Dudney,Female,California,15,7,221488,13972,November
+399,Leonhard,Simeoni,Male,Pennsylvania,12,18,189244,32560,November
+400,Bonny,MacInerney,Female,Virginia,27,5,145671,4487,November
+401,Cheri,Ewenson,Female,New York,7,12,396473,14045,November
+402,Renaldo,Spadelli,Male,Alabama,50,16,121904,33975,November
+403,Netti,Thacker,Female,New York,40,22,306311,9327,November
+404,York,MacCurley,Male,New Mexico,23,9,27893,11668,November
+405,Ede,Labroue,Female,Washington,16,25,90676,22593,November
+406,Staci,Domelow,Female,Louisiana,2,18,348274,4364,November
+407,Nettle,Lesor,Female,District of Columbia,23,2,122552,30599,November
+408,Elsie,Schwandermann,Female,Texas,6,5,236112,20378,November
+409,Nanny,Tuxell,Female,Texas,33,17,77289,31582,November
+410,Darda,Twiddell,Female,Delaware,10,2,261045,856,November
+411,Herschel,Taffley,Male,Ohio,14,7,165304,,November
+412,Kiri,Scoggin,Female,New York,7,18,400271,22751,November
+413,Karalee,MacKnocker,Female,District of Columbia,23,1,104181,17321,November
+414,Rockey,Medendorp,Male,Missouri,24,12,350176,16531,November
+415,Aleda,Payne,Female,Florida,5,9,291858,27657,November
+416,Ferne,Arboin,Female,District of Columbia,47,3,50500,1485,November
+417,Dru,Staker,Female,Florida,49,24,486711,10618,November
+418,Bink,McKelvie,Male,California,42,19,455393,16442,November
+419,Bettina,Kener,Female,New Mexico,36,7,347382,28951,November
+420,Abbye,Mougin,Female,California,14,7,26252,5130,November
+421,Hersch,Ebdon,Male,North Carolina,36,11,390606,2103,November
+422,Kikelia,Castane,Female,Tennessee,19,17,297811,11553,November
+423,Jolie,De Michetti,Female,California,42,5,24602,17948,November
+424,Delmar,Labrenz,Male,Utah,48,11,252858,4324,November
+425,Maxi,O'Hengerty,Female,Florida,34,22,38378,9105,November
+426,Dill,Delhay,Male,South Carolina,14,23,42714,10946,November
+427,Shermy,Elener,Male,Louisiana,4,4,52718,2173,November
+428,Graeme,Yeowell,Male,Virginia,44,12,79619,1657,November
+429,Wesley,Bovey,Male,Ohio,6,19,207507,26702,November
+430,Anselm,Barter,Male,Arizona,22,3,278688,5531,November
+431,Ambur,Spadazzi,Female,North Carolina,43,6,230082,24332,November
+432,Ibby,Clears,Female,California,25,5,167392,21603,November
+433,Brana,Fruin,Female,Minnesota,38,23,380746,5249,November
+434,Shandra,Lafaye,Female,New York,18,11,261484,12330,November
+435,Joshia,Buske,Male,Louisiana,50,4,,26806,November
+436,Virginia,Forber,Female,Florida,41,23,433388,3661,November
+437,Westbrook,Blaszczynski,Male,Ohio,13,10,354002,29297,November
+438,Hilliard,Philliskirk,Male,Florida,10,5,106597,22165,November
+439,Meredith,Castro,Female,Oregon,29,4,167676,31204,November
+440,Blinnie,Durtnal,Female,Pennsylvania,2,20,62824,1781,November
+441,Perceval,Heckle,Male,Missouri,45,11,187634,1341,November
+442,Eduardo,Antusch,Male,Massachusetts,40,4,402853,6873,November
+443,Lorettalorna,Loidl,Female,Illinois,33,6,,596,November
+444,Caldwell,Brisseau,Male,Virginia,42,17,455922,19340,November
+445,Steffen,Isakson,Male,Florida,7,15,294629,24326,November
+446,Jules,Beckford,Male,Texas,23,5,107069,33865,November
+447,Terrill,Janeczek,Male,Alabama,20,3,317954,3008,November
+448,Bastien,Delooze,Male,Kansas,45,10,478796,16166,November
+449,Lindsey,Hammelberg,Male,California,17,8,42263,30556,November
+450,Armando,Wessing,Male,Virginia,8,13,265635,30694,November
+451,Ximenes,Heaselgrave,Male,Texas,49,3,215645,11371,November
+452,Donn,Guy,Male,Illinois,1,10,463516,18365,November
+453,Elna,Corzor,Female,Nevada,7,14,194993,,November
+454,Carlin,Ballantine,Male,Virginia,46,7,137445,9182,November
+455,Ganny,Kulis,Male,Texas,,,130929,1096,November
+456,Fleurette,Durrett,Female,Minnesota,4,15,284791,2087,November
+457,Graham,Silberschatz,Male,Virginia,26,17,300352,15698,November
+458,Virginie,Godbold,Female,Florida,3,11,93189,9034,November
+459,Marcelo,Feige,Male,Kentucky,5,17,76784,452,November
+460,Janine,Kobelt,Female,Virginia,11,10,28688,,November
+461,Thekla,Oxenford,Female,Washington,46,6,187997,5947,November
+462,Neill,Hobell,Male,Texas,32,21,344643,23685,November
+463,Gretel,Harker,Female,Missouri,43,13,431230,20268,November
+464,Tibold,Brome,Male,Alabama,44,19,435915,9213,November
+465,Viviyan,Capaldi,Female,Washington,34,2,33032,34228,November
+466,Theadora,Kimpton,Female,District of Columbia,31,19,42690,5885,November
+467,Bird,D'Angeli,Female,District of Columbia,11,16,273689,2788,November
+468,Vally,Cobello,Female,New York,32,7,84549,,November
+469,Karel,Thursfield,Male,California,37,18,224123,27477,November
+470,Carrie,Newbegin,Female,Iowa,27,7,87568,34060,November
+471,Tye,Rusk,Male,Georgia,17,19,227506,32195,November
+472,Karalee,Gawith,Female,Alabama,27,16,222452,18475,November
+473,Sig,Gowan,Male,Virginia,38,19,19326,12994,November
+474,Inglis,Whimpenny,Male,Texas,,,84149,30481,November
+475,Winny,Maffulli,Male,California,35,25,249721,12661,November
+476,Moria,Blease,Female,Florida,39,6,277399,30361,November
+477,Merrill,Legrave,Male,California,22,10,278653,7767,November
+478,Alidia,Marris,Female,District of Columbia,41,25,70487,31798,November
+479,Crista,Gallant,Female,Texas,30,24,67781,6197,November
+480,Ailina,MacKill,Female,Washington,3,4,476689,20430,November
+481,Brewer,Otterwell,Male,Kansas,2,3,489812,14017,November
+482,Saudra,Lilbourne,Female,Kentucky,26,23,409560,3968,November
+483,Barbey,Braidford,Female,Illinois,25,13,127837,2129,November
+484,Madelyn,Orum,Female,Massachusetts,44,15,454462,26716,November
+485,Angelita,Scade,Female,New York,28,17,426792,,November
+486,Murdoch,Janjic,Male,Nevada,6,25,285879,22184,November
+487,Alfredo,Hendrickx,Male,Kentucky,35,19,399248,30910,November
+488,Idalia,Dilawey,Female,Delaware,32,1,298721,,November
+489,Frankie,Fenech,Male,Minnesota,7,4,230417,20972,November
+490,Cheston,Butchard,Male,Florida,7,20,486510,246,November
+491,Mahmoud,Orkney,Male,Texas,41,7,396595,33063,November
+492,Flss,Andresser,Female,Florida,48,22,219987,18787,November
+493,Far,Redrup,Male,Washington,32,16,273396,4821,November
+494,Blaine,Vasyunin,Male,District of Columbia,34,22,131746,15320,November
+495,Bryn,Ferrige,Female,Missouri,31,15,66294,,November
+496,Sheila,Hyman,Female,Colorado,40,1,351557,13384,November
+497,Cosmo,McGuiney,Male,Hawaii,38,16,354535,21714,November
+498,Gayelord,Cockayne,Male,Texas,1,10,218798,4619,November
+499,Had,Bennellick,Male,Texas,48,19,176186,1254,November
+500,Harlin,Sokell,Male,California,45,4,391272,16290,November
+501,Darrelle,Warmisham,Female,Georgia,8,17,219836,28339,November
+502,Dorothea,Consterdine,Female,Georgia,47,22,414840,6248,November
+503,Ricky,Boys,Male,Arizona,36,7,129908,6185,November
+504,Ursula,Doble,Female,Texas,8,5,223728,13764,November
+505,Vic,Rennie,Male,California,17,20,366598,15519,November
+506,Luther,Freed,Male,Minnesota,49,8,102976,33648,November
+507,Tess,Gerritsma,Female,Pennsylvania,21,9,271342,31890,November
+508,Staford,Danhel,Male,Colorado,42,7,118399,26643,November
+509,Lazar,de Clerk,Male,Florida,4,8,300340,14275,November
+510,Damian,Mann,Male,Massachusetts,34,24,,20418,November
+511,Aubrey,Senton,Male,Virginia,18,2,37013,32801,November
+512,Giraud,Phettiplace,Male,Texas,15,14,428455,16942,November
+513,Lara,Marchenko,Female,California,32,14,471140,24087,November
+514,Blisse,Geaney,Female,Pennsylvania,34,13,85728,33964,November
+515,Krissy,Maxwaile,Female,Florida,9,23,78399,25942,November
+516,Vale,Glancy,Male,Virginia,16,13,222787,9502,November
+517,Tedman,Fippe,Male,Texas,25,6,65378,23506,November
+518,Kelby,MacCheyne,Male,Mississippi,42,15,264386,23695,November
+519,Pattie,Castiglioni,Female,Florida,,,117493,30467,November
+520,Kerr,Streatley,Male,Oklahoma,32,9,119273,4237,November
+521,Quill,Qualtro,Male,California,20,4,382042,5332,November
+522,Adelbert,Le Noire,Male,Arizona,34,15,95270,15748,November
+523,Caresa,Sudy,Female,Ohio,20,1,333396,34379,November
+524,Glen,Aleksankov,Male,Washington,33,18,223926,32505,November
+525,Somerset,Newland,Male,Texas,7,3,359233,19623,November
+526,Franny,Kennealy,Female,New York,29,20,175283,33426,November
+527,Ambrosius,Lazenby,Male,New York,44,13,268047,5032,November
+528,Rollin,Hacquel,Male,California,25,9,108155,13844,November
+529,Lizbeth,Dering,Female,California,20,23,138006,2044,November
+530,Fidole,Brownbridge,Male,Maryland,46,12,430670,7859,November
+531,Binni,Huckabe,Female,Kentucky,2,24,163846,321,November
+532,Reg,Shera,Male,Nevada,31,19,452674,21333,November
+533,Loutitia,Thorrington,Female,Ohio,18,14,,3053,November
+534,Edita,Laurent,Female,Missouri,20,13,175784,11559,November
+535,Serge,O'Dowd,Male,Texas,42,23,54777,23595,November
+536,Felicdad,Andreotti,Female,Arizona,46,1,84046,4020,November
+537,Carlene,Crates,Female,California,17,20,140452,,November
+538,Maud,de Grey,Female,Texas,46,14,53535,17341,November
+539,Talia,Lared,Female,New York,1,17,172602,1073,November
+540,Sharleen,McGinty,Female,California,26,24,,21406,November
+541,Ellissa,Celli,Female,Florida,33,5,184648,34170,November
+542,Leoline,Yablsley,Female,Florida,18,24,373980,18456,November
+543,Meaghan,Fairclough,Female,Arizona,50,18,483513,14137,November
+544,Cyril,Assinder,Male,Texas,32,21,145836,20837,November
+545,Ezra,Arnett,Male,Texas,29,23,230058,16651,November
+546,Darcy,Basillon,Male,Washington,41,18,21428,6735,November
+547,Camille,Emsden,Female,Alabama,35,8,96016,,November
+548,Damaris,Jentin,Female,Massachusetts,45,4,121778,19912,November
+549,Sergent,Delacourt,Male,New York,26,10,233729,13007,November
+550,Jeffry,Mathou,Male,Texas,44,4,329578,,November
+551,Carver,Eliaz,Male,New York,,,63777,26571,November
+552,Starr,MacGeffen,Female,Tennessee,36,15,182274,34279,November
+553,Noel,Boyen,Male,Indiana,37,18,66409,16009,November
+554,Laurena,Cota,Female,North Carolina,25,21,6298,16769,November
+555,Gary,Yosevitz,Male,Texas,28,16,286807,19038,November
+556,Aila,Druery,Female,Alabama,27,9,119541,24655,November
+557,Kaiser,Keenlayside,Male,Nebraska,8,6,458286,15641,November
+558,Brendin,Tansey,Male,Virginia,28,9,52095,24242,November
+559,Madalyn,Ovenell,Female,California,14,2,469613,6020,November
+560,Gracie,Bolderoe,Female,Massachusetts,27,14,350737,19138,November
+561,Prue,Heino,Female,Texas,28,5,449642,34665,November
+562,Lisbeth,Antoniou,Female,Tennessee,49,17,223211,11412,November
+563,Jeannine,Bohden,Female,Illinois,15,4,,26124,November
+564,Jarret,Howatt,Male,Washington,14,7,489677,7239,November
+565,Leanora,Leftbridge,Female,Nevada,33,8,277759,1859,November
+566,Dniren,Castellini,Female,Pennsylvania,3,12,40446,27718,November
+567,Niki,Deverson,Male,Virginia,28,8,92878,1883,November
+568,Fanechka,Calafate,Female,Kentucky,28,6,44713,7217,November
+569,Neall,Rames,Male,Hawaii,35,4,72568,9789,November
+570,Lucius,Brabban,Male,Kansas,7,3,483133,9247,November
+571,Charlot,Loggie,Female,Florida,10,18,341644,31554,November
+572,Pace,Paradyce,Male,Nebraska,39,9,300297,22487,November
+573,Janette,Launchbury,Female,Texas,37,15,130460,14552,November
+574,Arv,Barten,Male,Minnesota,39,9,44785,,November
+575,Debera,Ginnaly,Female,Alabama,47,1,257367,11950,November
+576,Roi,Hembrow,Male,Nebraska,22,22,293721,24338,November
+577,Darrick,Medlar,Male,Pennsylvania,27,13,233718,25453,November
+578,Rafael,Tennison,Male,Nevada,3,1,203594,6466,November
+579,Papagena,Manhood,Female,Arizona,36,25,368576,28405,November
+580,Dirk,Ferras,Male,Kentucky,13,10,478136,14514,November
+581,Cloe,Todhunter,Female,California,6,19,37500,9604,November
+582,Doroteya,Ralphs,Female,New York,21,24,257910,32274,November
+583,Viki,Moxham,Female,Texas,17,16,181789,32266,November
+584,Abel,MacGiffin,Male,Texas,19,6,54803,34622,November
+585,Lindsey,Neilands,Male,North Carolina,4,7,334155,34471,November
+586,Rochester,Brightling,Male,Oregon,13,3,96020,21465,November
+587,Bald,Apfler,Male,Mississippi,32,8,400451,31066,November
+588,Marco,O'Henecan,Male,California,32,12,125832,21975,November
+589,Chevy,Pegg,Male,Florida,25,2,59633,34296,November
+590,Jeniece,Blackler,Female,South Carolina,40,1,50493,8159,November
+591,Nicoli,Heady,Female,California,43,9,52237,30841,November
+592,Sarah,Haldin,Female,Colorado,29,5,470580,7312,November
+593,Bevan,Mohammad,Male,Nebraska,27,20,339282,27242,November
+594,Christoph,Gommowe,Male,New York,40,6,152555,29043,November
+595,Fallon,Comfort,Female,Wisconsin,31,14,276412,1412,November
+596,Blair,Musprat,Female,Florida,25,9,53252,20270,November
+597,Conni,Hedge,Female,Oklahoma,33,1,442424,20966,November
+598,Neron,Jentet,Male,Florida,18,2,141746,8579,November
+599,Fredericka,Vayro,Female,Ohio,9,6,223619,18128,November
+600,Laurens,McGiven,Male,Texas,29,1,329533,31062,November
+601,Gerrie,Haton,Male,Michigan,18,18,131221,22053,November
+602,Tildi,Vassie,Female,Iowa,42,17,54792,34032,November
+603,Matt,Gerrets,Male,Texas,22,17,384069,34011,November
+604,Marleen,Gilardone,Female,Ohio,8,3,464572,29948,November
+605,Darlene,Folkes,Female,Nevada,16,24,379207,,November
+606,Orion,Cornell,Male,Georgia,13,21,253406,5212,November
+607,Bernie,Pitkaithly,Male,Texas,24,11,346253,29959,November
+608,Cherry,Karran,Female,Tennessee,15,7,273671,27468,November
+609,Carree,Maingot,Female,Illinois,18,3,253793,20173,November
+610,Norma,Dybald,Female,Wisconsin,32,20,452218,14790,November
+611,Gusti,Denerley,Female,Virginia,11,18,26955,,November
+612,Iver,Farge,Male,Texas,42,8,343654,29346,November
+613,Isabella,Tunesi,Female,New York,38,13,423710,31748,November
+614,Sanders,Pellew,Male,Alabama,1,24,225978,5657,November
+615,Alison,Chaize,Female,Minnesota,37,7,308130,5771,November
+616,Diane-marie,Petheridge,Female,Pennsylvania,27,25,142536,9986,November
+617,Ralf,Abela,Male,Iowa,41,24,427688,10681,November
+618,Shermie,Llopis,Male,Georgia,49,10,394464,14204,November
+619,Dolli,Sondon,Female,Texas,17,12,153763,4816,November
+620,Verena,Doleman,Female,Arizona,9,23,347008,28440,November
+621,Zebadiah,Mattiato,Male,Pennsylvania,12,21,340753,24603,November
+622,Veronika,Wealthall,Female,Indiana,19,25,455478,13529,November
+623,Grenville,Haselwood,Male,New York,6,8,258735,30837,November
+624,Gus,Neles,Male,Minnesota,26,6,343840,4239,November
+625,Bert,Tether,Male,Texas,40,21,234001,10498,November
+626,Bendick,Dmytryk,Male,Florida,4,14,485456,,November
+627,Boyce,O'Doohaine,Male,Georgia,23,18,82512,18951,November
+628,Gerty,Daenen,Female,Illinois,25,4,449316,14710,November
+629,Jany,Noen,Female,North Carolina,15,20,252660,9733,November
+630,Bibbye,Patroni,Female,North Carolina,47,20,389215,17082,November
+631,Annmaria,Byrne,Female,Nevada,12,3,264746,2280,November
+632,Jeanelle,Conaghan,Female,Maryland,32,21,279900,26182,November
+633,Arlee,McCullagh,Female,California,32,8,152252,3280,November
+634,Dell,Harvatt,Male,Georgia,33,23,408681,27008,November
+635,Anton,Caudelier,Male,Oregon,37,23,368879,17494,November
+636,Morganne,Gainsboro,Female,Indiana,24,11,384098,12391,November
+637,Vernor,Montford,Male,Florida,,,272357,,November
+638,Zilvia,Lawler,Female,Wisconsin,5,6,492463,18386,November
+639,Mady,Mattisson,Female,South Dakota,25,19,122585,8232,November
+640,Dominique,Ewestace,Male,Illinois,16,22,46157,26062,November
+641,Hamid,Rannie,Male,Florida,34,19,396669,5721,November
+642,Edin,Branchet,Female,Missouri,,,138950,2103,November
+643,Loydie,Giblin,Male,Virginia,49,5,180412,25396,November
+644,Joyan,Lawee,Female,Massachusetts,31,6,618,15437,November
+645,Emlen,Vasnev,Male,West Virginia,,,422391,34861,November
+646,Thibaut,Lepoidevin,Male,Florida,28,8,129684,14102,November
+647,Marlin,Wilman,Male,Georgia,20,5,187472,30155,November
+648,Querida,Flitcroft,Female,Nebraska,16,15,232028,31847,November
+649,Alena,Melarkey,Female,Nevada,12,14,80340,,November
+650,Feodor,Abyss,Male,California,50,16,139644,4400,November
+651,Ron,Thornley,Male,North Carolina,34,5,132202,32266,November
+652,Forster,Jacobsson,Male,South Dakota,34,6,406735,10947,November
+653,Adoree,Fouracres,Female,Virginia,12,21,224349,3313,November
+654,Shaw,Thickin,Male,Texas,34,5,42572,20255,November
+655,Neda,Novakovic,Female,Florida,22,14,380872,15356,November
+656,Averill,Baroche,Male,Texas,33,10,226825,,November
+657,Blair,Reddie,Male,Texas,18,8,324364,3251,November
+658,Lambert,Winspeare,Male,Washington,12,22,202820,30494,November
+659,Ericha,Janaway,Female,Arizona,31,17,,14520,November
+660,Sydney,Gopsall,Female,California,27,14,120995,29981,November
+661,Shannan,Levesley,Male,California,36,18,298381,34992,November
+662,Gav,Dolling,Male,Florida,16,6,252939,30891,November
+663,Mariann,Kalberer,Female,Pennsylvania,39,20,111662,5343,November
+664,Barbee,Baggs,Female,California,24,22,31849,16007,November
+665,Auguste,Wellbank,Female,Texas,2,5,24781,6769,November
+666,Manya,Manass,Female,Pennsylvania,2,7,188557,,November
+667,Dara,Freckingham,Female,Missouri,12,9,302743,31646,November
+668,Lanny,Ranking,Female,Arizona,21,19,175780,24181,November
+669,Sephira,Futty,Female,California,14,19,475845,645,November
+670,Howey,Ivashintsov,Male,Minnesota,2,16,397703,8010,November
+671,Rudd,Booler,Male,California,33,7,144781,11774,November
+672,Reeta,Gronou,Female,Missouri,41,14,496162,32815,November
+673,Keir,Risdale,Male,Indiana,13,7,305363,6851,November
+674,Rube,Tarbard,Male,Georgia,22,21,36301,12008,November
+675,Ianthe,Adlam,Female,Ohio,5,2,112317,,November
+676,Alejandrina,Dyerson,Female,Tennessee,44,14,27201,34009,November
+677,Pierette,Jimes,Female,Florida,27,19,239843,21828,November
+678,Valle,Spiaggia,Male,Ohio,9,6,475417,30283,November
+679,Bailie,Briat,Male,California,,,425732,18032,November
+680,Phillida,Angell,Female,North Carolina,11,2,200800,12746,November
+681,Sammie,Shearston,Male,Florida,44,25,487857,9480,November
+682,Casandra,Woolard,Female,Ohio,39,13,3086,13465,November
+683,Ernesto,Kores,Male,Texas,25,18,490337,29229,November
+684,Cornelius,Coie,Male,Illinois,9,17,186599,2670,November
+685,Antonie,Orritt,Female,California,22,7,210234,33064,November
+686,Ilario,Tawton,Male,California,39,25,61666,12625,November
+687,Daryle,Haggath,Male,Texas,9,9,392739,13092,November
+688,Ricardo,Gorey,Male,Florida,39,20,438875,7690,November
+689,Johanna,Croughan,Female,Ohio,26,19,206912,30225,November
+690,Johnathon,Runcie,Male,District of Columbia,45,17,451800,32962,November
+691,Florinda,Mather,Female,Oregon,46,5,99283,13548,November
+692,Clarette,Boydon,Female,Texas,14,4,428250,2805,November
+693,Boy,Binns,Male,Texas,36,6,242103,31367,November
+694,Tab,Houlridge,Male,Utah,2,2,223522,27978,November
+695,Hunter,Dominec,Male,Mississippi,27,14,122239,32007,November
+696,Erroll,Bowdon,Male,Texas,37,12,479007,30337,November
+697,Binny,Laugharne,Female,Texas,47,3,433474,28595,November
+698,Belvia,Pistol,Female,Pennsylvania,30,16,99015,32923,November
+699,Carlee,Arnould,Female,Florida,5,3,168375,14073,November
+700,Carol,Mellows,Female,Massachusetts,44,16,323464,18131,November
+701,Helenka,Niesel,Female,California,38,13,370668,21751,November
+702,Abbie,Cordet,Female,Michigan,40,1,65017,,November
+703,Jasmin,Habershaw,Female,West Virginia,,,63987,23928,November
+704,Joelly,Really,Female,Illinois,50,6,32555,20542,November
+705,Dagmar,Lorkings,Female,Texas,36,6,283133,18001,November
+706,Cleon,Orrow,Male,California,15,20,155241,32136,November
+707,Drusie,Escala,Female,Nebraska,46,21,471723,6017,November
+708,Theressa,Lyster,Female,New York,31,22,488906,4842,November
+709,Roxane,Lowle,Female,Virginia,20,16,209286,3926,November
+710,Ashlan,Clutton,Female,Virginia,35,8,394280,32032,November
+711,Claretta,Ravillas,Female,Virginia,37,16,90131,29389,November
+712,Asa,Guest,Male,Georgia,38,9,233349,20097,November
+713,Nariko,Forseith,Female,Virginia,9,1,449301,16250,November
+714,Roseline,Belvard,Female,Minnesota,49,2,50932,26975,November
+715,Randolph,Holah,Male,Arizona,4,21,434389,27933,November
+716,Walliw,Mattson,Female,Texas,38,23,334513,30021,November
+717,Ruy,Jelf,Male,Ohio,39,24,462480,18422,November
+718,Addy,Vernay,Female,Florida,33,22,51397,10228,November
+719,Osborne,Skeemer,Male,Missouri,24,22,468192,25901,November
+720,Trina,Braunle,Female,Florida,4,24,140364,5768,November
+721,Link,Abramin,Male,Texas,35,2,191284,10369,November
+722,Clio,Girodias,Female,Florida,12,18,498206,23342,November
+723,Tommy,Lightbown,Male,Nebraska,15,12,406999,4006,November
+724,Berny,Brinklow,Male,Texas,20,1,264472,26674,November
+725,Abbott,Ifill,Male,California,11,7,332684,14884,November
+726,Garik,Franckton,Male,Illinois,14,9,103519,6918,November
+727,Judy,Walworth,Female,Idaho,23,9,315195,7281,November
+728,Jeanie,Franck,Female,Ohio,27,16,374122,23019,November
+729,Thomasin,Garvagh,Female,Nevada,11,6,43428,9858,November
+730,Egor,Dominique,Male,Colorado,2,21,436100,27458,November
+731,Glyn,Fermin,Male,District of Columbia,28,7,233039,32162,November
+732,Carly,Elwin,Male,Minnesota,15,5,469305,5771,November
+733,Tracee,Ruggen,Female,Texas,9,2,285174,15470,November
+734,Filia,Saunt,Female,Florida,13,13,140227,34285,November
+735,Madelene,Byrcher,Female,Utah,24,9,354749,33695,November
+736,Issie,Dreghorn,Female,Utah,42,21,378434,3079,November
+737,Moore,Fullicks,Male,North Carolina,19,22,298546,29733,November
+738,Frasier,Suter,Male,Alabama,9,11,258752,28195,November
+739,Adeline,Guinn,Female,Michigan,13,6,41502,12505,November
+740,Seth,Corkel,Male,California,46,16,110174,,November
+741,Arvy,Tarquini,Male,Washington,16,12,230528,8340,November
+742,Bert,Timberlake,Female,Virginia,2,22,429052,27725,November
+743,Cos,Scoterbosh,Male,Louisiana,24,10,208427,385,November
+744,Bevan,Olijve,Male,Texas,31,15,135333,5319,November
+745,Veradis,Ricardot,Female,Wisconsin,24,3,437660,3865,November
+746,Allison,Batcock,Female,Virginia,34,21,24090,5416,November
+747,Marcille,Yekel,Female,North Carolina,17,16,4518,26156,November
+748,Napoleon,Sowrey,Male,California,42,22,183776,5344,November
+749,Tye,Pluck,Male,California,31,15,271864,12438,November
+750,Garth,Schenkel,Male,Tennessee,23,18,174053,18985,November
+751,Teri,Fennick,Female,Arkansas,46,5,22124,8620,November
+752,Letizia,Diaper,Female,Wisconsin,8,4,69780,29042,November
+753,Reinaldo,Brabender,Male,Arizona,17,9,328099,24892,November
+754,Hertha,Pargent,Female,Arizona,26,11,412672,20555,November
+755,Hannis,Hedon,Female,Illinois,6,19,76114,22315,November
+756,Ethelind,Leverson,Female,Ohio,,,338415,16249,November
+757,Pepillo,Wildt,Male,Illinois,2,8,25329,33935,November
+758,Vernon,Febre,Male,Washington,40,13,107705,9489,November
+759,Alley,Medina,Male,New York,24,20,338987,15637,November
+760,Andie,Fresson,Male,Florida,41,8,160715,10281,November
+761,Burch,Rubanenko,Male,New York,49,17,342822,34591,November
+762,Tammara,Caherny,Female,District of Columbia,45,8,21130,31211,November
+763,Sterne,Kirk,Male,Arizona,6,10,333626,32713,November
+764,Lucias,Bann,Male,New Jersey,29,2,110462,6400,November
+765,Efren,Ismead,Male,District of Columbia,6,19,402135,34135,November
+766,Tanitansy,Krol,Female,New York,46,11,77643,4321,November
+767,Rudd,Dunston,Male,California,,,416574,13183,November
+768,Fiona,Trueman,Female,Pennsylvania,50,21,277501,5645,November
+769,Elroy,Baudains,Male,Virginia,5,1,231775,10913,November
+770,Georgia,Leyton,Female,Montana,38,13,141130,6106,November
+771,Tiler,Bordessa,Male,Idaho,4,7,275358,21006,November
+772,Dyana,Beetlestone,Female,California,8,4,323996,33358,November
+773,Lida,Hlavac,Female,Connecticut,50,15,378954,20819,November
+774,Filippo,Youings,Male,California,34,18,431843,28701,November
+775,Idell,Hedgeley,Female,Idaho,3,1,314281,31738,November
+776,Jeanie,Greenhill,Female,Texas,11,3,412529,7097,November
+777,Anica,Fossett,Female,Michigan,48,15,63875,10494,November
+778,Estevan,Gillicuddy,Male,Arkansas,43,4,44360,4459,November
+779,Gerrilee,Quadling,Female,South Dakota,50,4,71325,10636,November
+780,Lian,Lorent,Female,California,29,3,84837,30525,November
+781,Randene,O'Neary,Female,California,8,15,259364,15642,November
+782,Max,Dybald,Male,Kentucky,10,18,7240,1592,November
+783,Cleo,Serck,Female,Texas,27,18,143017,23490,November
+784,Faunie,Selbie,Female,Colorado,43,19,447703,34397,November
+785,Cloe,Skuse,Female,West Virginia,37,15,292011,16925,November
+786,Carlita,Itzkovsky,Female,Florida,39,17,186982,24957,November
+787,Leyla,Toyer,Female,Arizona,7,4,320933,16025,November
+788,Blane,Bilton,Male,Kansas,19,17,387322,9548,November
+789,Kathy,Janauschek,Female,Georgia,44,23,250099,27613,November
+790,Tobey,Whiterod,Female,Ohio,26,21,78073,29758,November
+791,Desirae,Brookesbie,Female,New York,34,4,98046,28298,November
+792,Conrado,Bogart,Male,Indiana,47,12,43074,18196,November
+793,Betti,Laughrey,Female,New Jersey,48,14,431828,12125,November
+794,Tabby,Bartlomiejczyk,Female,Texas,34,11,136688,14342,November
+795,Erick,Pleven,Male,Georgia,24,14,57255,17323,November
+796,Collete,Howman,Female,Tennessee,2,16,423134,5436,November
+797,Britteny,Shyram,Female,Florida,9,6,284948,19136,November
+798,Nerta,Roebottom,Female,Maryland,9,14,24123,19254,November
+799,Chucho,Crame,Male,California,29,4,376293,4516,November
+800,Kenny,Buxy,Male,New York,33,24,97699,13825,November
+801,Thain,Pettigrew,Male,Connecticut,38,13,276864,2570,November
+802,Laraine,Mulvin,Female,Arkansas,28,16,342086,4450,November
+803,Allayne,Glawsop,Male,Nebraska,16,6,46462,32183,November
+804,Carri,Golland,Female,Oregon,13,5,295151,15674,November
+805,Graeme,Halward,Male,Florida,38,9,375513,32124,November
+806,Calypso,Ditts,Female,Arizona,24,10,253746,24204,November
+807,Brigitta,Stokell,Female,Illinois,40,16,393975,,November
+808,Mal,Speirs,Male,Texas,2,20,303028,5334,November
+809,Dal,Gages,Male,New York,12,17,451142,1047,November
+810,Gussi,Gilli,Female,Texas,44,2,372551,2555,November
+811,Zachary,De Freitas,Male,Florida,17,2,442984,2725,November
+812,Jammal,MacMeeking,Male,Georgia,5,10,84595,18098,November
+813,Cleopatra,Chadbourne,Female,Georgia,50,24,203003,1347,November
+814,Rodolph,Baurerich,Male,Florida,21,13,18926,33225,November
+815,Biddy,Leven,Female,Louisiana,27,11,323558,9317,November
+816,Consolata,Petrollo,Female,Minnesota,13,12,71424,18741,November
+817,Hal,Kilcullen,Male,Florida,19,22,,6454,November
+818,Vinita,Dumsday,Female,Michigan,9,22,264344,18633,November
+819,Eartha,Clubley,Female,Florida,20,14,393139,15459,November
+820,Matt,Hawtin,Male,Illinois,32,19,21301,21400,November
+821,Winn,Reek,Male,Florida,24,25,338826,31820,November
+822,Ellie,Rosenfield,Female,Florida,13,12,8353,17526,November
+823,Louisa,Prestner,Female,Mississippi,4,14,262042,2586,November
+824,Jermain,Moffet,Male,West Virginia,21,9,279175,12999,November
+825,Solly,Saleway,Male,Connecticut,1,12,46804,14911,November
+826,Maryann,Bullier,Female,New York,44,10,169613,16259,November
+827,Charmion,Wenzel,Female,Colorado,29,1,378922,10876,November
+828,Les,Chanson,Male,Virginia,1,9,356490,12645,November
+829,Sol,Bradder,Male,Colorado,45,11,108068,,November
+830,Frasquito,LLelweln,Male,Texas,4,18,374454,19081,November
+831,Melony,Clayson,Female,Iowa,16,7,130566,,November
+832,Gratiana,Piperley,Female,Utah,25,9,491363,33282,November
+833,Jeniffer,Hollier,Female,Texas,31,6,412091,5381,November
+834,Tonnie,Carlyon,Male,New Jersey,24,6,330887,27282,November
+835,Sid,Rucklidge,Male,Virginia,,,219196,10928,November
+836,Nona,Copozio,Female,California,31,7,468333,11588,November
+837,Joyous,Tanzer,Female,Kansas,49,7,361591,32512,November
+838,Zena,Yendle,Female,Michigan,13,7,306006,,November
+839,Tine,Sexon,Female,New York,13,3,95022,4829,November
+840,Arie,Zanetto,Male,California,39,4,251719,28247,November
+841,Cornie,Laviss,Female,Missouri,20,12,343873,15039,November
+842,Kipper,Destouche,Male,Louisiana,7,18,338683,25343,November
+843,Judith,Messenger,Female,Oregon,7,1,24047,16076,November
+844,Joelynn,Dorling,Female,Arizona,30,7,312603,6937,November
+845,Amelina,MacVicar,Female,Texas,21,4,131270,16985,November
+846,Milo,Shemilt,Male,Arkansas,26,5,223767,6005,November
+847,Tommie,Cotmore,Female,Pennsylvania,16,20,223609,862,November
+848,Ignacio,Ikins,Male,Arizona,1,19,36109,18486,November
+849,Halie,Christmas,Female,New York,44,17,77480,31955,November
+850,Louis,Gouldbourn,Male,Texas,13,25,57341,30349,November
+851,Tamiko,Levy,Female,Indiana,30,7,40489,13861,November
+852,Farlay,Grattan,Male,Missouri,49,15,34484,34510,November
+853,Dix,Folds,Female,Florida,45,10,64041,4591,November
+854,Scarface,Leythley,Male,Illinois,5,10,65431,18189,November
+855,Dreddy,Bulward,Female,Texas,15,4,375878,34770,November
+856,Kristoforo,Poutress,Male,Georgia,49,9,214115,9346,November
+857,Fred,Gibbeson,Male,Georgia,38,6,178188,2728,November
+858,Kaila,Forth,Female,North Carolina,38,20,493694,30060,November
+859,Cirillo,Treby,Male,Virginia,25,1,132305,1605,November
+860,Tildie,Bohman,Female,Washington,3,25,193946,4790,November
+861,Morley,Sybe,Male,Texas,17,9,211157,29680,November
+862,Jolee,Ort,Female,California,39,8,421598,24943,November
+863,Gates,Talboy,Female,Texas,14,25,344971,29015,November
+864,Giordano,Pentony,Male,Maryland,16,24,454795,19435,November
+865,Teena,Bence,Female,Florida,35,9,199765,4887,November
+866,Jermayne,Hugenin,Male,Alaska,50,16,293109,33083,November
+867,Alexia,Waberer,Female,Texas,23,21,357046,9067,November
+868,Almeda,Mattielli,Female,Virginia,9,2,453320,10590,November
+869,Boigie,Spikeings,Male,Kentucky,29,1,471057,27498,November
+870,Marney,Glasser,Female,Pennsylvania,40,18,13958,19950,November
+871,Maxie,Whall,Female,Alaska,1,2,,26548,November
+872,Joscelin,Guilbert,Female,New Jersey,21,17,50626,12636,November
+873,Barnett,Hearsey,Male,Nevada,17,1,347439,27614,November
+874,Imelda,Rigate,Female,South Dakota,8,18,207321,22549,November
+875,Roxy,Wrinch,Female,Oklahoma,28,10,246487,23172,November
+876,Breanne,Harland,Female,California,43,14,491684,2067,November
+877,Boote,Jaan,Male,Minnesota,6,2,161988,21291,November
+878,Guinevere,Hune,Female,Nevada,30,6,485228,14842,November
+879,Eward,Sigars,Male,Pennsylvania,13,5,471793,20566,November
+880,Waldo,Sellar,Male,California,33,12,319637,16343,November
+881,Yankee,Geeraert,Male,Missouri,14,14,480306,25326,November
+882,Ryun,Wisdish,Male,New York,44,8,221503,14868,November
+883,Emelyne,Jaquest,Female,Minnesota,,,157036,20062,November
+884,Leodora,Tinto,Female,Illinois,44,3,382765,904,November
+885,Annemarie,Leedal,Female,District of Columbia,45,12,328957,31126,November
+886,Victoir,McNeish,Male,Vermont,43,18,433653,2095,November
+887,Matthaeus,Stollwerck,Male,Alabama,31,11,421025,12976,November
+888,Angil,Sewley,Female,Utah,27,22,199566,32881,November
+889,Roddie,Amis,Male,Idaho,27,17,428243,5259,November
+890,Hulda,Tomaskunas,Female,California,1,16,49756,20745,November
+891,Kata,Aberchirder,Female,California,41,7,475880,10102,November
+892,Ealasaid,Goley,Female,Arkansas,49,15,289571,3538,November
+893,Jerrold,Rhodes,Male,Minnesota,19,11,9946,13253,November
+894,Hamlin,Cruz,Male,Ohio,27,15,468198,,November
+895,Rodrick,Gealy,Male,Oklahoma,27,17,141952,10588,November
+896,Sabra,Norrington,Female,Texas,33,25,52033,2431,November
+897,Base,Bozier,Male,Texas,27,22,436505,34817,November
+898,Kleon,Howsan,Male,Pennsylvania,19,19,249688,9240,November
+899,Norbie,Corden,Male,Nevada,37,2,438867,10547,November
+900,Wendye,MacDaid,Female,Texas,33,6,,28649,November
+901,Leilah,Scardefield,Female,Maryland,38,2,288502,28458,November
+902,Cecilla,Rolingson,Female,Ohio,15,10,95128,6326,November
+903,Oralee,Ethridge,Female,California,11,7,143949,31923,November
+904,Philomena,Phant,Female,District of Columbia,34,10,334303,9451,November
+905,Terry,Palke,Female,Colorado,50,23,480359,1913,November
+906,Carling,Farny,Male,Connecticut,34,5,367784,367,November
+907,Stevie,Fulle,Male,Mississippi,45,17,295093,14865,November
+908,Shandie,Corre,Female,California,45,23,285867,13071,November
+909,Sammie,Eilhart,Male,Illinois,48,2,422919,18469,November
+910,Charisse,Romer,Female,South Carolina,43,8,170194,23936,November
+911,Ansell,Wasylkiewicz,Male,Florida,9,12,391629,33347,November
+912,Jocko,Linder,Male,New Mexico,46,17,435573,1798,November
+913,Alison,Deaville,Female,Florida,15,23,151308,24087,November
+914,Avril,Fellows,Female,District of Columbia,14,1,174585,,November
+915,Felipe,Dickman,Male,Tennessee,19,9,341240,28693,November
+916,Jan,Brookes,Male,Tennessee,15,9,47543,18992,November
+917,Jonathon,Jellybrand,Male,New York,4,7,215038,21693,November
+918,Michelle,Esland,Female,Tennessee,12,21,193033,16244,November
+919,Jervis,Lukesch,Male,California,25,20,184912,12024,November
+920,Haze,Drust,Male,New York,22,3,177755,27092,November
+921,Brendin,Trelease,Male,Florida,42,22,311319,14895,November
+922,Loren,Bavester,Male,California,39,4,131288,5741,November
+923,Patrice,Walsh,Male,California,48,16,456584,8954,November
+924,Penny,Everil,Male,Texas,16,20,121823,24379,November
+925,Demetris,Kirkland,Female,Texas,9,16,210474,23066,November
+926,Dani,Fryer,Female,Colorado,11,12,44438,30748,November
+927,Jacquelin,Orrah,Female,Indiana,25,22,198996,11930,November
+928,Prue,Uzzell,Female,Alabama,49,16,301585,18418,November
+929,Hurleigh,Farloe,Male,Florida,50,9,348294,4716,November
+930,Koral,Pohlke,Female,North Carolina,17,4,234522,7750,November
+931,Max,Dennis,Male,Texas,46,16,26401,33238,November
+932,Deina,Blaschke,Female,California,,,80914,11597,November
+933,Jo-anne,Antonoyev,Female,Kansas,37,20,135106,9202,November
+934,Diego,Dunsford,Male,Nevada,38,13,470883,33774,November
+935,Lorain,McNeilly,Female,Virginia,25,17,121680,13719,November
+936,Dewain,Pitkethly,Male,Pennsylvania,46,10,123289,31265,November
+937,Ethelred,Garnall,Male,Florida,36,20,488584,,November
+938,Mallory,Askham,Male,Virginia,11,5,288535,23894,November
+939,Donny,Tant,Female,North Carolina,47,23,70598,17742,November
+940,Bernhard,McGuane,Male,Texas,40,18,221079,20922,November
+941,Conchita,Addie,Female,New York,23,10,470999,33775,November
+942,Bogey,Sammes,Male,District of Columbia,22,1,241091,,November
+943,Farleigh,Vise,Male,North Carolina,3,23,248318,24833,November
+944,Dagny,Kildahl,Male,Maryland,15,14,443072,27758,November
+945,Chas,Gay,Male,District of Columbia,43,1,336620,8496,November
+946,Sadella,McMurthy,Female,Massachusetts,8,23,91261,28732,November
+947,Bobby,Monelle,Male,Nevada,12,14,342897,23148,November
+948,Lauryn,Towe,Female,Washington,39,1,239032,,November
+949,Mindy,De Coursey,Female,California,7,1,436281,9404,November
+950,Drugi,Ponsford,Male,Nebraska,26,4,282981,11868,November
+951,Jerrylee,Welling,Female,California,42,2,105343,21415,November
+952,Care,Stutt,Male,Florida,1,19,137431,,November
+953,Audrey,Kydde,Female,Massachusetts,40,20,310566,7037,November
+954,Ethe,Tokley,Male,Louisiana,23,13,174306,17035,November
+955,Maurene,Bullon,Female,Virginia,10,2,230902,17153,November
+956,Davis,MacGaughie,Male,Kansas,41,2,119828,9516,November
+957,Dorian,Evennett,Male,California,16,25,481879,635,November
+958,Monah,Kinset,Female,California,31,13,462346,13183,November
+959,Magnum,Jiroudek,Male,Virginia,5,16,151674,9539,November
+960,Kellen,Voff,Female,Kansas,6,8,224769,31994,November
+961,Chickie,Punyer,Female,West Virginia,6,10,438382,22226,November
+962,Loreen,Lightewood,Female,District of Columbia,18,25,144915,24734,November
+963,Bette,Bleacher,Female,Minnesota,37,20,430472,34523,November
+964,Ashley,Adney,Female,Texas,38,13,261870,20060,November
+965,Brocky,L'Episcopi,Male,Virginia,30,25,342997,19473,November
+966,Janaye,Andras,Female,Georgia,49,3,376011,16071,November
+967,Arty,Perrington,Male,Arizona,21,21,272600,19794,November
+968,Chiarra,Figurski,Female,California,44,9,325697,14201,November
+969,Tymothy,Priddey,Male,Nevada,9,8,392572,33243,November
+970,Monique,Paike,Female,Indiana,45,20,373432,22099,November
+971,Roxanna,Brazel,Female,Illinois,43,6,428172,34105,November
+972,Ailsun,Maud,Female,North Carolina,40,5,127110,31197,November
+973,Tim,Schoenleiter,Male,Minnesota,44,2,483151,26039,November
+974,Norry,Glenn,Male,Utah,33,15,267799,20005,November
+975,Cris,Fleckney,Male,Massachusetts,9,17,36559,10941,November
+976,Worthington,McIllroy,Male,Illinois,50,21,176803,6043,November
+977,Ronica,Covil,Female,New Mexico,34,17,53271,20981,November
+978,Marianne,Headech,Female,Missouri,15,3,235569,17132,November
+979,Dani,Vizor,Female,Arizona,16,18,457566,14692,November
+980,Morley,Camamill,Male,North Carolina,28,5,438370,8463,November
+981,Iggy,Scorer,Male,Texas,8,11,269581,616,November
+982,Katinka,Jahnig,Female,Utah,40,6,239948,7256,November
+983,Sherie,Woolfall,Female,Texas,28,3,133465,26559,November
+984,Grantley,Sumers,Male,Kentucky,47,25,227344,9376,November
+985,Everard,Raleston,Male,Missouri,21,24,38018,16747,November
+986,Alain,Jowle,Male,Minnesota,28,1,306602,21260,November
+987,Konstantin,Longfield,Male,Michigan,20,11,273294,22390,November
+988,Carri,Zorzoni,Female,Virginia,1,25,208786,2438,November
+989,Idell,Driussi,Female,California,34,2,379188,9996,November
+990,Mel,Marzelle,Male,Texas,40,6,431247,,November
+991,Brew,Brevitt,Male,West Virginia,36,4,429174,6822,November
+992,Concettina,Betterton,Female,New Hampshire,43,10,231054,3576,November
+993,Reese,Batting,Male,Indiana,7,15,36046,32847,November
+994,Bartie,Simla,Male,New York,21,13,294608,29009,November
+995,Frazer,Cantle,Male,Texas,14,2,46762,8443,November
+996,Neville,Durante,Male,Oregon,21,21,485909,8454,November
+997,Shannan,Forson,Male,Pennsylvania,48,25,15693,14782,November
+998,Felicdad,Autry,Female,California,15,7,191375,16815,November
+999,Carney,Rubery,Male,Georgia,39,20,206633,22049,November
+1000,Kanya,Boissier,Female,District of Columbia,33,23,472308,8914,November
