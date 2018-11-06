@@ -52,10 +52,6 @@ main {
   right: 20px;
   margin-top: 11px; }
 
-.button-sizing {
-  height: 60px; }
-
-/* Media queries */
 @media (max-width: 992px) and (min-width: 768px) {
   .logo-footer {
     padding: 0px 0px 0px 0px; } }
