@@ -9,7 +9,7 @@ body {
   line-height: 66px; }
 
 main {
-  min-height: calc(110vh - 66px); }
+  min-height: calc(176vh - 66px); }
 
 .navbar {
   background-color: rgba(55, 63, 72, 0.43);

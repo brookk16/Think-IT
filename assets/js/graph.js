@@ -6,25 +6,24 @@ queue()
 function makeGraphs(error, salesData) {
     var ndx = crossfilter(salesData);
 
-    salesData.forEach(function(d) {
-        d.leads_generated = parseInt(d.leads_generated);
-        d.appointments_generated = parseInt(d.appointments_generated);
-        d.total_amount_earned = parseInt(d.total_amount_earned);
-        d.Total_amount_lost = parseInt(d.Total_amount_lost);
-        
+    salesData.forEach(function(d){
+        d.earned = parseInt(d.earned)
+        d.lost = parseInt(d.lost);
     })
     
-    
-
     show_store_location_selector(ndx);
     show_amount_earned_per_store(ndx);
-    
-console.log(salesData);
+    show_leads_and_appts_per_store(ndx);
+    show_employees(ndx);
+
     dc.renderAll();
+    console.log(salesData);
 }
 
 function show_store_location_selector(ndx) {
     var stateDim = ndx.dimension(dc.pluck("store_location"));
+    
+    
 
     var stateSelect = stateDim.group();
 
@@ -35,53 +34,103 @@ function show_store_location_selector(ndx) {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function show_amount_earned_per_store(ndx) {
+
     var stateDim = ndx.dimension(dc.pluck("store_location"));
     
-    var amount_earned = ndx.dimension(dc.pluck("total_amount_earned"))
-    
-    var total_amount_earned = stateDim.group().reduceSum(dc.pluck("total_amount_earned"));
-    
-    var amount_lost = ndx.dimension((dc.pluck("Total_amount_lost")))
-    
-    var total_amount_lost = stateDim.group().reduceSum(dc.pluck("Total_amount_lost"));
+    var amount_earned = ndx.dimension(dc.pluck("earned"));
 
+    function add_item(p, v) {
+        p.count++;
+        p.total += v.earned;
+        p.average = p.total / p.count;
+        return p;
+    }
 
+    function remove_item(p, v) {
+        p.count--;
+        if (p.count == 0) {
+            p.total = 0;
+            p.average = 0;
+        }
+        else {
+            p.total -= v.earned; /*- v.lost*/
+            p.average = p.total / p.count;
+        }
+        return p;
+    }
 
+    function initialise() {
+        return { count: 0, total: 0, average: 0 };
+    }
+
+    var average_earn_by_state = stateDim.group().reduce(add_item, remove_item, initialise);
     
+
     dc.barChart("#amount-gained-lost-per-store")
         .width(800)
-        .height(400)
-        .margins({top: 50, right: 50, bottom: 50, left: 70})
+        .height(600)
+        .margins({ top: 50, right: 50, bottom: 50, left: 70 })
         .dimension(stateDim)
-        .group(total_amount_earned, "Total amount earned")
-        .stack(total_amount_lost, "Total amount lost")
+        .group(average_earn_by_state)
+        .valueAccessor(function(d) { return d.value.average.toFixed(8); })
         .transitionDuration(1000)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
-        .label(function (d) { return d.key })
-        .elasticY(true)
+        .elasticY(false)
         .xAxisLabel("State")
-        .yAxisLabel("Total amount earned and lost")
-        .yAxis().ticks(23)
-        
+        .yAxisLabel("Average amount earned and lost");
         
 }
+
+function show_leads_and_appts_per_store(ndx) {
+
+    var stateDim = ndx.dimension(dc.pluck("store_location"));
+
+    var totalLeads = stateDim.group().reduceSum(dc.pluck("leads_generated"));
+
+    var totalAppts = stateDim.group().reduceSum(dc.pluck("appointments_generated"));
+
+
+    dc.barChart("#leads-and-appts-per-store")
+        .width(800)
+        .height(600)
+        .margins({ top: 50, right: 50, bottom: 50, left: 70 })
+        .dimension(stateDim)
+        .group(totalLeads, "Total leads")
+        .stack(totalAppts, "Total appointments generated")
+        .transitionDuration(1000)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .elasticY(true)
+        .xAxisLabel("State")
+        .yAxisLabel("Total amount of leads and appointments generated")
+        .yAxis().tickFormat(function(v) { return v; });
+}
+
+function show_employees(ndx) {
+
+    var amount_earned = ndx.dimension(dc.pluck("earned"));
+
+    var total_earned = amount_earned.group();
     
+    
+    var employeeDim = ndx.dimension(dc.pluck("full_name"));
+
+    dc.dataTable("#employee-table")
+        .width(768)
+        .height(480)
+        .dimension(total_earned)
+        .group(employeeDim)
+        .order(d3.descending);
+
+}
 
 
-
+    
+   
+    
+    
+    
+    
+    

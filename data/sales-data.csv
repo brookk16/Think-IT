@@ -1,1001 +1,501 @@
-id,first_name,last_name,gender,store_location,leads_generated,appointments_generated,total_amount_earned,Total_amount_lost,Month
-1,Roldan,Hartland,Male,California,33,19,53589,32834,November
-2,Gene,Caine,Male,Texas,23,5,340003,20946,November
-3,Ann,Hennemann,Female,Florida,4,23,340398,16641,November
-4,Darleen,Vynoll,Female,Florida,16,25,291775,19188,November
-5,Therine,Gaither,Female,Florida,42,20,312966,22405,November
-6,Julietta,MacMoyer,Female,California,5,24,113043,26413,November
-7,Rodrick,Maroney,Male,Arizona,31,17,452917,21451,November
-8,Marillin,Kidner,Female,California,36,21,182687,3601,November
-9,Florry,Freeborn,Female,California,17,1,216896,17492,November
-10,Natassia,Tomkys,Female,Florida,2,12,371452,4570,November
-11,Tomasina,Pennrington,Female,Texas,4,19,432633,30096,November
-12,Ray,Penning,Male,Texas,41,4,116508,29441,November
-13,Garwood,Suett,Male,Texas,37,7,157592,8703,November
-14,Hans,Fike,Male,Florida,37,24,226437,15820,November
-15,Rodrigo,Dannett,Male,California,10,15,76804,30207,November
-16,Moritz,Ferguson,Male,New Jersey,28,23,382506,34133,November
-17,Stearn,Shier,Male,California,1,22,431416,14836,November
-18,Sim,Kubal,Male,Texas,8,4,262425,15956,November
-19,Lib,Beadel,Female,Texas,46,10,403143,47,November
-20,Amargo,Mulcock,Female,Ohio,7,15,398621,25699,November
-21,Paola,Kinsley,Female,Texas,47,0,127606,27175,November
-22,Marin,Paradis,Female,Florida,13,7,183958,31051,November
-23,Rufe,Oliveti,Male,Florida,27,19,339884,22142,November
-24,Amber,Plampeyn,Female,Arizona,17,12,208056,30724,November
-25,Bent,Corrao,Male,California,16,22,179360,1069,November
-26,Sena,Pennazzi,Female,California,23,16,381629,3127,November
-27,Gordan,Eynon,Male,Florida,45,4,324603,20916,November
-28,Theresa,Turle,Female,Nebraska,11,9,305703,4429,November
-29,Fiann,Caddens,Female,Texas,23,13,242187,20129,November
-30,Michell,Malec,Female,Texas,49,4,140726,21351,November
-31,Ernestus,Westerman,Male,Florida,14,19,310285,17954,November
-32,Derron,Christoforou,Male,Texas,20,2,438016,13652,November
-33,Philippe,Elwel,Female,California,9,25,263498,7450,November
-34,Rubia,Thorsby,Female,Ohio,29,25,55699,7999,November
-35,Arel,Wickson,Male,Washington,34,25,333683,27134,November
-36,Alistair,Bradane,Male,Texas,13,15,412017,20973,November
-37,Melessa,Precious,Female,Texas,7,22,190354,2020,November
-38,Corny,Hubery,Male,Maryland,36,13,454401,1550,November
-39,Jonah,Dungey,Male,Arizona,34,13,208634,30517,November
-40,Farra,Shillitoe,Female,Florida,14,23,183839,353,November
-41,Wilmar,Orable,Male,Florida,29,19,465297,2976,November
-42,Artie,Pauncefort,Male,Texas,10,11,396559,30177,November
-43,Clemence,Attenbrough,Female,Texas,27,11,257495,2002,November
-44,Consuela,Jarmyn,Female,California,29,3,125102,2441,November
-45,Sisely,Smittoune,Female,Arizona,47,15,327773,22053,November
-46,El,Devil,Male,Maryland,18,14,181512,31349,November
-47,Merrick,Jerrans,Male,California,26,16,248966,548,November
-48,Fitzgerald,Androsik,Male,Florida,21,6,114607,19050,November
-49,Shurlock,Viel,Male,California,17,2,265336,5752,November
-50,Anastasie,Deekes,Female,Texas,20,16,392756,5066,November
-51,Ronni,Blasik,Female,California,12,5,263166,7056,November
-52,Leandra,Kleimt,Female,Nebraska,31,5,63273,10415,November
-53,Tandie,Garham,Female,Florida,33,16,84510,18558,November
-54,Buckie,Stephens,Male,Texas,22,6,178523,16154,November
-55,Homerus,Betonia,Male,California,27,24,364099,19522,November
-56,Elenore,Bigly,Female,Maryland,31,8,341261,30482,November
-57,Barbabas,Peizer,Male,California,2,12,68135,1433,November
-58,Renard,Mulbry,Male,Texas,9,12,433408,25277,November
-59,Kendell,McGriele,Male,Mississippi,37,4,424568,7321,November
-60,Dana,Scougal,Female,Florida,12,3,253317,23241,November
-61,Drucill,Stollman,Female,Arizona,37,17,291073,16542,November
-62,Amitie,Simister,Female,Ohio,38,6,423462,29011,November
-63,Arel,McKimm,Male,Washington,4,14,78872,28344,November
-64,Chick,Treby,Male,California,40,17,172355,13859,November
-65,Delcina,Storrier,Female,California,10,20,222275,30439,November
-66,Diena,McGarrahan,Female,California,33,0,295346,19397,November
-67,Phil,Ungerecht,Female,Arizona,0,8,297427,2927,November
-68,Elinore,Gibben,Female,Florida,33,25,147206,15186,November
-69,Leanora,Grunson,Female,Texas,31,8,184428,8014,November
-70,Prissie,DelaField,Female,Florida,36,13,441442,4789,November
-71,Nicoli,Lorenzetti,Female,Arizona,0,3,183626,6999,November
-72,Bordie,Pyle,Male,Nebraska,32,17,299793,32768,November
-73,Alla,Smithyman,Female,Florida,2,23,472539,29914,November
-74,Edi,Phelipeaux,Female,California,17,6,305067,18767,November
-75,Osborne,Biddiss,Male,Ohio,18,11,164898,10852,November
-76,Madella,Fewless,Female,Texas,7,0,22658,29044,November
-77,Vernon,Baillie,Male,New Jersey,35,6,382715,1622,November
-78,Andra,Ivashechkin,Female,California,18,24,17068,2148,November
-79,Trstram,Durbyn,Male,Texas,5,14,492057,30605,November
-80,Bevon,Howson,Male,Florida,24,7,56875,9246,November
-81,Grove,Avrahamof,Male,Washington,16,22,54014,25713,November
-82,Ray,Hincks,Female,Florida,49,23,34915,6509,November
-83,Gale,Pescott,Male,California,5,2,477194,31353,November
-84,Uta,Benet,Female,Texas,22,1,254566,32784,November
-85,Bethena,Van't Hoff,Female,California,23,23,444773,23682,November
-86,Rachele,Royse,Female,California,49,10,49938,21795,November
-87,Hazel,Oene,Female,Texas,44,1,175487,33667,November
-88,Verile,Caltun,Female,California,22,11,176436,3807,November
-89,Marika,Brafferton,Female,Maryland,28,24,385023,14131,November
-90,Ilario,O'Geneay,Male,Texas,31,3,436629,25199,November
-91,Krissy,Rawood,Female,Florida,33,11,492267,26329,November
-92,Evangelin,Josephsen,Female,Texas,29,7,423125,5801,November
-93,Dorthea,De Biaggi,Female,Texas,25,20,328734,26181,November
-94,Staffard,Brunn,Male,California,45,17,273619,20705,November
-95,Talya,Branthwaite,Female,Texas,43,20,18339,30058,November
-96,Joelly,Mateiko,Female,Florida,44,25,479692,109,November
-97,Heda,Mathen,Female,Maryland,0,18,354012,4314,November
-98,Dannie,Weekley,Male,Arizona,15,24,176968,15823,November
-99,Daniella,Kingzett,Female,Florida,19,19,10754,20123,November
-100,Ezra,Datte,Male,Florida,42,1,324903,17880,November
-101,Irwinn,Polak,Male,Texas,25,10,499627,33339,November
-102,Wylie,Cluderay,Male,California,47,4,89622,14561,November
-103,Charita,Fishley,Female,California,43,2,102171,28316,November
-104,Glenn,Cunniffe,Male,Ohio,22,24,454981,12308,November
-105,Carrissa,Spawton,Female,Texas,25,15,376733,12643,November
-106,Titos,MacGarvey,Male,Ohio,23,17,273543,22915,November
-107,Gweneth,Petrushkevich,Female,Texas,9,22,174768,6977,November
-108,Blakelee,Sapshed,Female,California,36,24,4326,23442,November
-109,Christoph,O'Neal,Male,Maryland,41,18,298154,33795,November
-110,Orelee,Goburn,Female,Texas,31,18,66966,17369,November
-111,Dallas,Nannetti,Female,New Jersey,4,6,96433,30525,November
-112,Richmound,Snaden,Male,Florida,25,7,113123,27413,November
-113,Joete,Lafflina,Female,Texas,29,14,5989,10596,November
-114,Hy,Nortcliffe,Male,California,0,15,390894,731,November
-115,Art,McKillop,Male,California,41,15,66550,3854,November
-116,Griffin,Scola,Male,Ohio,18,5,58679,21463,November
-117,Carrol,Wintersgill,Male,Ohio,19,9,269096,33891,November
-118,Eulalie,Niblett,Female,California,24,12,158836,32143,November
-119,Dulce,Stiegers,Female,California,1,15,2328,18489,November
-120,Lind,Hegley,Male,Ohio,3,4,151332,3342,November
-121,Costa,Tondeur,Male,Texas,26,18,291410,29240,November
-122,Theo,Washbrook,Female,California,48,6,405230,29336,November
-123,Agosto,Spitell,Male,Maryland,20,0,437287,2855,November
-124,Alis,Conley,Female,Florida,0,23,185315,9688,November
-125,Orville,Shallcross,Male,Texas,5,16,409275,21991,November
-126,Lois,Shepstone,Female,California,42,23,317167,23486,November
-127,Denney,Pagett,Male,Ohio,24,9,455700,31241,November
-128,Tammy,Greenalf,Female,Nebraska,2,10,276656,1697,November
-129,Othello,Visco,Male,Nebraska,26,9,493337,28738,November
-130,Lavinia,Male,Female,Texas,24,18,279180,8478,November
-131,Daryl,Earl,Female,California,9,1,245952,28729,November
-132,Salvador,Braunlein,Male,California,26,18,243223,26779,November
-133,Mindy,Jillis,Female,California,27,5,398822,7972,November
-134,Dean,Scanterbury,Male,Nebraska,25,0,251089,14291,November
-135,Marguerite,Laviste,Female,California,14,13,450331,21732,November
-136,Andonis,Camsey,Male,Texas,10,0,47636,18378,November
-137,Lawton,Espinay,Male,Texas,36,14,402035,9727,November
-138,Freemon,Pettit,Male,Nebraska,17,5,32793,26140,November
-139,Fabio,Farnell,Male,California,43,17,412625,32934,November
-140,Karlie,Heal,Female,Texas,25,25,352337,29121,November
-141,Kit,Solon,Female,Arizona,25,23,242082,34717,November
-142,Keeley,Themann,Female,Florida,19,2,24255,24077,November
-143,Jasper,Warr,Male,Florida,6,14,297554,10579,November
-144,West,Gylle,Male,Arizona,19,8,134825,30655,November
-145,Job,Phlippi,Male,Florida,41,13,199291,16248,November
-146,Orella,Ianetti,Female,Maryland,37,16,174208,33004,November
-147,Dominique,Whewill,Male,Florida,47,25,278201,16799,November
-148,Antonio,Leavey,Male,Ohio,7,2,335939,3505,November
-149,Ken,Courage,Male,Washington,15,11,322845,23251,November
-150,Olag,Duffyn,Male,California,44,11,445845,2466,November
-151,Quincey,Sleeford,Male,Texas,29,9,180856,20143,November
-152,Hyacinth,Martinat,Female,Texas,21,14,74544,24390,November
-153,Rudyard,Marieton,Male,California,35,11,396848,1843,November
-154,Gusta,Rossiter,Female,California,0,22,194996,8992,November
-155,Chaim,Meaders,Male,California,49,22,147153,1693,November
-156,Nelly,Petruska,Female,California,18,23,490778,33149,November
-157,Ailee,Fowden,Female,Texas,10,0,24588,3148,November
-158,Bourke,Lowseley,Male,Florida,25,9,273801,32586,November
-159,Madelin,Mollnar,Female,Texas,41,4,190251,34740,November
-160,Les,Charnock,Male,Florida,1,22,19991,32798,November
-161,Chiarra,Fowlston,Female,Texas,22,15,276384,33948,November
-162,Holli,Caswell,Female,California,19,8,378322,20556,November
-163,Faber,Towle,Male,California,34,16,166366,25975,November
-164,Hyatt,Barratt,Male,Ohio,25,13,243945,34409,November
-165,Zara,Try,Female,Texas,29,3,353776,8550,November
-166,Rhianon,De Pietri,Female,California,1,7,49938,1523,November
-167,Kennett,Hauxby,Male,Florida,34,25,288294,14800,November
-168,Heinrik,Dicky,Male,New Jersey,7,14,391131,30496,November
-169,Jade,Gallaccio,Female,Arizona,20,10,451078,27203,November
-170,Fred,Pevie,Female,Arizona,38,8,278374,7446,November
-171,Jermain,Chalfant,Male,Florida,17,13,289772,27678,November
-172,Lesly,Didball,Female,Florida,50,13,246687,10749,November
-173,Willy,Bertson,Male,California,17,0,246755,22194,November
-174,Sherwin,Ryding,Male,Texas,26,25,294055,30762,November
-175,Elna,Kleinstein,Female,Ohio,3,7,294731,11049,November
-176,Ingaberg,Saltwell,Female,California,8,0,202534,5115,November
-177,Danya,Rogge,Male,Maryland,10,7,54092,18002,November
-178,Fanny,Laite,Female,California,9,16,386969,22099,November
-179,Hale,Facchini,Male,Florida,40,14,419162,33484,November
-180,Cindelyn,Chirm,Female,California,32,5,75610,14786,November
-181,Kessiah,Baraja,Female,Texas,26,11,276804,14278,November
-182,Julio,Faustin,Male,Maryland,28,2,111723,12825,November
-183,Orlan,Screwton,Male,Arizona,41,11,177581,34344,November
-184,Etti,King,Female,California,29,12,424530,28984,November
-185,Kathrine,Bougen,Female,California,32,8,28622,11598,November
-186,Jaclin,Stathers,Female,California,28,14,483818,30235,November
-187,Nada,Vasic,Female,Washington,50,7,24338,13638,November
-188,Arlana,Wrightham,Female,Washington,41,12,201240,14474,November
-189,Henri,Prodrick,Male,Washington,32,24,72673,20363,November
-190,Gayler,Padgett,Male,Texas,26,0,102455,3,November
-191,Pooh,O'Rodane,Male,Texas,37,23,327002,13307,November
-192,Errick,Plan,Male,Nebraska,26,4,320288,10828,November
-193,Bridget,Shorton,Female,Texas,38,21,389255,6661,November
-194,Price,Dyson,Male,Florida,11,16,310458,31758,November
-195,Marcella,Kleynermans,Female,Florida,11,24,114923,24312,November
-196,Annecorinne,Grishakin,Female,Florida,15,20,334107,33695,November
-197,Jerrylee,Stanyan,Female,California,28,21,283500,23582,November
-198,Bamby,Brookhouse,Female,California,50,19,405889,27187,November
-199,Shane,Thornborrow,Male,California,19,11,114768,20804,November
-200,Lesley,Cowderay,Female,Florida,23,12,163914,24760,November
-201,Gaelan,Gianuzzi,Male,Florida,17,1,452847,10208,November
-202,Sumner,O'Heaney,Male,California,35,12,46891,25223,November
-203,Tobe,Forsdyke,Male,California,31,7,206013,10828,November
-204,Barnebas,Kryszkiecicz,Male,Florida,15,6,181509,22855,November
-205,Tabitha,McAllaster,Female,Florida,17,19,240388,19430,November
-206,Darrel,Brehault,Male,Florida,6,1,476687,24942,November
-207,Corbin,Breadmore,Male,Nebraska,42,6,385475,15781,November
-208,Marylee,Frentz,Female,California,9,4,5870,23451,November
-209,Odie,Ricciardiello,Male,California,26,0,15034,33013,November
-210,Nicolas,Cryer,Male,Maryland,6,10,40179,14344,November
-211,Armstrong,Cusack,Male,Texas,46,19,55844,4675,November
-212,Windham,Edgeworth,Male,Florida,11,16,104704,18427,November
-213,Alwin,Tomik,Male,Maryland,5,5,499286,386,November
-214,Mill,Commander,Male,Texas,5,23,228292,8642,November
-215,Leland,Cordner,Female,Florida,25,16,141195,18152,November
-216,Egan,Shrubb,Male,California,43,17,277488,26110,November
-217,Pierre,Sutherby,Male,Florida,23,7,119178,32740,November
-218,Heath,Laxtonne,Male,California,22,13,469845,27778,November
-219,Warner,Kenryd,Male,Florida,28,21,419039,16192,November
-220,Clarissa,Narraway,Female,California,30,7,343516,14345,November
-221,Emlynne,Bicksteth,Female,California,10,15,342532,1832,November
-222,Remy,Rawdall,Female,Florida,38,21,301236,2853,November
-223,Celie,Kneafsey,Female,Texas,50,13,431435,28881,November
-224,Eddie,Blankley,Female,Washington,42,18,398211,16951,November
-225,Charis,Gipp,Female,Ohio,4,15,241706,32541,November
-226,Archibold,Stocks,Male,Florida,5,13,51935,19551,November
-227,Hobie,Matkin,Male,Texas,32,1,161463,26766,November
-228,Perri,Campbell,Female,Florida,24,11,438633,21057,November
-229,Morrie,Kennagh,Male,Ohio,44,6,149139,32768,November
-230,Henrieta,Perett,Female,Arizona,8,3,440983,3660,November
-231,Alli,Whillock,Female,Ohio,49,9,212745,26845,November
-232,Thayne,Lenz,Male,Texas,40,21,117059,9077,November
-233,Mavra,De Benedictis,Female,Texas,10,10,221793,15491,November
-234,Reagen,Cambling,Male,Texas,39,10,459367,1809,November
-235,Leonie,Iwanczyk,Female,California,46,10,307880,24061,November
-236,Olin,Luisetti,Male,Florida,27,9,196995,27278,November
-237,Cris,Iacovaccio,Female,Arizona,4,11,471683,33483,November
-238,Kerwinn,Knoles,Male,Texas,19,5,74125,21301,November
-239,Davie,Toke,Male,Arizona,13,22,325014,1598,November
-240,Alina,Iggo,Female,California,50,19,442781,21679,November
-241,Rozanne,Danieli,Female,Texas,38,21,485097,4441,November
-242,Andrea,Scalia,Female,Washington,26,11,245695,15107,November
-243,Wildon,Mortimer,Male,Ohio,45,20,252927,25842,November
-244,Alaric,Addinall,Male,Florida,23,15,407484,11607,November
-245,Elle,Wardingley,Female,Florida,35,10,498392,29829,November
-246,Royal,Muldowney,Male,Ohio,16,14,238271,21645,November
-247,Lucho,Redshaw,Male,Florida,16,17,20262,12413,November
-248,Odo,Pretor,Male,Texas,8,0,243765,33694,November
-249,Althea,Izat,Female,Arizona,26,10,454561,31086,November
-250,Selig,Patchett,Male,Texas,6,6,237396,16350,November
-251,Ennis,Toghill,Male,Texas,37,16,433017,15716,November
-252,Nil,Philp,Male,Florida,20,10,11562,18267,November
-253,Kandy,Danslow,Female,Ohio,27,12,291019,15893,November
-254,Cherye,Blewis,Female,California,31,20,39184,27241,November
-255,Ashlen,Loynton,Female,California,16,21,128866,1720,November
-256,Val,Bartoli,Female,Florida,2,23,101019,15879,November
-257,Oliviero,Hallmark,Male,Texas,49,22,182431,10928,November
-258,Dukie,Quinnet,Male,Arizona,49,25,315314,27382,November
-259,Evangelin,Rapp,Female,Arizona,46,24,355750,11964,November
-260,Bradan,Pickthorn,Male,Texas,47,23,5754,6380,November
-261,Dorris,Smitten,Female,California,6,3,487832,28275,November
-262,Jennette,Lavielle,Female,Texas,42,11,363780,3464,November
-263,Seymour,Pettisall,Male,California,29,15,86728,10370,November
-264,Clemmie,Ambroix,Male,California,22,2,205468,13224,November
-265,Ezra,Wilcot,Male,Texas,0,4,404470,18159,November
-266,Kameko,Andryushchenko,Female,New Jersey,36,6,315884,4166,November
-267,Mitch,Maudett,Male,California,17,4,393352,31329,November
-268,Kelsy,Loadsman,Female,Washington,22,9,89185,7253,November
-269,Peter,Cusack,Male,California,23,0,170023,22063,November
-270,Liam,Mergue,Male,California,17,3,247040,18845,November
-271,Arch,Billett,Male,California,38,18,439971,3304,November
-272,Basile,Bispo,Male,California,29,21,421862,32064,November
-273,Hussein,Braznell,Male,Arizona,2,2,405975,13398,November
-274,Sayers,MacGorley,Male,Ohio,21,3,351928,24592,November
-275,Randal,Cristofori,Male,California,3,14,232557,29320,November
-276,Ruthie,Gianuzzi,Female,Texas,22,6,40199,28931,November
-277,Terry,Alessandrucci,Female,California,4,18,435794,28857,November
-278,Abbott,Sowle,Male,California,7,15,93329,18264,November
-279,Tootsie,Schechter,Female,Arizona,32,18,132595,29886,November
-280,Brenden,Peasee,Male,California,12,7,468041,26734,November
-281,Cynde,O'Rudden,Female,Texas,39,2,458384,6625,November
-282,Cordy,Duigenan,Male,Texas,27,17,204414,82,November
-283,Weylin,Olyff,Male,California,13,14,226427,3655,November
-284,Torrin,Kosel,Male,California,19,9,130010,26440,November
-285,Noni,Charlick,Female,Ohio,27,17,390254,20181,November
-286,Lamar,Kittoe,Male,Texas,44,17,391203,32596,November
-287,Shannan,Dorricott,Male,Ohio,4,13,461411,23720,November
-288,Dorena,Littledike,Female,Florida,22,19,181082,25652,November
-289,Zelig,Schachter,Male,Ohio,21,11,143936,14795,November
-290,Jared,Beebis,Male,Ohio,16,25,120233,9937,November
-291,Sarah,De Blasio,Female,Florida,25,0,419676,5051,November
-292,Josephine,Pummery,Female,Florida,13,5,453646,21555,November
-293,Candide,Zanassi,Female,Texas,8,8,164206,15178,November
-294,Kariotta,de la Valette Parisot,Female,Texas,14,22,305117,2283,November
-295,Rowland,Djurkovic,Male,California,19,23,130120,20809,November
-296,Winifield,Shatliffe,Male,Maryland,2,9,330103,12990,November
-297,Shaughn,Klas,Male,Washington,34,1,46442,33085,November
-298,Hamlin,Storror,Male,California,1,8,379866,28441,November
-299,Cthrine,Leebetter,Female,Arizona,36,5,279633,32645,November
-300,Giordano,De la Feld,Male,Florida,26,14,24094,20641,November
-301,Kare,Grievson,Female,California,32,11,234620,33705,November
-302,Jerald,Karpinski,Male,Texas,3,6,53869,25849,November
-303,Elwyn,Hinder,Male,Texas,19,20,260704,7537,November
-304,Auguste,Horbart,Female,California,21,6,249486,16572,November
-305,Daphene,Milbank,Female,Washington,9,14,214607,32791,November
-306,Jacquelynn,Piolli,Female,Texas,0,10,2790,2353,November
-307,Jessie,Greasty,Male,Texas,32,21,42205,10118,November
-308,Andrei,Lapwood,Female,Texas,30,14,217601,16510,November
-309,Darren,Gurnee,Male,California,18,5,363163,12017,November
-310,Pooh,Pawfoot,Female,Texas,47,6,202637,19867,November
-311,Rose,Stoute,Female,California,11,24,186300,33284,November
-312,Leeanne,Stubbert,Female,Texas,25,11,233271,24758,November
-313,Debbi,Haverty,Female,Florida,2,13,362959,2279,November
-314,Allison,Bradder,Female,Florida,46,1,297164,20002,November
-315,Ealasaid,Rowlings,Female,California,4,0,318891,18996,November
-316,Erny,Boulter,Male,Washington,50,0,385869,1322,November
-317,Adrian,Rudgley,Female,California,13,17,358348,1549,November
-318,Camellia,Altofts,Female,Ohio,10,15,270406,18587,November
-319,Kile,Josselsohn,Male,Ohio,7,1,195564,883,November
-320,Julietta,Rawkesby,Female,Texas,28,17,269197,21432,November
-321,Karry,Barchrameev,Female,Florida,48,7,420261,28072,November
-322,Courtney,Palumbo,Male,Florida,46,3,286605,5355,November
-323,Ricard,Pickwell,Male,California,44,0,25698,23080,November
-324,Hussein,Ollerhad,Male,Ohio,39,7,151013,16419,November
-325,Nicolette,MacCulloch,Female,Florida,10,15,309820,156,November
-326,Bondon,Krzyzaniak,Male,California,8,3,22556,29647,November
-327,Marji,Orringe,Female,Florida,4,3,202772,20525,November
-328,Jasen,Stiebler,Male,California,22,2,443913,9781,November
-329,Van,Matousek,Male,Florida,1,18,57979,28686,November
-330,Artair,Schorah,Male,California,21,5,247811,27549,November
-331,Christabella,Lidington,Female,Florida,3,6,26988,19439,November
-332,Alasdair,Cordero,Male,California,37,0,458723,23506,November
-333,Maxy,Doley,Male,California,49,17,462931,15794,November
-334,Juli,Henfre,Female,California,29,0,363935,23383,November
-335,Edithe,Sketcher,Female,Nebraska,11,15,338780,23313,November
-336,Wallache,Cardenosa,Male,Texas,44,9,168536,5890,November
-337,Shaughn,Lansberry,Male,Arizona,9,24,327800,33967,November
-338,Tedmund,Georgievski,Male,Florida,22,19,49836,16666,November
-339,Shelden,Conerding,Male,California,0,2,182797,33853,November
-340,Marieann,Blucher,Female,Arizona,20,7,217375,221,November
-341,Rozalin,Povele,Female,Texas,38,12,171423,19619,November
-342,Jude,Attenbrough,Male,Arizona,45,13,383556,25225,November
-343,Donnell,Woodington,Male,California,29,19,131535,6177,November
-344,Daisy,Bayles,Female,Florida,30,3,55422,18009,November
-345,Afton,Paireman,Female,Florida,39,9,429019,4609,November
-346,Phelia,Bartolic,Female,Florida,14,10,36978,29491,November
-347,Flossy,Lambdon,Female,Texas,19,8,177473,7809,November
-348,Hobard,Callery,Male,Florida,39,22,445017,32742,November
-349,Alonzo,Bramsom,Male,California,44,25,109679,23656,November
-350,Fredia,Filliskirk,Female,Florida,13,9,45463,9195,November
-351,Berty,Slayton,Male,Florida,27,21,5512,32754,November
-352,Eadmund,Boggon,Male,California,46,13,283630,27304,November
-353,Otis,Sweeting,Male,California,30,22,454098,26585,November
-354,Corella,Boleyn,Female,Ohio,12,25,56450,30244,November
-355,Prudy,Alderton,Female,California,8,10,245786,1783,November
-356,Wain,Copnell,Male,Texas,12,15,416882,2861,November
-357,Theo,Rentenbeck,Male,Maryland,39,14,150855,30707,November
-358,Domingo,Chippindall,Male,Florida,36,17,109241,563,November
-359,Zebadiah,Margerison,Male,California,44,1,483289,33037,November
-360,Fabe,Divina,Male,Texas,40,16,363824,4920,November
-361,Hildagarde,Ridoutt,Female,Florida,45,7,480688,5841,November
-362,Ramsey,Stathers,Male,Wyoming,27,12,44007,32988,November
-363,Claudine,Nares,Female,Texas,17,24,69927,32183,November
-364,Horatio,Buzek,Male,Texas,47,16,23354,7482,November
-365,Randell,Fairbairn,Male,Texas,32,2,233269,15654,November
-366,Irv,Petroff,Male,Texas,20,23,487192,2204,November
-367,Jeramie,Emps,Male,Texas,29,12,159509,26421,November
-368,Thatcher,Southwood,Male,California,2,18,143506,21161,November
-369,Ginevra,Dauby,Female,Arizona,42,8,89200,27707,November
-370,Florina,Verriour,Female,Florida,45,8,144436,8527,November
-371,Ev,Hefforde,Male,Ohio,33,16,487321,15538,November
-372,Dru,Deftie,Male,Texas,36,25,263867,7644,November
-373,Ailee,Ruffey,Female,Texas,50,24,214699,31413,November
-374,Olly,Wooffitt,Female,Florida,37,5,4392,18978,November
-375,Basilio,Livoir,Male,New Jersey,7,14,371928,4465,November
-376,Ashley,Danbrook,Female,California,29,23,6088,24827,November
-377,Jasun,Biddell,Male,Texas,35,23,331945,26710,November
-378,Jacquenette,McCorrie,Female,Texas,45,19,303774,10180,November
-379,Frank,Triggs,Female,Florida,24,4,9618,1181,November
-380,Nani,De Wolfe,Female,Florida,1,0,392854,23489,November
-381,Lesley,Southerton,Female,Florida,39,15,147663,14226,November
-382,Hyatt,Backshill,Male,Mississippi,10,3,13288,10594,November
-383,Lenette,Tynemouth,Female,California,7,23,239997,21473,November
-384,Doe,Bottelstone,Female,Florida,14,3,210040,8203,November
-385,Lon,Gillings,Male,California,36,20,365632,27609,November
-386,Andrea,Bogaert,Male,Texas,32,5,278137,20928,November
-387,Neille,Smithers,Female,Washington,8,0,128939,1520,November
-388,Shadow,Dumper,Male,California,47,21,263272,11372,November
-389,Persis,Smallman,Female,Texas,12,24,471751,24608,November
-390,Mirna,Stoker,Female,California,43,24,56322,19448,November
-391,Vevay,Noods,Female,Florida,41,22,173755,34657,November
-392,Flossi,Bellenie,Female,Florida,16,22,485532,15600,November
-393,Page,Wentworth,Female,Texas,36,8,310229,30254,November
-394,Fiann,Bootman,Female,California,24,13,293941,13298,November
-395,Bibby,Parsall,Female,New Jersey,38,2,461968,27763,November
-396,Vita,Pollett,Female,Ohio,42,15,86044,8072,November
-397,Griswold,Fealey,Male,Ohio,38,7,492848,23121,November
-398,Marney,Fincham,Female,California,9,15,282737,13156,November
-399,Aharon,Avramovic,Male,California,32,9,343319,16573,November
-400,Clayborn,Malthouse,Male,Texas,14,25,98516,33832,November
-401,Kelsey,Wrathall,Male,Florida,10,7,296248,21332,November
-402,Dyanna,Wilman,Female,California,0,17,277730,32470,November
-403,Daniela,Kiffe,Female,Washington,4,7,322397,23420,November
-404,Prince,Sawart,Male,Texas,48,17,462316,10790,November
-405,Reggie,Carnson,Female,Arizona,29,20,337298,3979,November
-406,Harrietta,Gorner,Female,Florida,4,5,286686,26213,November
-407,Bonnie,Tregidga,Female,Florida,34,10,347893,15787,November
-408,Dina,Clemmett,Female,Texas,13,6,219595,23331,November
-409,Reyna,Weatherhead,Female,Texas,14,21,478692,26674,November
-410,Herta,Symmons,Female,California,46,12,99399,3666,November
-411,Trefor,Legate,Male,Washington,2,12,414370,1907,November
-412,Claiborne,Hedderly,Male,Florida,36,19,326593,29666,November
-413,Dorette,Sibbald,Female,Texas,20,24,262127,10226,November
-414,Teddie,Proffitt,Female,Texas,31,23,274438,1746,November
-415,Elbertine,Cartin,Female,Nebraska,42,1,99431,22117,November
-416,Katherina,Cridlon,Female,California,15,3,69799,19060,November
-417,Garrik,Greveson,Male,Texas,33,12,486608,20544,November
-418,Dara,Lemasney,Female,California,30,20,385240,12363,November
-419,Gabriele,Fabbri,Male,Ohio,43,9,303528,9578,November
-420,Winnie,Hansod,Male,Texas,12,21,423057,3098,November
-421,Yorker,Giovani,Male,Texas,46,22,488210,7069,November
-422,Rodolfo,Toping,Male,Texas,36,15,130279,19590,November
-423,Angelina,Debnam,Female,Texas,4,4,340848,8604,November
-424,Meredeth,Huckerbe,Male,California,29,20,493365,31709,November
-425,Dacia,Sagar,Female,Nebraska,45,12,328874,5489,November
-426,Yettie,Clay,Female,Arizona,10,17,687,22746,November
-427,Nowell,Bole,Male,California,23,14,51836,34637,November
-428,Noak,Gormally,Male,Texas,15,9,255814,22095,November
-429,Lynnell,Godilington,Female,California,23,21,33800,13435,November
-430,Averell,Huckel,Male,Texas,38,8,104710,24681,November
-431,Esmaria,Marks,Female,California,3,18,436260,13461,November
-432,Liuka,Seary,Female,Florida,37,15,470639,25214,November
-433,Alic,Dust,Male,Texas,20,22,414980,8997,November
-434,Huntley,Jaulmes,Male,Texas,16,3,87978,22068,November
-435,Almira,Geldert,Female,Texas,8,19,60309,90,November
-436,Julita,Garshore,Female,Maryland,28,2,438490,3432,November
-437,Sergeant,Wilkes,Male,Texas,31,23,161494,14643,November
-438,Codee,McShea,Female,Florida,12,7,59658,12647,November
-439,Gaylor,Binnell,Male,Washington,35,23,234730,16092,November
-440,Madelaine,Dugmore,Female,Florida,8,25,244760,20165,November
-441,Winnie,Novotne,Male,Texas,39,9,74233,34956,November
-442,Cari,Barford,Female,Washington,50,17,496143,19972,November
-443,Lorilee,Lilford,Female,Ohio,31,11,415750,24927,November
-444,Tera,Dufour,Female,California,13,10,51222,5789,November
-445,Yul,Wallege,Male,California,29,16,265801,19478,November
-446,Wainwright,Noir,Male,Texas,18,7,240215,20292,November
-447,Berke,Faro,Male,Florida,13,21,268132,21818,November
-448,Cherlyn,Hince,Female,Florida,34,24,46592,13043,November
-449,Maggee,Querree,Female,California,11,4,130982,3775,November
-450,Geno,Ceaplen,Male,Florida,36,1,19835,30133,November
-451,Olga,Devigne,Female,Arizona,9,12,347127,20806,November
-452,Case,Elbourne,Male,Ohio,3,24,459909,15358,November
-453,Goldi,Roughan,Female,Florida,33,3,298173,5769,November
-454,Deni,Messer,Female,Washington,43,17,118183,5110,November
-455,Staffard,Philipart,Male,Washington,21,24,335649,28104,November
-456,Ronny,Ritchings,Female,California,18,3,7393,26766,November
-457,Rayner,Mundie,Male,Texas,13,12,276425,10678,November
-458,Valentino,Linham,Male,California,22,19,178525,4928,November
-459,Jud,Coath,Male,Florida,41,15,35096,5668,November
-460,Otis,Michelmore,Male,Washington,38,23,125115,25835,November
-461,Carie,Dunkley,Female,New Jersey,3,5,45328,4650,November
-462,Heall,Beckmann,Male,Washington,30,20,34562,8815,November
-463,Mycah,Spurman,Male,California,20,5,77187,23936,November
-464,Eben,Ovendale,Male,Florida,10,5,302750,12142,November
-465,Kermit,Horlick,Male,Florida,29,15,221685,13747,November
-466,Almeria,Francecione,Female,California,15,15,315389,15419,November
-467,Silvana,Jaray,Female,California,33,24,409164,16821,November
-468,Garrard,Huckfield,Male,Florida,32,11,408836,12702,November
-469,Drucill,Punter,Female,Texas,42,2,81130,14229,November
-470,Renie,Pauncefort,Female,Texas,5,0,240994,16893,November
-471,Xenia,Vanyushin,Female,California,28,11,210986,17046,November
-472,Lorne,Ferras,Male,California,6,18,179292,19390,November
-473,Thedrick,Schuster,Male,California,12,1,441566,34461,November
-474,Renee,Learoyde,Female,California,25,25,34162,25015,November
-475,Harry,Chesser,Male,Ohio,23,0,81333,6707,November
-476,Rand,Cessford,Male,Washington,2,19,256170,17374,November
-477,Maure,Strangwood,Female,Texas,2,20,315420,187,November
-478,Bentley,Thrower,Male,California,13,19,318372,30504,November
-479,Bat,Sellers,Male,Florida,21,5,122016,32547,November
-480,Doreen,Polson,Female,Texas,16,24,245258,24978,November
-481,Howey,Sutherby,Male,Florida,11,5,176429,5577,November
-482,Patrizia,Biscomb,Female,Texas,6,3,286785,33007,November
-483,Ginnie,Vicker,Female,California,23,9,187752,4661,November
-484,Pietrek,Josefowicz,Male,Texas,38,8,310672,33510,November
-485,Sam,Madre,Male,Texas,43,10,423820,23373,November
-486,Moore,Withnall,Male,Nebraska,7,17,287174,6844,November
-487,Cindi,Aizikov,Female,California,6,9,260495,5141,November
-488,Jacinthe,Sottell,Female,Florida,37,22,114359,10899,November
-489,Ted,Ingrem,Female,Maryland,24,11,384572,30570,November
-490,Jacques,Goakes,Male,New Jersey,35,8,339664,3664,November
-491,Brynne,Burth,Female,Florida,5,0,402772,19061,November
-492,Nichole,Eltone,Male,California,4,24,415815,682,November
-493,Eliza,Smedmoor,Female,Florida,9,16,327232,5005,November
-494,Laverna,Doogan,Female,California,16,18,333375,348,November
-495,Monica,Glisenan,Female,Texas,23,23,361924,27972,November
-496,Marven,Iamittii,Male,Florida,24,23,328066,18579,November
-497,Shina,Ghent,Female,Texas,22,20,10427,34164,November
-498,Ruperta,Dougliss,Female,Texas,12,7,47634,20741,November
-499,Jasun,Ibarra,Male,Texas,35,13,377109,34286,November
-500,Nickolai,Sandeland,Male,Nebraska,43,0,398498,34197,November
-501,Osbert,Hintze,Male,Maryland,29,20,445079,29030,November
-502,Idelle,Rappoport,Female,Florida,50,14,271567,25625,November
-503,Markus,Leppard,Male,California,1,13,113078,10306,November
-504,Angelika,Odams,Female,Ohio,43,13,333458,29320,November
-505,Linn,Coweuppe,Female,Florida,5,18,152411,16159,November
-506,Kellia,McNelly,Female,California,22,5,102497,30454,November
-507,Maridel,Lewer,Female,Arizona,38,16,42975,22397,November
-508,Joshua,Adamovich,Male,Texas,33,0,118473,9817,November
-509,Tracy,Fumagall,Female,Texas,18,18,29541,10055,November
-510,Diannne,McElhargy,Female,Texas,4,8,173648,8964,November
-511,Clio,Barrable,Female,Texas,34,10,124485,32500,November
-512,Michaela,Mendus,Female,Florida,29,6,111684,924,November
-513,Gerri,Cocksedge,Male,Florida,21,3,234536,29962,November
-514,Lucina,McDonald,Female,Florida,46,11,294508,25061,November
-515,Cherice,Chugg,Female,Mississippi,47,3,78407,13377,November
-516,Lemuel,Monnoyer,Male,Arizona,42,6,317645,21111,November
-517,Vera,Yardley,Female,Ohio,45,5,338711,13763,November
-518,Dennison,Leuty,Male,Florida,48,22,434757,6159,November
-519,Jackelyn,Mantram,Female,Florida,7,3,485494,34567,November
-520,Virge,Wogan,Male,Maryland,43,12,153234,30816,November
-521,Elliott,Starkey,Male,Texas,0,4,75002,10055,November
-522,Doralia,Sergant,Female,Florida,10,16,139405,26383,November
-523,Cullie,Pashe,Male,California,22,24,471845,18674,November
-524,Boonie,Rubenczyk,Male,Texas,34,14,89866,3446,November
-525,Peggie,Cockshot,Female,Florida,10,1,390170,19932,November
-526,Bron,Dayment,Male,Texas,35,2,458606,4594,November
-527,Alphonso,Mucci,Male,Texas,20,6,187981,12365,November
-528,Ben,Fonteyne,Male,California,48,23,7043,7324,November
-529,Suzy,Bowton,Female,New Jersey,36,7,267913,22987,November
-530,Ruperto,Whear,Male,California,48,19,5795,6166,November
-531,Samuel,Sarsfield,Male,Maryland,32,9,102215,20217,November
-532,Stillmann,Hymans,Male,Maryland,18,3,330720,20009,November
-533,Mireille,Skacel,Female,Texas,22,10,223010,26923,November
-534,Mathilde,Runnett,Female,Florida,20,19,324327,33753,November
-535,Evonne,O' Hanvey,Female,New Jersey,42,7,126594,25563,November
-536,Dex,Mossman,Male,Florida,12,9,1138,31682,November
-537,Warren,Ginnaly,Male,Texas,17,19,138919,13605,November
-538,Alberto,O'Scannill,Male,California,32,2,433832,30441,November
-539,Etta,Finan,Female,California,19,24,474274,6683,November
-540,Gery,Stout,Male,Florida,49,16,344529,30710,November
-541,Genvieve,De Wolfe,Female,Texas,29,15,167194,5586,November
-542,Carey,Temprell,Female,Florida,23,21,252372,11931,November
-543,Shell,Ricarde,Female,Texas,34,13,55669,34078,November
-544,Babette,Rubi,Female,Mississippi,36,23,294602,11400,November
-545,Fidole,Clarke,Male,Florida,6,20,11769,24688,November
-546,Karoline,Gotter,Female,Florida,49,20,176647,10133,November
-547,Tomas,Lemmon,Male,Washington,11,18,187031,691,November
-548,Grissel,Tallet,Female,Florida,41,11,339929,15897,November
-549,Alonso,Shimwell,Male,California,3,11,453712,6385,November
-550,Henrie,Climar,Female,Florida,18,15,107208,11534,November
-551,Emmalynne,Lortzing,Female,California,1,19,319309,12476,November
-552,Bart,Chaffin,Male,California,44,14,5230,3131,November
-553,Laurens,Barens,Male,Texas,3,2,75314,24197,November
-554,Kent,Phoenix,Male,Texas,0,6,231391,23399,November
-555,Georgianne,Picknett,Female,Texas,23,11,404735,6741,November
-556,Nolly,Iveagh,Male,Florida,31,17,242206,13498,November
-557,Hamlin,Ech,Male,Florida,42,9,450316,4792,November
-558,Rafaela,Leist,Female,Nebraska,15,23,123309,12505,November
-559,Vernon,McTerrelly,Male,California,36,11,57801,26754,November
-560,Berkeley,Osbaldeston,Male,Texas,33,24,168016,21602,November
-561,Kerr,Gibberd,Male,Maryland,31,8,492377,13937,November
-562,Aurthur,Heynen,Male,California,39,25,152893,405,November
-563,Gill,Playdon,Male,Maryland,45,6,331722,32162,November
-564,Wernher,Week,Male,Arizona,45,3,361594,10265,November
-565,Art,Tineman,Male,Ohio,7,14,147754,33142,November
-566,Symon,Robuchon,Male,Florida,40,22,30282,11647,November
-567,Nicky,Edison,Female,Florida,3,18,444331,29453,November
-568,Laurel,Keilty,Female,Texas,30,24,374710,16337,November
-569,Louella,Retchford,Female,Mississippi,24,15,159728,9631,November
-570,Ludovico,Schulke,Male,Texas,4,7,3293,23815,November
-571,Cindie,Tollerton,Female,Florida,37,1,463578,25198,November
-572,Gretchen,Toderini,Female,Florida,36,6,99429,6334,November
-573,Dolph,Conibear,Male,California,24,7,158656,33613,November
-574,Bank,Crumly,Male,Florida,2,16,207987,21438,November
-575,Emelen,Eich,Male,California,46,11,144756,2622,November
-576,Anatol,Saxon,Male,California,47,5,126400,24879,November
-577,Dag,Tapp,Male,Florida,25,6,112421,29259,November
-578,Yetta,Izakson,Female,California,36,7,408085,7266,November
-579,Rochelle,Kivlin,Female,Texas,27,11,439463,22766,November
-580,Phedra,De Normanville,Female,Washington,26,8,462462,503,November
-581,Winnifred,Fagan,Female,California,22,15,408340,29631,November
-582,Lynne,Akeherst,Female,Arizona,50,16,443386,19585,November
-583,Vicki,Strover,Female,Texas,19,16,25074,5803,November
-584,Tiena,Roche,Female,Arizona,21,8,200742,1867,November
-585,Christiano,Rilings,Male,Ohio,35,6,5592,20204,November
-586,Nana,Clewlowe,Female,Texas,31,23,382422,25021,November
-587,Feliks,Vasyagin,Male,California,22,25,340787,9077,November
-588,Piggy,Kobiera,Male,Florida,18,5,171084,24479,November
-589,Cross,Varran,Male,California,28,9,343808,30205,November
-590,Thorstein,Coldtart,Male,Texas,36,17,337392,15417,November
-591,Luisa,Breewood,Female,Arizona,46,24,217987,20343,November
-592,Eziechiele,Jasiak,Male,Texas,39,19,103092,16702,November
-593,Annabal,Liccardo,Female,Ohio,42,24,51781,32916,November
-594,Ingunna,Binner,Female,Florida,29,25,21727,24984,November
-595,Prudy,Holton,Female,Ohio,11,23,461475,18584,November
-596,Mirilla,Cornelleau,Female,California,9,24,207240,5658,November
-597,Mignonne,Stranio,Female,Texas,48,2,93312,13453,November
-598,Winna,Goode,Female,Florida,13,4,136213,9371,November
-599,Reade,Amoss,Male,Maryland,33,3,203757,17639,November
-600,Ardyth,Aldred,Female,Texas,9,17,273749,21744,November
-601,Alaric,Cush,Male,Texas,19,7,416023,19829,November
-602,Lind,Lamshead,Male,Texas,2,24,392036,158,November
-603,Paquito,Jefferd,Male,Texas,16,8,38188,27510,November
-604,Lorita,McCerery,Female,Texas,2,21,276820,28577,November
-605,Collen,Stoddard,Female,California,14,10,438178,23767,November
-606,Zack,Zukierman,Male,Texas,10,8,455544,18057,November
-607,Timmy,Zum Felde,Male,Texas,7,22,356165,30507,November
-608,Erica,Morecomb,Female,Ohio,39,22,360250,29294,November
-609,Jenna,Andrivot,Female,Washington,43,20,53590,34795,November
-610,Ali,Boothman,Female,California,21,4,181262,3063,November
-611,Arlan,Ardron,Male,Texas,4,21,121613,28849,November
-612,Bradan,Dorset,Male,Florida,38,14,276341,22888,November
-613,Dallon,Barlee,Male,Ohio,20,1,306508,16348,November
-614,Chelsey,Geeson,Female,Texas,26,23,31504,27293,November
-615,Shurlocke,Girardetti,Male,California,45,2,36118,4528,November
-616,D'arcy,Claus,Male,California,10,13,350871,30671,November
-617,Beverlie,Farron,Female,California,13,7,200251,34873,November
-618,Hodge,Palliser,Male,California,3,17,151233,34783,November
-619,Cully,Baldry,Male,California,26,2,8723,264,November
-620,Andrey,Parrin,Male,Washington,15,7,202621,2037,November
-621,Rosabel,Sant,Female,Texas,5,24,338175,3956,November
-622,Adrianne,Georgeot,Female,California,39,18,366635,12797,November
-623,Isacco,Spottiswoode,Male,Texas,49,9,122670,9627,November
-624,Esra,Norkutt,Male,Texas,19,19,8230,10284,November
-625,Stern,Emer,Male,Ohio,46,9,230333,9863,November
-626,Candra,Coiley,Female,Texas,48,22,226971,25174,November
-627,Gardie,Geyton,Male,New Jersey,11,11,441498,34565,November
-628,Mela,Moth,Female,Texas,17,2,449447,17607,November
-629,Eartha,Foyster,Female,Texas,33,3,201521,3041,November
-630,Jonis,Vogt,Female,Texas,43,7,359127,541,November
-631,Richmond,Kleehuhler,Male,Arizona,26,11,70807,26720,November
-632,Rasia,Hanlon,Female,Florida,22,1,390529,3364,November
-633,Giorgio,Hutten,Male,California,42,22,317423,25593,November
-634,Bastian,Farmery,Male,California,35,20,170891,28248,November
-635,Halette,Forten,Female,California,42,20,324676,27470,November
-636,Andrus,Goldhill,Male,California,24,2,127064,3539,November
-637,Constantina,Farlambe,Female,Texas,27,8,394827,27781,November
-638,Drusilla,Richardt,Female,Texas,41,9,321528,26340,November
-639,Trudey,McDavitt,Female,Florida,42,23,113392,1144,November
-640,Ruben,Tolomio,Male,Maryland,17,14,230685,10416,November
-641,Gennie,Mattimoe,Female,Nebraska,50,21,453575,11097,November
-642,Efrem,Brasse,Male,California,50,20,193940,31790,November
-643,Trudey,Kubanek,Female,California,20,8,180095,17211,November
-644,Carly,Nassie,Female,Texas,48,25,72381,3240,November
-645,Charita,Liversidge,Female,Florida,44,7,331306,26838,November
-646,Hobard,Gush,Male,Texas,25,8,296400,5205,November
-647,Reube,Went,Male,Texas,25,8,419978,5845,November
-648,Mal,Dabnor,Male,California,23,25,68488,15685,November
-649,Kaylee,Flecknoe,Female,Texas,19,3,59734,1309,November
-650,Iolande,Petteford,Female,Florida,12,23,181536,17296,November
-651,Vivyan,Lissimore,Female,Florida,44,8,456597,20552,November
-652,Andrej,Cotillard,Male,Texas,44,18,56667,31929,November
-653,Octavius,Clohissy,Male,Texas,24,1,336628,3480,November
-654,Maggy,Baglan,Female,Florida,31,19,66969,13976,November
-655,Cecil,Marconi,Female,Texas,16,25,311789,25049,November
-656,Cordell,McGiveen,Male,Texas,45,11,283718,22300,November
-657,Isak,Leverton,Male,Texas,47,12,267935,22624,November
-658,Karil,Ucceli,Female,Ohio,16,6,453821,26517,November
-659,Bartlett,Purdy,Male,Maryland,28,19,485465,31829,November
-660,Kare,Putley,Female,Washington,42,11,359126,12499,November
-661,Cicily,Bowling,Female,Texas,40,3,297243,14438,November
-662,Zaccaria,O'Kinedy,Male,California,21,13,278938,3951,November
-663,Nari,Cominoli,Female,Ohio,15,4,285384,32051,November
-664,Vivie,Passion,Female,Ohio,25,15,99837,31152,November
-665,Una,Virgoe,Female,California,34,20,61895,7409,November
-666,Fallon,Brickdale,Female,California,50,0,19080,3912,November
-667,Christian,Overill,Male,Florida,32,24,341089,9299,November
-668,Huntley,Paszek,Male,Florida,16,14,277924,27029,November
-669,Melodie,Settle,Female,California,28,20,16314,21280,November
-670,Tonnie,Machen,Male,Florida,46,9,428917,23884,November
-671,Brooks,Coch,Male,California,24,0,67459,14060,November
-672,Bambi,Kynastone,Female,Texas,7,4,333687,31220,November
-673,Frans,Halward,Male,Florida,50,3,228348,12878,November
-674,Maura,Cleare,Female,Texas,21,14,236599,25206,November
-675,Brook,Wannes,Female,Florida,14,9,252267,14171,November
-676,Sharl,Shirt,Female,Florida,21,4,86993,11784,November
-677,Stephenie,Venning,Female,Mississippi,49,10,222508,12854,November
-678,Wood,Gaiford,Male,Florida,41,12,178308,10958,November
-679,Skylar,Steinham,Male,California,29,22,194228,3472,November
-680,Glynnis,Manuely,Female,California,7,9,426614,17452,November
-681,Rik,Baron,Male,Florida,3,6,386901,411,November
-682,Jeffy,Soal,Male,California,1,23,130773,22642,November
-683,Ogdon,Blampied,Male,Arizona,13,8,357430,11924,November
-684,Janaya,Flockhart,Female,Texas,15,18,55807,29313,November
-685,Lenore,Kolyagin,Female,Texas,5,25,464669,22980,November
-686,Wilmar,Corn,Male,California,35,16,304814,30251,November
-687,Delores,Muffen,Female,California,24,25,202841,26943,November
-688,Everett,Astman,Male,California,18,21,196482,9472,November
-689,Nealson,Van Brug,Male,Florida,42,21,301361,2630,November
-690,Marion,Mackie,Male,Ohio,15,14,414581,22820,November
-691,Smith,Howell,Male,Washington,36,5,19897,33710,November
-692,Robbin,Kettridge,Female,Ohio,46,22,446809,28924,November
-693,Ashli,Bockman,Female,Nebraska,34,24,22662,2168,November
-694,Barris,Glauber,Male,Florida,27,4,470472,30020,November
-695,Bobby,Fantin,Male,New Jersey,9,19,113647,4178,November
-696,Zahara,Etteridge,Female,Ohio,1,15,427175,2196,November
-697,Della,Powley,Female,Florida,25,6,290611,24346,November
-698,Stanly,Mapples,Male,Texas,25,0,131358,27456,November
-699,Dory,Winwood,Female,Maryland,19,22,305088,13557,November
-700,Kain,Tetla,Male,California,39,19,281346,17948,November
-701,Danica,Gebhardt,Female,California,42,23,4504,10315,November
-702,Lynn,Josephoff,Female,California,40,7,75827,3503,November
-703,Marius,McCrum,Male,Texas,37,21,448349,8306,November
-704,Pierce,Chazotte,Male,Texas,2,15,435648,28355,November
-705,Trev,Leamon,Male,Florida,48,13,8158,19324,November
-706,Maren,Benoey,Female,Washington,24,4,8519,19494,November
-707,Tova,Buchanan,Female,Maryland,20,10,71035,31949,November
-708,Lilas,De Maria,Female,Florida,3,19,111185,1147,November
-709,Sheffie,Rigbye,Male,California,33,13,267306,3095,November
-710,Crystal,Groarty,Female,Ohio,30,14,438884,16975,November
-711,Dion,Deverson,Female,Arizona,13,10,389707,33521,November
-712,Dorine,Bourdis,Female,Ohio,5,10,443635,27516,November
-713,Westley,Rosander,Male,Florida,18,5,61,10403,November
-714,Karel,Denington,Female,Texas,16,10,72682,23719,November
-715,Yves,Gowen,Male,Florida,27,14,139238,23796,November
-716,Darius,Hardwin,Male,Maryland,49,7,176819,24050,November
-717,Boris,Schade,Male,Ohio,49,5,273218,9073,November
-718,Morganne,Antognelli,Female,Texas,22,5,358848,22205,November
-719,Verla,Tighe,Female,California,1,12,399541,24362,November
-720,Lillian,McAnalley,Female,Florida,37,3,132076,33035,November
-721,Heinrik,Bumphries,Male,California,28,24,16007,30804,November
-722,Pepe,Harraway,Male,Texas,1,16,240410,24938,November
-723,Beryle,Kenyon,Female,Ohio,10,17,260898,27043,November
-724,Winn,McCardle,Male,Florida,48,11,283429,33577,November
-725,Gerti,Farington,Female,Florida,17,5,63632,9598,November
-726,Jorrie,Tombs,Female,Arizona,14,24,139575,8994,November
-727,Siegfried,Blampied,Male,Maryland,33,14,4369,30674,November
-728,Vina,Lavielle,Female,Florida,7,9,487791,15851,November
-729,Kaitlynn,Yurevich,Female,Washington,45,20,263476,6291,November
-730,Bathsheba,Burney,Female,Ohio,35,9,447711,21598,November
-731,Deloria,Althrop,Female,Florida,45,12,182975,30546,November
-732,Coral,McNeachtain,Female,Texas,14,13,169869,3965,November
-733,Annecorinne,Wythe,Female,Washington,31,24,90439,26188,November
-734,Blondell,Pilpovic,Female,Texas,27,11,31124,29088,November
-735,Siusan,Sebley,Female,Florida,39,5,63393,17937,November
-736,Ethyl,Gowdie,Female,Texas,34,15,137263,11001,November
-737,Oswell,Faltin,Male,Ohio,47,22,57680,27731,November
-738,Mandi,Beare,Female,California,23,6,918,28368,November
-739,Roldan,Dominichelli,Male,Florida,19,5,452351,7653,November
-740,Lora,Gristhwaite,Female,Florida,22,23,72541,3920,November
-741,Breanne,Casterou,Female,Florida,46,6,159013,13340,November
-742,Durward,D'Arrigo,Male,California,16,1,43745,29239,November
-743,Maddi,Juleff,Female,Ohio,37,10,127360,34328,November
-744,Clarence,Pickin,Male,Texas,50,25,449522,21989,November
-745,Taddeo,Beste,Male,Florida,42,20,84420,29648,November
-746,Monroe,Osban,Male,Florida,39,22,2581,4732,November
-747,Olivero,Clough,Male,Florida,7,2,343598,10079,November
-748,Caryn,Bernardinelli,Female,Arizona,1,25,8050,31281,November
-749,Sergeant,Santi,Male,Texas,7,1,440019,8515,November
-750,Demetris,Vice,Female,Florida,19,10,471926,865,November
-751,Hersh,Hanne,Male,California,40,5,183004,22935,November
-752,Ajay,Skill,Female,Texas,29,3,12989,20189,November
-753,Camilla,Snare,Female,Ohio,3,6,396893,13648,November
-754,Orsa,Yerson,Female,Texas,2,10,44049,4289,November
-755,Lyndsey,Drabble,Female,Washington,12,20,192314,30176,November
-756,Alix,Griffithe,Male,Arizona,39,17,262814,26777,November
-757,Nevsa,Leworthy,Female,Texas,24,25,376319,3820,November
-758,Bryn,Giraudoux,Female,California,27,9,189748,31298,November
-759,Efrem,Woodworth,Male,California,3,18,375324,10873,November
-760,Derrek,Dumini,Male,Florida,48,10,259877,7252,November
-761,Sibby,Sewart,Female,Texas,37,13,359333,3780,November
-762,Pepita,Mallia,Female,Texas,23,16,451527,11282,November
-763,Tripp,Rummings,Male,Texas,18,12,498953,31454,November
-764,Margarette,Eglin,Female,Washington,8,16,269320,21040,November
-765,Hanny,Wellen,Female,Florida,22,13,461241,21516,November
-766,Sofie,Barti,Female,Florida,11,18,462902,3036,November
-767,Ruperto,Le Huquet,Male,Texas,30,20,307829,31057,November
-768,Kayne,Tilsley,Male,Arizona,12,15,448233,15275,November
-769,Scarface,Mahaffey,Male,California,0,5,284005,17209,November
-770,Danette,Pomphrett,Female,California,6,24,154305,18883,November
-771,Sandi,Oslar,Female,Florida,47,5,154371,32002,November
-772,Charlot,Fleet,Female,Texas,21,22,191672,8250,November
-773,Gordie,Lum,Male,Florida,18,22,418491,2372,November
-774,Hannie,Fitzroy,Female,Texas,6,14,249728,20097,November
-775,Welsh,Hiseman,Male,Florida,17,19,341837,10957,November
-776,Prinz,Bennington,Male,California,33,25,262518,682,November
-777,Carr,Thorby,Male,Mississippi,6,0,161537,25106,November
-778,Cletis,Gerrell,Male,California,19,4,482024,34795,November
-779,Yance,Stroder,Male,Florida,33,21,431816,210,November
-780,Webb,Alpin,Male,Texas,50,7,1172,24678,November
-781,Rycca,Van de Vlies,Female,Ohio,3,10,206544,23301,November
-782,Jakob,Espley,Male,New Jersey,5,2,234037,12599,November
-783,Anatol,Jefferd,Male,Texas,12,5,466084,33170,November
-784,Corry,Landells,Female,Arizona,2,16,493864,15452,November
-785,Harwell,Piken,Male,Texas,43,16,50315,16247,November
-786,Shayne,Sines,Male,Florida,9,4,323072,22578,November
-787,Maggi,Stimpson,Female,California,18,1,446458,16290,November
-788,Shana,Broske,Female,Texas,45,2,143541,2548,November
-789,Tracey,Bannester,Male,Florida,37,9,180067,24168,November
-790,Anatole,McCloy,Male,California,47,25,264320,18782,November
-791,Sisely,Sever,Female,Texas,3,4,225541,28336,November
-792,Engelbert,Gobbett,Male,New Jersey,41,16,19602,21853,November
-793,Karim,Flipsen,Male,Florida,37,10,365580,31180,November
-794,Ambros,Smitherham,Male,Ohio,13,19,41703,21195,November
-795,Berenice,Kegan,Female,Florida,27,20,110588,20788,November
-796,Erina,Bordis,Female,Texas,48,9,318940,19943,November
-797,Carolyn,Guyonneau,Female,Arizona,27,11,144064,10534,November
-798,Sigismundo,Ferrillio,Male,Texas,5,10,387552,6755,November
-799,Filide,Karlsen,Female,California,1,7,415916,11196,November
-800,Tommie,Baldick,Female,Arizona,23,16,214244,7735,November
-801,Danya,Brownfield,Female,Washington,4,0,129668,13981,November
-802,Cassie,Lindback,Female,California,2,11,327794,20373,November
-803,Hallie,Yalden,Female,Florida,8,22,174798,22275,November
-804,Dewie,Hankey,Male,Ohio,31,6,98382,23902,November
-805,Doroteya,Garton,Female,California,11,12,456631,21629,November
-806,Hal,Heasley,Male,California,8,11,73585,33560,November
-807,Maryjo,Chaffer,Female,California,1,20,347265,8750,November
-808,Nickola,Slym,Male,California,10,11,463315,27600,November
-809,Riobard,Spohr,Male,Maryland,37,16,152372,26991,November
-810,Bennie,Peotz,Male,Texas,0,12,83724,15779,November
-811,Shamus,Treswell,Male,Florida,43,9,169749,2390,November
-812,Constantin,Issacson,Male,Maryland,37,0,296938,10727,November
-813,Nelli,Fakeley,Female,Florida,15,1,435638,22248,November
-814,Thoma,Grimes,Male,Florida,0,8,307118,5403,November
-815,Rossy,Proudlove,Male,Florida,50,3,388771,2928,November
-816,Flint,Klulisek,Male,California,39,1,436572,12494,November
-817,Benjy,Willett,Male,Texas,37,15,50795,3681,November
-818,Manon,Bazell,Female,Texas,29,25,336613,31966,November
-819,Bertie,Ikin,Male,Mississippi,49,23,332654,22176,November
-820,Ravid,Goretti,Male,Texas,23,11,456712,28287,November
-821,Adamo,Ybarra,Male,Washington,20,17,116958,24616,November
-822,Woodie,Sprowell,Male,California,50,17,168056,1011,November
-823,Aaren,Astle,Female,California,9,18,104391,28540,November
-824,Antons,Grog,Male,California,18,10,211923,608,November
-825,Stacie,Cossey,Female,California,3,17,365719,1160,November
-826,Byram,Sedcole,Male,Texas,25,23,85313,494,November
-827,Saleem,Babber,Male,Arizona,27,20,94787,29538,November
-828,Korella,Skirvane,Female,California,8,25,407057,20427,November
-829,Ede,Wreath,Female,Texas,4,13,128357,34393,November
-830,Arte,Weyland,Male,Arizona,43,20,135034,20004,November
-831,Forbes,Kondratowicz,Male,Washington,34,16,370887,29969,November
-832,Jessamyn,Thurske,Female,California,18,10,338524,15088,November
-833,Theodor,Shearsby,Male,Texas,32,7,327472,11742,November
-834,Stephen,Roskrug,Male,New Jersey,17,18,2962,427,November
-835,Willette,Elloway,Female,Texas,8,2,244606,2570,November
-836,Halli,Starsmore,Female,Florida,34,16,66776,13551,November
-837,Dacey,McMechan,Female,Texas,24,1,208839,12351,November
-838,Morry,Stidston,Male,California,49,19,24132,21824,November
-839,Druci,Rennles,Female,Mississippi,24,6,489694,24194,November
-840,Saul,Titcombe,Male,Texas,23,19,279612,31503,November
-841,Austin,Lakey,Female,Texas,19,17,96198,6490,November
-842,Travis,Rigglesford,Male,Mississippi,50,3,265665,1035,November
-843,Milli,Simoncelli,Female,Texas,41,15,163750,17973,November
-844,Josey,Zavattero,Female,California,50,17,17862,23104,November
-845,Giulio,Stobbs,Male,Ohio,18,8,484519,8570,November
-846,Kerri,Farnan,Female,Texas,43,6,414524,1890,November
-847,Nara,Ebbett,Female,New Jersey,38,16,201803,21008,November
-848,Odell,Gable,Male,California,35,23,41570,2047,November
-849,Matthiew,Gillmore,Male,California,21,19,117162,17802,November
-850,Stanly,Llorente,Male,Texas,39,9,75644,11379,November
-851,Jaymee,Rableau,Female,Florida,0,22,82349,940,November
-852,Eunice,Plowright,Female,Florida,3,8,307211,18944,November
-853,Jimmy,Tomasello,Male,California,43,10,312787,29121,November
-854,Jeanie,Dibb,Female,California,39,2,232594,17642,November
-855,Allayne,Sowersby,Male,Florida,32,7,72783,21977,November
-856,Darbee,Elvidge,Male,Florida,0,8,269574,1304,November
-857,Kaleb,Moyes,Male,Florida,13,25,13103,23885,November
-858,Melloney,Mingard,Female,Texas,29,7,169808,12161,November
-859,Bess,Schenfisch,Female,Ohio,4,12,406001,7408,November
-860,Bud,Radin,Male,Texas,14,7,201070,27033,November
-861,Estele,Pollard,Female,Nebraska,13,5,336017,16878,November
-862,Killian,Measom,Male,California,31,19,209312,28589,November
-863,Jarrid,Thewles,Male,California,12,12,307055,34006,November
-864,Yvette,Cutchee,Female,Texas,20,8,228532,3894,November
-865,Shea,Clewlow,Male,California,24,22,244556,4813,November
-866,Corny,Sprigg,Male,California,3,8,208713,15710,November
-867,Vincent,Denver,Male,California,15,10,145591,27117,November
-868,Fred,Ockland,Male,Washington,27,14,377773,402,November
-869,Daffy,Mullane,Female,Texas,8,3,332587,16110,November
-870,Anitra,Aldin,Female,Arizona,40,23,290521,32587,November
-871,Tybi,Crutchley,Female,Florida,2,7,162904,17621,November
-872,Jessika,Matysiak,Female,California,43,21,167417,17147,November
-873,Dory,Baelde,Male,Ohio,34,17,402281,5661,November
-874,Demetris,Reach,Male,Florida,47,19,373111,27791,November
-875,Killy,Cornelisse,Male,Florida,37,2,460388,30459,November
-876,Denyse,Gutridge,Female,Texas,34,14,44487,7400,November
-877,Mariele,Lively,Female,Florida,13,21,337604,26278,November
-878,Selig,Gettings,Male,Texas,49,19,218029,16260,November
-879,Elbertine,McCloughen,Female,California,9,3,459944,13544,November
-880,Kevon,Cockrem,Male,Florida,5,0,195358,19644,November
-881,Phillipp,Lewins,Male,Florida,44,8,301789,7161,November
-882,Waylon,Klimuk,Male,California,21,0,22411,14300,November
-883,Tibold,Gimlet,Male,California,43,0,201226,356,November
-884,Harwell,Ffrench,Male,California,33,3,218177,4963,November
-885,Bruce,Barette,Male,Ohio,29,13,158636,22138,November
-886,Morton,Bakeup,Male,California,38,4,274266,7878,November
-887,Alford,Maiklem,Male,Texas,20,20,194284,24333,November
-888,Alfredo,Weddeburn - Scrimgeour,Male,Texas,24,0,236446,42,November
-889,Bertie,Duell,Male,Washington,34,19,247415,21874,November
-890,Chandler,Troak,Male,Arizona,24,18,364880,26045,November
-891,Ruthy,Middler,Female,California,12,12,94014,7304,November
-892,Tabbi,Lankester,Female,Texas,11,23,170767,14547,November
-893,Jamaal,Primett,Male,Texas,3,12,361276,7907,November
-894,Ardyth,Cunnington,Female,Florida,22,25,288789,7340,November
-895,Eirena,Abbotts,Female,Arizona,7,17,304363,9364,November
-896,Evey,Craddy,Female,Washington,8,10,95282,16522,November
-897,Sybyl,Fassam,Female,Florida,39,11,22584,31298,November
-898,Morganica,Glasebrook,Female,Texas,22,19,426310,9988,November
-899,Joeann,Humbee,Female,Texas,26,0,216711,7498,November
-900,Henrieta,Thompsett,Female,California,14,14,27249,8737,November
-901,Arne,Maidlow,Male,Texas,9,11,36798,27838,November
-902,Allard,Bownde,Male,California,6,15,19901,14420,November
-903,Blayne,Simakov,Male,Arizona,10,15,38213,23618,November
-904,Ezra,Parncutt,Male,Florida,29,3,270032,18826,November
-905,Mandie,Buntine,Female,Texas,3,3,408078,16837,November
-906,Nichols,Tritton,Male,Maryland,29,20,153129,16138,November
-907,Iorgos,Lansdown,Male,Texas,34,4,420548,30412,November
-908,Thor,Beddows,Male,Florida,22,16,319497,15082,November
-909,Dylan,Whiteside,Male,Texas,50,8,89280,33316,November
-910,Chip,Golborne,Male,Florida,39,10,439907,14161,November
-911,Kailey,Meth,Female,Florida,19,5,7948,17608,November
-912,Marielle,Craisford,Female,New Jersey,26,1,21938,23482,November
-913,Francene,Mee,Female,Texas,31,23,23214,7732,November
-914,Boy,Roseby,Male,Florida,14,17,383169,8871,November
-915,Delcina,Jewitt,Female,California,48,10,373552,17784,November
-916,Jo-anne,Gisbourn,Female,Arizona,3,4,328824,8453,November
-917,Becky,Walkey,Female,California,29,7,489088,11314,November
-918,Gracie,Paliser,Female,Ohio,10,20,131306,6959,November
-919,Euphemia,Snook,Female,Texas,26,11,127740,20815,November
-920,Manfred,Downie,Male,Ohio,32,19,90199,32665,November
-921,Mariele,Jotcham,Female,Florida,23,1,118136,32867,November
-922,Alain,Cawker,Male,Florida,8,14,363950,23966,November
-923,Stewart,Beggan,Male,California,49,23,146187,5908,November
-924,Tonya,Congdon,Female,Maryland,3,25,468392,18549,November
-925,Shandy,Jowett,Female,Washington,23,5,292580,33678,November
-926,Kania,Hazelton,Female,California,34,6,293351,19011,November
-927,Elsa,Svanetti,Female,Florida,14,13,172136,5742,November
-928,Christan,Levermore,Female,Ohio,35,24,171871,28812,November
-929,Nickie,Cuckson,Male,California,0,16,253578,9794,November
-930,Ado,Chisnall,Male,California,4,13,135949,14558,November
-931,Padriac,Govey,Male,Texas,21,18,216662,1968,November
-932,Flori,Penwright,Female,Texas,46,25,34003,29414,November
-933,Napoleon,Kits,Male,California,5,20,45745,1163,November
-934,Danya,Devany,Male,Florida,38,11,440289,21307,November
-935,Drusi,Pettis,Female,California,32,1,315550,5770,November
-936,Herrick,Kirdsch,Male,California,33,5,229693,13341,November
-937,Rafe,Wife,Male,Texas,23,19,189180,33921,November
-938,Sher,Markham,Female,Florida,45,4,386186,3417,November
-939,Melita,Pietzke,Female,New Jersey,42,18,408025,11652,November
-940,Joell,Libbie,Female,Texas,19,22,104483,4629,November
-941,Jeremie,Covelle,Male,Texas,36,16,220760,3903,November
-942,Gusta,Medley,Female,California,41,23,130094,30907,November
-943,Calida,Kopfen,Female,Florida,22,10,276889,26972,November
-944,Cobbie,Gobourn,Male,Texas,46,2,139854,20605,November
-945,Poul,Alf,Male,California,39,10,253120,15627,November
-946,Dita,Attack,Female,Florida,49,5,93202,29997,November
-947,Angele,Althorpe,Female,Washington,7,16,252992,22046,November
-948,Ax,Cusiter,Male,Texas,8,23,199093,16004,November
-949,Aurthur,Jodkowski,Male,California,15,21,368986,29455,November
-950,Jamal,Wolsey,Male,Florida,33,19,30386,29928,November
-951,Lenette,Jaycocks,Female,Florida,28,18,498527,21613,November
-952,Carleton,Haythorne,Male,California,41,13,348575,7842,November
-953,Ned,Kier,Male,California,49,8,162011,13617,November
-954,Laney,Harefoot,Male,Florida,20,1,361562,12847,November
-955,Ruthe,Matthiae,Female,Florida,29,11,241912,2683,November
-956,Xymenes,Nerheny,Male,Washington,21,17,87682,31117,November
-957,Rosabel,Hebbron,Female,Washington,49,22,1174,30921,November
-958,Philippine,Fulstow,Female,California,6,19,32309,9441,November
-959,Emily,Corradi,Female,Florida,42,4,241228,23193,November
-960,Ingaborg,Lefeaver,Female,Maryland,13,23,207404,13203,November
-961,Madlin,Jubb,Female,Florida,14,1,314569,18687,November
-962,Cherice,Smead,Female,Washington,37,7,412883,6835,November
-963,Cosme,Hayller,Male,Florida,1,24,41996,9909,November
-964,Sheppard,Iwanicki,Male,New Jersey,45,3,117585,8999,November
-965,Donnajean,Truggian,Female,Florida,27,5,372227,13156,November
-966,Galvan,Wapplington,Male,Ohio,17,11,296970,28084,November
-967,Fletcher,Handling,Male,Arizona,38,18,14550,21314,November
-968,Donelle,Heckner,Female,Florida,26,8,26397,5245,November
-969,Blanch,Soane,Female,Maryland,22,14,257422,22330,November
-970,Ruttger,Bitcheno,Male,Florida,4,6,116509,22087,November
-971,Heath,Giacomoni,Male,California,14,10,183434,10433,November
-972,Korie,Aisman,Female,Florida,34,18,262371,5412,November
-973,Vitia,Resun,Female,Ohio,21,18,194593,28252,November
-974,Tammara,Robbins,Female,California,5,23,409449,633,November
-975,Ray,Critchley,Female,Florida,49,17,471748,3729,November
-976,Almeda,Gubbins,Female,Maryland,16,2,419581,30307,November
-977,Thaddus,Greenshiels,Male,Texas,34,17,417375,21001,November
-978,Cross,Greenman,Male,Nebraska,5,6,424293,4757,November
-979,Isidoro,Stainton - Skinn,Male,Texas,6,20,147870,22563,November
-980,Clovis,Edgeler,Female,Maryland,29,25,24407,3448,November
-981,Veronique,Northover,Female,California,49,21,76610,15884,November
-982,Juliette,Chrestien,Female,Texas,46,13,380744,13063,November
-983,Esme,Birtwell,Female,Texas,34,0,222763,24310,November
-984,Pebrook,Mumm,Male,California,17,0,343269,17463,November
-985,Ellen,Fackrell,Female,Florida,49,14,471385,10167,November
-986,Thor,Strettle,Male,Arizona,49,10,470536,18439,November
-987,Amber,Ronisch,Female,New Jersey,14,8,476344,26193,November
-988,Jaquelin,Walkinshaw,Female,Texas,22,1,311826,3436,November
-989,Moritz,Speer,Male,Florida,41,15,307009,15818,November
-990,Jerrold,Ride,Male,Arizona,34,19,42069,27532,November
-991,Bethena,Kingzet,Female,California,47,9,494323,2742,November
-992,Pennie,Fautley,Female,Texas,36,8,383136,7651,November
-993,Madelaine,Bolt,Female,Florida,19,6,270964,33895,November
-994,Elwyn,Cleaton,Male,Maryland,31,0,174177,7973,November
-995,Adelind,Hallmark,Female,Florida,16,0,227721,34004,November
-996,Jerrie,Manketell,Male,Ohio,0,6,104176,13281,November
-997,Issi,Crummay,Female,California,43,21,128103,31949,November
-998,Hilliary,Elijah,Female,Texas,8,9,190725,3474,November
-999,Elbertina,Risborough,Female,California,28,8,358174,25814,November
-1000,Allis,Kalb,Female,Arizona,38,6,301631,4379,November
+"id","full_name","gender","store_location","leads_generated","appointments_generated","earned","lost","month"
+1,Nonah Lote,Female,Florida,39,17,28073,671,November
+2,Bern Rother,Male,Texas,48,0,3308,8955,November
+3,Viviyan Latchford,Female,California,50,0,17373,696,November
+4,Dyann Poulett,Female,Arizona,48,11,7311,3053,November
+5,Chloette Mechi,Female,Arizona,45,18,28311,373,November
+6,Claretta Sinney,Female,Texas,20,11,45263,6704,November
+7,Lizbeth Grzegorecki,Female,Ohio,28,20,5239,9866,November
+8,Eba Abelson,Female,California,38,1,21043,9528,November
+9,Hamlen Tant,Male,Texas,50,18,36461,6293,November
+10,Merrili Clilverd,Female,California,17,21,23933,2019,November
+11,Wallie Mattschas,Male,Texas,14,24,26554,2728,November
+12,Jeana Quan,Female,Texas,24,2,6308,7075,November
+13,Morgun MacGinney,Male,Texas,44,13,43323,1176,November
+14,Jarrid Saxby,Male,Florida,42,1,17665,5788,November
+15,Trent Giovanetti,Male,Florida,11,3,4481,5856,November
+16,Sammie Cullingworth,Male,California,23,8,42374,4877,November
+17,Gerianna Huws,Female,Florida,33,16,1965,7792,November
+18,Ruggiero McMeanma,Male,California,27,15,29165,8110,November
+19,Abey Nanetti,Male,Texas,37,14,36583,10172,November
+20,Aurea Cattach,Female,Arizona,44,18,13256,4569,November
+21,Markos Addlestone,Male,Arizona,41,5,39554,1899,November
+22,Cornela Benduhn,Female,Texas,45,7,30571,1918,November
+23,Goran Saffen,Male,Maryland,24,16,36131,4594,November
+24,Lurline Summerson,Female,Florida,28,23,29260,3160,November
+25,Carena Lammenga,Female,New Jersey,27,12,4996,7322,November
+26,Crosby Orknay,Male,Texas,15,15,9966,10291,November
+27,Sukey O'Hartnett,Female,Florida,31,7,42652,2824,November
+28,Adelbert Olorenshaw,Male,Texas,22,3,4512,1266,November
+29,Garvin Mecchi,Male,Texas,25,15,38711,9286,November
+30,Wally Kuschek,Male,Texas,19,5,22296,7803,November
+31,Jerrylee Mattiato,Female,New Jersey,21,2,6478,2025,November
+32,Kaspar Matejka,Male,Texas,2,8,16411,6033,November
+33,Carmelina Beceril,Female,California,13,16,21804,9787,November
+34,Algernon Hackinge,Male,California,44,15,10715,7684,November
+35,Karoline Struttman,Female,California,34,2,3346,2102,November
+36,Bobinette O'Corrigane,Female,Florida,35,17,20047,7356,November
+37,Susi Grishukov,Female,Texas,46,20,38755,3309,November
+38,Georgy Harriskine,Male,Mississippi,29,8,42562,4400,November
+39,Rosaleen Tasch,Female,Washington,30,4,17386,7456,November
+40,Cyrillus Eliasen,Male,Ohio,33,15,23043,5942,November
+41,Leonie Noddle,Female,Florida,45,10,29374,3935,November
+42,Lydon Powers,Male,Florida,14,7,23176,9105,November
+43,Wilbur Hamly,Male,California,10,10,38010,1589,November
+44,Hayes McElree,Male,Florida,41,5,47502,6407,November
+45,Grove Guillotin,Male,Texas,19,1,37939,8576,November
+46,Dorie Cammocke,Female,Texas,47,4,14881,9954,November
+47,Cassaundra Penreth,Female,Texas,22,10,29164,674,November
+48,Israel Arne,Male,California,44,8,47941,5690,November
+49,Nicoline Francescozzi,Female,California,28,2,37156,7584,November
+50,Gregg Sherar,Male,Washington,42,10,19235,5140,November
+51,Claudell Jesty,Male,California,9,23,47628,2013,November
+52,Boony Murton,Male,Texas,34,3,17573,2291,November
+53,Marti Auchinleck,Female,Texas,1,7,47662,8204,November
+54,Stanton Kmicicki,Male,Texas,33,3,6573,8415,November
+55,Vincent Baskerfield,Male,Arizona,11,19,12789,1596,November
+56,Tina Marriage,Female,Florida,33,10,20501,5630,November
+57,Jonas Attwell,Male,Texas,33,20,39196,4018,November
+58,Urban Lawley,Male,Ohio,40,17,4762,5669,November
+59,Hilary Bertin,Male,California,23,11,9230,5164,November
+60,Loralie Trimme,Female,Arizona,1,16,36170,1605,November
+61,Dallas Veltmann,Female,Florida,13,3,8164,152,November
+62,Masha Bourke,Female,Texas,8,16,26444,10269,November
+63,Dacia O'Deoran,Female,California,26,24,29574,4271,November
+64,Gloria Crowdy,Female,Arizona,39,13,11591,2945,November
+65,Othella Elvidge,Female,Florida,22,13,45634,9640,November
+66,Judas Swindall,Male,Arizona,47,1,24978,6426,November
+67,Mag Blesdill,Female,Florida,22,10,41141,4078,November
+68,Virgie Britt,Female,Ohio,17,11,27589,4190,November
+69,Norrie Moulsdale,Male,Washington,3,3,47841,807,November
+70,Kennie Fouch,Male,Arizona,46,21,1522,5458,November
+71,Monah Lorinez,Female,Ohio,5,15,27758,3049,November
+72,Raynor Konert,Male,California,11,16,27450,4742,November
+73,Dion Pinckney,Female,Texas,18,15,33741,314,November
+74,Georgy McIlmorow,Male,Florida,28,20,38425,2621,November
+75,Filia Goscomb,Female,California,32,16,18727,8511,November
+76,Obediah Belin,Male,Texas,8,2,4955,6860,November
+77,Hope Josovitz,Female,Florida,4,1,34770,8338,November
+78,Hedvig Derrell,Female,Texas,12,19,24546,763,November
+79,Abby Siggee,Female,Florida,4,1,30181,6103,November
+80,Templeton Jansky,Male,Texas,0,11,21638,4437,November
+81,Tatiania Lantaff,Female,Ohio,18,14,655,10912,November
+82,Marin Normanvill,Female,Mississippi,45,20,25104,3941,November
+83,Barrie Krates,Male,Texas,32,21,43557,383,November
+84,Remus Pady,Male,Texas,2,22,1267,8389,November
+85,Gallagher Ratcliff,Male,California,36,25,6893,6670,November
+86,Elnora Twinn,Female,California,28,13,7791,1237,November
+87,Nerti Grint,Female,Arizona,5,0,49418,1310,November
+88,Teriann Neesam,Female,Florida,41,4,15151,8962,November
+89,Lana Karpinski,Female,Florida,22,20,43702,10952,November
+90,Lola Jell,Female,Florida,11,6,5015,8330,November
+91,Valaria Gillbee,Female,Texas,11,21,32120,6084,November
+92,Ali Stemp,Male,Ohio,21,10,30042,9546,November
+93,Ezra Connechy,Male,Arizona,16,9,29806,2611,November
+94,Elyssa Pudding,Female,California,33,21,23661,1210,November
+95,Piotr Skinley,Male,California,40,22,46501,487,November
+96,Addy Haysey,Female,Florida,22,16,44763,5490,November
+97,Mair Tabourel,Female,Florida,21,24,22908,10921,November
+98,Cymbre Myall,Female,California,15,12,42802,7435,November
+99,Titos Spickett,Male,Texas,20,19,5380,4745,November
+100,Clayton Robjohns,Male,California,13,15,15471,8878,November
+101,Horatia Graffham,Female,Texas,10,16,27198,8640,November
+102,Anna-diane Sturt,Female,Florida,12,14,20187,10256,November
+103,Chance Chedgey,Male,Florida,19,0,6562,354,November
+104,Chrystal Duval,Female,Texas,46,14,17904,1894,November
+105,Clyde Scotchbrook,Male,Florida,19,9,13017,10880,November
+106,Thedrick Wheadon,Male,New Jersey,18,21,45953,2861,November
+107,Nicolai Dunmore,Male,Texas,33,9,41736,2869,November
+108,Eldridge Foulstone,Male,California,20,11,20523,8558,November
+109,Bastien Tarbox,Male,California,43,9,18497,137,November
+110,Arney Chumley,Male,California,12,25,41300,9571,November
+111,Padraic Chatan,Male,Florida,32,13,14154,7076,November
+112,Pam Studdeard,Female,Texas,9,2,11078,6013,November
+113,Vanna Seagar,Female,California,29,23,605,3649,November
+114,Valerie Cousen,Female,Texas,19,21,18582,3478,November
+115,Meggie Rupel,Female,Texas,23,15,1743,8200,November
+116,Alika Ridsdell,Female,Nebraska,26,10,3625,874,November
+117,Fianna Woodcroft,Female,Texas,33,9,17689,9987,November
+118,Mufi Garshore,Female,New Jersey,21,25,44474,1073,November
+119,Philip Hastings,Male,Nebraska,36,6,11961,4224,November
+120,Dianne Whitwood,Female,California,45,6,44083,9565,November
+121,Othello Humpage,Male,Texas,30,23,5128,4917,November
+122,Deeanne Milier,Female,California,11,24,25464,8592,November
+123,Harlin Bofield,Male,California,0,22,11597,3523,November
+124,Kahaleel Hendrix,Male,Mississippi,0,15,21270,2625,November
+125,Felike Browning,Male,Texas,45,22,13256,10487,November
+126,Rochette Woolacott,Female,California,4,4,19170,4291,November
+127,Maud Crut,Female,Maryland,28,11,45088,1245,November
+128,Vinni Ingliby,Female,Texas,43,23,45254,580,November
+129,Neilla Gallally,Female,California,26,17,36147,7054,November
+130,Petrina Wayper,Female,Arizona,41,5,16427,6931,November
+131,Ottilie Giraudel,Female,California,7,6,21003,6601,November
+132,Lishe Laidel,Female,California,34,20,25325,10271,November
+133,Peter Checkley,Male,Texas,6,5,20635,9503,November
+134,Lothario Durrance,Male,California,13,3,36708,224,November
+135,August Canet,Male,California,37,19,19480,8490,November
+136,Rudolfo Levin,Male,California,36,17,10166,8957,November
+137,Fran Tofful,Male,California,11,2,1346,6274,November
+138,Gaynor Drakes,Female,California,20,25,5231,906,November
+139,Janifer Phillis,Female,Texas,33,4,40712,7142,November
+140,Julietta Jaime,Female,California,39,17,25529,10151,November
+141,Graehme Richfield,Male,Ohio,24,5,26025,6161,November
+142,Daria Bason,Female,Texas,29,14,4029,9893,November
+143,Chen Wilcocks,Male,California,46,21,8397,7293,November
+144,Farlee Bluschke,Male,California,49,15,14423,1411,November
+145,Tiffi Kelloway,Female,California,19,8,11918,5959,November
+146,Gwen Crossgrove,Female,Texas,29,4,24597,865,November
+147,Magdaia Vale,Female,Texas,31,5,25449,3325,November
+148,Gar Jeune,Male,Florida,43,22,5628,1092,November
+149,Tabby Sweett,Female,Florida,18,16,7125,9866,November
+150,Neddy Dominick,Male,Ohio,20,15,11582,10695,November
+151,Enoch McKew,Male,Texas,47,11,49689,10052,November
+152,Kiley Philippet,Male,Maryland,8,20,17964,6955,November
+153,Tye Toop,Male,Ohio,18,19,1701,2359,November
+154,Myles Conti,Male,Ohio,25,25,6641,6285,November
+155,Corena Cureton,Female,Texas,45,22,25039,2371,November
+156,Bryana Greetham,Female,California,40,4,17238,2829,November
+157,Lizzie Grose,Female,Texas,13,18,40874,1304,November
+158,Fonz Seman,Male,Maryland,41,5,4960,5305,November
+159,Raynard Brumble,Male,California,3,4,45830,6778,November
+160,Marion Dober,Male,Texas,42,11,24078,3088,November
+161,Caddric Cubberley,Male,California,45,23,8621,9848,November
+162,Rick Squibbs,Male,Florida,1,4,33791,9494,November
+163,Britta Devon,Female,Maryland,16,25,1474,5227,November
+164,Lacey Szanto,Female,Florida,13,25,17666,7204,November
+165,Wendie Kerwood,Female,California,33,23,48465,4983,November
+166,Misty Beloe,Female,Florida,29,6,25364,2168,November
+167,Rodrick Allsup,Male,Ohio,10,5,17250,6578,November
+168,Charles Swepson,Male,California,29,4,41439,8871,November
+169,Avictor Kilban,Male,Texas,27,13,10641,7627,November
+170,Krystle Minett,Female,Texas,47,17,22250,5133,November
+171,Rebecca Gallaher,Female,Florida,50,9,12539,6715,November
+172,Liuka Wiseman,Female,Texas,34,24,17258,600,November
+173,Lora Dwyer,Female,Texas,46,6,32189,1022,November
+174,Pascale Caroll,Male,Texas,33,24,5542,2539,November
+175,Nicolette Ibbs,Female,Ohio,30,23,2962,1612,November
+176,Mariya Billyeald,Female,Florida,17,1,31948,8443,November
+177,Filbert Boerderman,Male,Arizona,28,16,45279,7480,November
+178,Jerome Quakley,Male,Ohio,20,9,10210,8943,November
+179,Berny McGeachie,Male,Maryland,4,19,10642,8716,November
+180,Arie Spraging,Male,Ohio,9,24,36415,542,November
+181,Kenn Partleton,Male,California,31,20,35418,6172,November
+182,Waneta Dulton,Female,Florida,36,16,41022,6405,November
+183,Bondie Langhor,Male,Arizona,0,3,3190,6125,November
+184,Selby Iveans,Male,California,38,11,12788,1864,November
+185,Laughton Bickerton,Male,Texas,22,10,11983,9129,November
+186,Jeri Daly,Female,California,21,3,28251,6290,November
+187,Berget Yersin,Female,New Jersey,39,23,45582,8142,November
+188,Shelagh Baack,Female,Florida,29,9,40017,1757,November
+189,Lion Challin,Male,Florida,25,3,34306,10392,November
+190,Urbanus Mattiussi,Male,California,36,1,47606,2413,November
+191,Honor Cann,Female,Florida,45,17,15198,7679,November
+192,Sara-ann Auchinleck,Female,California,29,3,15371,2037,November
+193,Candie Arnholz,Female,Florida,1,2,34555,3409,November
+194,Abran Lamport,Male,California,1,9,23339,1275,November
+195,Pincas Culham,Male,Ohio,44,6,17057,6662,November
+196,Micky Quincey,Male,Arizona,24,17,4411,10234,November
+197,Dall Ovill,Male,Ohio,39,21,10618,7652,November
+198,Shawnee Blazdell,Female,Texas,37,1,13841,7206,November
+199,Candra Flannery,Female,Texas,1,1,11849,5277,November
+200,Felic Sweatland,Male,Florida,18,21,30219,10563,November
+201,Frederick Bacher,Male,Washington,8,23,14759,2137,November
+202,Lowrance Pickle,Male,Arizona,22,2,44066,10547,November
+203,Roscoe Tinan,Male,Texas,36,7,40620,8575,November
+204,Stu Winsome,Male,Maryland,0,9,2141,400,November
+205,Elnar Sultan,Male,California,7,1,15947,611,November
+206,Laney Wessell,Male,California,39,17,42120,9020,November
+207,Tobias Arrandale,Male,California,36,14,1951,8519,November
+208,Cymbre Stonham,Female,Florida,27,16,6383,2902,November
+209,Sayre Roony,Male,California,30,15,19048,8280,November
+210,Tabor Gravenor,Male,Ohio,11,4,33336,5297,November
+211,Jeannine Stit,Female,Texas,33,22,48967,3732,November
+212,Francyne Ablitt,Female,Florida,34,13,43884,1408,November
+213,Taite Rimmer,Male,California,24,5,5783,5455,November
+214,Yalonda Ashe,Female,California,48,3,18784,8529,November
+215,Perri Dallinder,Female,Ohio,21,0,24018,9086,November
+216,Ilaire Evans,Male,California,48,0,42404,7628,November
+217,Etienne Romeo,Male,Ohio,22,9,40860,10960,November
+218,Mariel Hayler,Female,Texas,3,13,6818,5281,November
+219,Hershel Wardingly,Male,Texas,7,14,20350,7419,November
+220,Daryle Lanphier,Male,California,21,5,9002,3646,November
+221,Glynis Bealing,Female,Ohio,40,2,31289,3346,November
+222,Lurlene Potteril,Female,Texas,12,19,39310,6256,November
+223,Nick Kiss,Male,Texas,1,7,19462,57,November
+224,Thor Elegood,Male,California,4,8,4321,10914,November
+225,Jolyn Barrand,Female,Florida,7,6,12456,2323,November
+226,Rosco Tabourier,Male,Florida,27,25,1845,10267,November
+227,Desirae Duffer,Female,Ohio,28,16,7769,10673,November
+228,Margaret Dovermann,Female,Florida,40,6,44801,9202,November
+229,Donavon Vuitton,Male,Texas,15,14,25401,3934,November
+230,Cyndi Alexsandrov,Female,California,30,7,33730,10086,November
+231,Winona Starr,Female,Texas,1,11,2711,671,November
+232,Igor Derx,Male,California,37,21,10094,6894,November
+233,Carri Colegrove,Female,California,39,21,31980,6847,November
+234,Aluino Hubert,Male,California,35,3,32079,8364,November
+235,Ado Shimmin,Male,California,47,20,20292,2879,November
+236,Rossy Rubrow,Male,Florida,48,1,15827,2125,November
+237,Ainslee Haughin,Female,California,43,19,33826,2247,November
+238,Elise Doldon,Female,California,34,1,21939,2605,November
+239,Cordell Mohammed,Male,Florida,47,11,13930,2245,November
+240,Gennifer Osmar,Female,Texas,6,8,24683,5904,November
+241,Eldin Janku,Male,Florida,16,20,16710,10696,November
+242,Jacquette Alejo,Female,California,8,23,39531,9818,November
+243,Bron Bollans,Male,California,22,15,24925,1695,November
+244,Isador Jouen,Male,Texas,49,22,49937,10286,November
+245,Grete Restall,Female,Texas,23,2,485,2363,November
+246,Les Cuel,Male,California,1,15,16284,903,November
+247,Gerty Hawkridge,Female,Nebraska,38,2,21775,10319,November
+248,Silas Hriinchenko,Male,Maryland,15,4,24475,5862,November
+249,April Gauvain,Female,California,28,22,31776,588,November
+250,Winnie Keeping,Female,Ohio,21,2,4380,4405,November
+251,Chucho Rozalski,Male,Texas,37,19,29677,3136,November
+252,Fonz Danjoie,Male,Washington,30,15,47087,3001,November
+253,Rowena Lintott,Female,Maryland,37,24,21237,7799,November
+254,Brody Brimicombe,Male,Texas,27,0,14947,818,November
+255,Giorgi Mateo,Male,Arizona,6,24,37125,6118,November
+256,Sasha Costen,Female,Texas,33,20,33809,3419,November
+257,Davidson Aldin,Male,California,35,21,41163,3744,November
+258,Filippo Lebreton,Male,Texas,5,13,40497,5671,November
+259,Montgomery Rootes,Male,Texas,19,6,225,9482,November
+260,Kory Wannes,Male,California,16,15,36937,133,November
+261,Carmine Muncaster,Male,Florida,49,0,15180,10196,November
+262,Sergeant Danilovic,Male,California,47,5,25512,7090,November
+263,Yanaton Pleming,Male,Ohio,39,0,24510,10325,November
+264,Ugo Osgodby,Male,Texas,26,14,44437,138,November
+265,Alecia Andersch,Female,Florida,5,12,12369,1631,November
+266,Angus Kochlin,Male,Texas,9,17,38962,6137,November
+267,Candi Sworder,Female,California,24,25,4624,8745,November
+268,Trumaine Blackden,Male,California,13,21,45245,10240,November
+269,Henrik Huke,Male,Texas,19,13,19576,9834,November
+270,Frasquito Whittick,Male,Florida,36,9,20033,1238,November
+271,Lauritz Turnock,Male,Florida,21,3,8627,9897,November
+272,Lucais Danielis,Male,Texas,16,16,18505,1613,November
+273,Bourke Cuniam,Male,Ohio,4,6,7032,2048,November
+274,Verge Craigs,Male,Florida,20,24,31240,6512,November
+275,Marilyn Arlett,Female,Texas,32,8,5942,8016,November
+276,Kristos Kilner,Male,Texas,43,11,5172,4444,November
+277,Thorsten Paolino,Male,Texas,42,2,2531,5021,November
+278,Farrell Mathelon,Male,Texas,19,0,20582,5562,November
+279,Simeon De Andreis,Male,Texas,19,15,3683,9018,November
+280,Poppy Dorber,Female,Florida,40,15,47990,6711,November
+281,Jule Hyman,Male,Ohio,35,22,43126,1425,November
+282,Arabele Manvell,Female,Florida,21,11,9496,5107,November
+283,Miller Malletratt,Male,Florida,37,24,2027,2437,November
+284,Jerald Gritten,Male,California,46,22,25373,9933,November
+285,Emelyne Ettritch,Female,California,29,16,290,10961,November
+286,Lorens Wasselin,Male,Texas,9,12,24187,4815,November
+287,Priscella Ironmonger,Female,Ohio,38,15,4182,1311,November
+288,Kalie Tommaseo,Female,Texas,25,0,22334,1425,November
+289,Amerigo Holliar,Male,California,43,21,47817,8665,November
+290,Lizzie Bysshe,Female,Florida,37,19,36546,10859,November
+291,Emmalynn Surcombe,Female,Texas,21,5,7431,98,November
+292,Jethro Djorevic,Male,Florida,16,5,4557,7996,November
+293,Alden Serck,Male,California,24,12,2745,3861,November
+294,Waldemar Fanshawe,Male,Florida,0,0,18571,6294,November
+295,Isidore Herity,Male,Maryland,39,6,18829,5831,November
+296,Bennett Ranaghan,Male,California,30,21,23762,9041,November
+297,Jasun Clancey,Male,Texas,23,8,46970,5402,November
+298,Udale Bossom,Male,New Jersey,38,0,8361,7513,November
+299,Bernette Coey,Female,Texas,12,2,43550,3247,November
+300,Dido Boyet,Female,California,23,19,28520,744,November
+301,Adam Simla,Male,California,30,14,6873,3366,November
+302,Roxie Ritmeyer,Female,Florida,24,17,5352,5333,November
+303,Rosabella Morit,Female,Washington,6,0,25351,6394,November
+304,Cyril Pawfoot,Male,Texas,9,13,28670,7154,November
+305,York Pawley,Male,Texas,46,14,6698,9491,November
+306,Hans Meagher,Male,Texas,7,4,47738,10816,November
+307,Reinhold McGonnell,Male,California,46,24,1807,9322,November
+308,Carissa Esslemont,Female,California,19,16,24145,5616,November
+309,Lurleen Hinz,Female,Texas,6,8,36035,3827,November
+310,Joann Shoebotham,Female,Texas,20,2,14986,7123,November
+311,Abran Dix,Male,Texas,36,9,11796,10186,November
+312,Jori Armstrong,Female,Ohio,23,12,22669,3539,November
+313,Rik Rubartelli,Male,Ohio,41,23,46357,8257,November
+314,Gertie Backhurst,Female,Texas,1,20,6435,1200,November
+315,Stefa Moules,Female,Florida,25,12,41599,1631,November
+316,Gilles Delahunty,Male,Texas,3,1,12507,7055,November
+317,Ellswerth Ripsher,Male,Texas,11,0,3968,3081,November
+318,Bernadene Hanrott,Female,Ohio,46,20,29146,604,November
+319,Tye Ivetts,Male,Texas,0,8,37462,4897,November
+320,Ruthie Mullaly,Female,Florida,5,5,49083,5649,November
+321,Christina Lattey,Female,California,23,8,42282,127,November
+322,Pamella Cobb,Female,Washington,25,0,36127,5593,November
+323,Rand Wellard,Male,Maryland,50,18,16201,7201,November
+324,Brewster Bartalini,Male,California,47,4,16467,9934,November
+325,Arty Dossettor,Male,Texas,21,16,10536,9751,November
+326,Tera Corless,Female,California,11,20,31303,9804,November
+327,Wilburt Nudds,Male,California,3,24,14748,7200,November
+328,Gianna Steggles,Female,California,16,9,23880,5353,November
+329,Dennis Rojel,Male,California,26,22,40212,8672,November
+330,Billy Torres,Male,California,29,5,4565,7199,November
+331,Alfredo McAw,Male,New Jersey,14,3,36714,2738,November
+332,Hartwell Cleugher,Male,Florida,18,1,32586,556,November
+333,Raimondo Geerling,Male,Arizona,24,24,14001,2754,November
+334,Gardner Irwin,Male,Washington,12,9,49650,10216,November
+335,Reginald Fehners,Male,Florida,42,22,7706,9159,November
+336,Wesley Jedrasik,Male,California,45,0,39872,3835,November
+337,Konstantin Romer,Male,Florida,32,22,49386,5632,November
+338,Conan Geach,Male,Florida,8,9,35780,10460,November
+339,Lon Ranby,Male,California,19,0,43270,8995,November
+340,Harley Gutsell,Female,Texas,5,15,6893,3478,November
+341,Selig Clohessy,Male,Florida,25,16,12933,8815,November
+342,Shaylynn Standingford,Female,Texas,44,1,38138,9382,November
+343,Ced Blaschke,Male,Ohio,30,18,12129,2813,November
+344,Neel Ellcock,Male,Florida,4,6,45130,5118,November
+345,Jillian Stubs,Female,California,23,3,43003,7276,November
+346,Willi Mcsarry,Female,California,42,5,15226,4001,November
+347,Christy Popham,Male,Texas,26,18,28326,3684,November
+348,Stanly Bidgod,Male,Texas,14,12,40760,6594,November
+349,Jermain Dreus,Male,Washington,28,12,23568,10922,November
+350,Gustaf Ferrolli,Male,Texas,21,5,11108,7712,November
+351,Rolfe Crossan,Male,California,12,1,15148,4983,November
+352,Isidor Conrath,Male,California,46,21,11306,7888,November
+353,Delcine Summers,Female,Florida,18,12,12323,5628,November
+354,Sharlene Macoun,Female,California,25,25,45379,4512,November
+355,Tedmund Tresise,Male,Washington,41,8,28891,7156,November
+356,Wyatan Halling,Male,California,43,7,36123,8322,November
+357,Karyl Dargan,Female,California,21,12,48745,10171,November
+358,Pavia Neasham,Female,California,1,10,22497,6548,November
+359,Eadmund Van der Beek,Male,Washington,44,18,49415,10550,November
+360,Luigi Dominici,Male,Arizona,37,6,19438,10453,November
+361,Evan Bothams,Male,Texas,21,2,37583,5063,November
+362,Witty Adicot,Male,Florida,33,9,17449,6123,November
+363,Garreth Yonnie,Male,Florida,13,10,24786,7823,November
+364,Kalvin Dundendale,Male,Washington,49,1,17873,9622,November
+365,Jorry Cornillot,Female,Arizona,49,20,2743,8144,November
+366,Job Morgue,Male,Texas,1,3,44046,7073,November
+367,Emmalynne Heaney,Female,Texas,22,16,33348,7712,November
+368,Denys Gozzett,Female,Texas,42,10,26337,2306,November
+369,Bertram Massinger,Male,Texas,19,25,31378,9964,November
+370,Faun Allaway,Female,Maryland,27,8,27411,7151,November
+371,Raoul Orgen,Male,California,32,2,24030,5696,November
+372,Gustaf Stoakes,Male,Maryland,19,17,47966,9824,November
+373,Dawna Laterza,Female,Florida,42,24,23873,4068,November
+374,Bell Wroe,Female,Florida,16,25,45954,10802,November
+375,Stacia Millions,Female,California,18,25,8637,9300,November
+376,Chance Eversley,Male,California,5,24,39243,3544,November
+377,Saul Viscovi,Male,Florida,10,24,32517,4673,November
+378,Addison Murty,Male,Texas,8,0,11881,2776,November
+379,Anet Hullins,Female,Texas,39,0,16921,5248,November
+380,Cami Lawlor,Female,Texas,45,7,18499,9310,November
+381,Dedra Willimont,Female,Texas,23,2,27889,8547,November
+382,Rosalind McPaik,Female,California,6,23,9358,1164,November
+383,Priscella Ackhurst,Female,Texas,2,10,17855,9238,November
+384,Gordie Clapham,Male,Florida,38,9,15497,7130,November
+385,Johannah Dodge,Female,California,0,24,46897,3402,November
+386,Fin Levicount,Male,Texas,43,3,48180,3094,November
+387,Josepha Bille,Female,California,33,25,13934,5174,November
+388,Odell McGettrick,Male,California,28,11,796,186,November
+389,Jacquelin Kimbling,Female,California,49,19,25884,9497,November
+390,Nelly Ohlsen,Female,Texas,28,14,26553,2410,November
+391,Poppy McClaughlin,Female,Texas,35,6,23079,8493,November
+392,Tallie Camilio,Male,Arizona,29,16,1883,1918,November
+393,Kerrill Thombleson,Female,Florida,35,6,7966,5695,November
+394,Calhoun Hyams,Male,Florida,31,21,12587,4067,November
+395,Vaughn Quakley,Male,Ohio,12,18,40673,127,November
+396,Catherin Caulcutt,Female,California,25,3,29092,9936,November
+397,Alys Maryman,Female,Ohio,17,1,17873,5741,November
+398,Ram Winspar,Male,Ohio,25,8,2659,7386,November
+399,Fey Tissiman,Female,Florida,1,16,19817,6565,November
+400,Dinny Vasse,Female,Texas,18,19,36393,5692,November
+401,Tamas Tumielli,Male,Texas,4,7,33489,7943,November
+402,Klaus Demeter,Male,Florida,44,22,8627,2963,November
+403,Andre Schild,Male,California,29,23,19023,3597,November
+404,Danika Rudolph,Female,California,17,0,40689,5893,November
+405,Gunilla Quinnell,Female,Florida,22,6,1942,6596,November
+406,Cozmo Crain,Male,Texas,45,10,21626,8816,November
+407,Keely Raphael,Female,California,22,6,26898,8699,November
+408,Nonna Ironmonger,Female,California,26,19,5358,1682,November
+409,Craggie Bowgen,Male,California,43,22,18389,6962,November
+410,Sayres Brosel,Male,Texas,47,24,37999,4676,November
+411,Lyndy Belcher,Female,Arizona,49,5,24679,4735,November
+412,Bax Gedge,Male,Texas,29,23,11555,10560,November
+413,Hamilton Peaple,Male,California,8,2,48651,10307,November
+414,Teddy Lidierth,Male,Texas,34,19,45368,8545,November
+415,Bevon Blasiak,Male,Ohio,29,2,28715,507,November
+416,Jaquelin Ghelerdini,Female,Florida,42,10,1200,7292,November
+417,Jone Dolling,Male,New Jersey,46,0,527,7353,November
+418,Dallis Stow,Male,Texas,46,4,36688,133,November
+419,Hodge Lusher,Male,California,25,12,23665,2426,November
+420,Raff Da Costa,Male,Florida,22,24,42361,8829,November
+421,Raff Gasnoll,Male,California,50,11,44123,8070,November
+422,Margeaux Copner,Female,Ohio,37,24,12848,7769,November
+423,Cyrillus Burnel,Male,California,44,9,1176,10380,November
+424,Rozalie Dumbreck,Female,Florida,32,7,45311,7910,November
+425,Ebonee Andrzejak,Female,Florida,12,10,9681,1869,November
+426,Theobald Farrants,Male,Florida,3,2,36906,240,November
+427,Aksel Vampouille,Male,California,24,21,14716,9880,November
+428,Doralin Etter,Female,California,7,6,47730,8203,November
+429,Kailey Forge,Female,Florida,35,12,26263,4220,November
+430,Gustaf Rapper,Male,Texas,29,22,23986,9429,November
+431,Freemon Bosma,Male,New Jersey,44,1,15821,4821,November
+432,Ive Christin,Male,Texas,44,0,5952,5451,November
+433,Teri Spurett,Female,Arizona,38,1,46922,10429,November
+434,Bernelle Hallatt,Female,Washington,30,13,14761,15,November
+435,Yvor Jaquin,Male,Texas,21,21,23796,5,November
+436,Ibrahim Kreber,Male,California,5,12,30907,4411,November
+437,Kizzee Sporle,Female,Florida,15,22,42374,8532,November
+438,Anica Radford,Female,Florida,50,9,47984,3156,November
+439,Tera Whitehurst,Female,Washington,39,10,23102,345,November
+440,Ephrayim Lemon,Male,Arizona,2,21,7143,5347,November
+441,Brana Fort,Female,Arizona,2,0,9504,10971,November
+442,Darb Britt,Female,Texas,2,15,4879,6006,November
+443,Rachel Sparkwill,Female,Florida,14,13,44942,5320,November
+444,Dulcy Batey,Female,California,32,13,10194,5436,November
+445,Janot Seiter,Female,Texas,29,7,28361,5947,November
+446,Eustace Dearell,Male,California,1,6,6238,3328,November
+447,Garek Birts,Male,California,50,22,44893,1370,November
+448,Randolf MacCrann,Male,Arizona,13,7,46128,9747,November
+449,Blanca Secombe,Female,Ohio,31,11,10552,10841,November
+450,Jess Cowgill,Male,Washington,28,0,28260,7138,November
+451,Jamil McKenney,Male,Texas,13,7,40022,8288,November
+452,Cointon Plowman,Male,Texas,50,11,47876,5455,November
+453,Angelika Curteis,Female,California,45,25,25901,103,November
+454,Vite Elliss,Male,Texas,38,8,5919,5929,November
+455,Wilona Lancastle,Female,California,49,7,47757,2966,November
+456,Ebeneser Packman,Male,Mississippi,24,9,29715,1825,November
+457,Ingeborg Marthen,Female,Florida,49,23,20851,2328,November
+458,Erminie Suston,Female,Florida,41,8,35717,4735,November
+459,Yorgos Uttermare,Male,California,30,11,41557,8567,November
+460,Edith Gerrels,Female,Florida,12,25,29124,5407,November
+461,Alastair Felix,Male,Ohio,26,10,10692,6734,November
+462,Marshall Dulanty,Male,Arizona,14,22,11634,10943,November
+463,Sayre Marioneau,Male,New Jersey,11,22,34508,3684,November
+464,Hobart Guthrie,Male,Texas,43,10,32816,10603,November
+465,Daisie Tweed,Female,Florida,31,6,40013,1196,November
+466,Vivianna Crossby,Female,Florida,38,25,12242,7706,November
+467,Lavinia Headech,Female,California,33,24,25102,7394,November
+468,Ollie Hickisson,Male,Arizona,21,18,27470,4445,November
+469,Lulita Wethey,Female,Texas,33,10,47624,2657,November
+470,Wallace Oldland,Male,Texas,23,12,3719,10925,November
+471,Dyana Thumann,Female,California,16,13,24084,6483,November
+472,Tamara Gobeaux,Female,California,43,20,36189,7757,November
+473,Melodee Hawksley,Female,Mississippi,35,21,26418,3064,November
+474,Eduardo Hallgarth,Male,Florida,1,12,34535,1485,November
+475,Benoite Postans,Female,Texas,43,25,9744,3502,November
+476,Tom Kennelly,Male,Texas,23,15,17520,363,November
+477,Nanice Blagden,Female,Texas,0,21,8882,7317,November
+478,Gwendolen Jouning,Female,New Jersey,16,7,8197,9115,November
+479,Colin Liveing,Male,Washington,26,16,8252,10813,November
+480,Kendell Atley,Male,Texas,14,18,18726,3228,November
+481,Fiann Shere,Female,California,50,7,20767,6025,November
+482,Grier Grabban,Female,Florida,26,12,46307,3229,November
+483,Matias Hazeldean,Male,Ohio,49,0,7771,7743,November
+484,Doralynn Kenwyn,Female,Texas,4,20,8468,3403,November
+485,Layton Soreau,Male,Texas,1,15,15910,5748,November
+486,Olwen Sargint,Female,California,35,10,1530,523,November
+487,Filia Lashford,Female,Texas,3,20,47381,6731,November
+488,Humphrey Grigoryov,Male,Texas,27,9,18551,8891,November
+489,Jacky Basezzi,Male,California,27,0,19197,4869,November
+490,Eimile Adams,Female,Washington,3,22,16657,2404,November
+491,Kellie Baise,Female,Ohio,48,1,29851,10121,November
+492,Cyrille O'Cridigan,Male,Florida,31,25,14254,6354,November
+493,Isac Dilger,Male,Texas,27,16,26780,6968,November
+494,Eolanda Jannaway,Female,Ohio,23,20,29734,8833,November
+495,Aldwin Formigli,Male,California,10,18,14594,8567,November
+496,Raffarty Dissman,Male,Texas,46,0,26349,6320,November
+497,Andrew Bather,Male,Florida,44,10,11829,4698,November
+498,Denis Sowley,Male,Florida,5,10,46747,10906,November
+499,Cammy Seymark,Male,Ohio,46,24,2564,7817,November
+500,Tabby Jordison,Female,California,12,20,35336,3192,November
