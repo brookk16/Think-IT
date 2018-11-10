@@ -14,10 +14,10 @@ function makeGraphs(error, salesData) {
     show_store_location_selector(ndx);
     show_amount_earned_per_store(ndx);
     show_leads_and_appts_per_store(ndx);
-    show_employees(ndx);
+    //show_employees(ndx);
 
     dc.renderAll();
-    console.log(salesData);
+    
 }
 
 function show_store_location_selector(ndx) {
@@ -42,7 +42,7 @@ function show_amount_earned_per_store(ndx) {
 
     function add_item(p, v) {
         p.count++;
-        p.total += v.earned;
+        p.total += v.earned - v.lost;
         p.average = p.total / p.count;
         return p;
     }
@@ -54,7 +54,7 @@ function show_amount_earned_per_store(ndx) {
             p.average = 0;
         }
         else {
-            p.total -= v.earned; /*- v.lost*/
+            p.total -= v.earned - v.lost; /*- v.lost*/
             p.average = p.total / p.count;
         }
         return p;
@@ -66,20 +66,27 @@ function show_amount_earned_per_store(ndx) {
 
     var average_earn_by_state = stateDim.group().reduce(add_item, remove_item, initialise);
     
+    
 
     dc.barChart("#amount-gained-lost-per-store")
         .width(800)
         .height(600)
-        .margins({ top: 50, right: 50, bottom: 50, left: 70 })
+        .margins({ top: 20, right: 20, bottom: 50, left: 60 })
         .dimension(stateDim)
         .group(average_earn_by_state)
-        .valueAccessor(function(d) { return d.value.average.toFixed(8); })
+        .valueAccessor(function(d) { return d.value.average.toFixed(2); })
         .transitionDuration(1000)
         .x(d3.scale.ordinal())
+        .y(d3.scale.linear().domain([5000, 26000]))
         .xUnits(dc.units.ordinal)
         .elasticY(false)
+        .renderHorizontalGridLines(true)
         .xAxisLabel("State")
-        .yAxisLabel("Average amount earned and lost");
+        .yAxisLabel("Average amount earned and lost")
+        .yAxis().tickFormat(function (v) {
+            return "$" + v;
+        })
+        
         
 }
 
@@ -94,21 +101,28 @@ function show_leads_and_appts_per_store(ndx) {
 
     dc.barChart("#leads-and-appts-per-store")
         .width(800)
-        .height(600)
-        .margins({ top: 50, right: 50, bottom: 50, left: 70 })
+        .height(500)
+        .margins({ top: 30, right: 150, bottom: 50, left: 50 })
         .dimension(stateDim)
         .group(totalLeads, "Total leads")
         .stack(totalAppts, "Total appointments generated")
+        .legend(dc.legend().x(660).y(250).itemHeight(10).gap(5))
         .transitionDuration(1000)
         .x(d3.scale.ordinal())
+        .y(d3.scale.linear().domain([5000, 26000]))
         .xUnits(dc.units.ordinal)
         .elasticY(true)
+        .renderHorizontalGridLines(true)
         .xAxisLabel("State")
         .yAxisLabel("Total amount of leads and appointments generated")
-        .yAxis().tickFormat(function(v) { return v; });
+        .ordinalColors(['red','green'])
+        .yAxis().tickFormat(function (v) {
+            return  v;
+        })
+        
 }
 
-function show_employees(ndx) {
+/*function show_employees(ndx) {
 
     var amount_earned = ndx.dimension(dc.pluck("earned"));
 
@@ -124,7 +138,7 @@ function show_employees(ndx) {
         .group(employeeDim)
         .order(d3.descending);
 
-}
+}*/
 
 
     
