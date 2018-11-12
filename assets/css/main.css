@@ -23,6 +23,9 @@ main {
   font-weight: 400;
   padding: 17px 0px 0px 0px; }
 
+.numberDisplay {
+  margin: 10px; }
+
 .footer {
   background-color: rgba(55, 63, 72, 0.43);
   width: 100%;

@@ -7,14 +7,15 @@ function makeGraphs(error, salesData) {
     var ndx = crossfilter(salesData);
 
     salesData.forEach(function(d){
-        d.earned = parseInt(d.earned)
+        d.earned = parseInt(d.earned);
         d.lost = parseInt(d.lost);
     })
     
     show_store_location_selector(ndx);
+    //show_top_ten(ndx);
     show_amount_earned_per_store(ndx);
     show_leads_and_appts_per_store(ndx);
-    //show_employees(ndx);
+    
 
     dc.renderAll();
     
@@ -22,23 +23,29 @@ function makeGraphs(error, salesData) {
 
 function show_store_location_selector(ndx) {
     var stateDim = ndx.dimension(dc.pluck("store_location"));
-    
-    
-
     var stateSelect = stateDim.group();
-
 
     dc.selectMenu("#store-location-selector")
         .dimension(stateDim)
         .group(stateSelect);
-
 }
+
+function show_top_ten(ndx) {
+    
+}
+
 
 function show_amount_earned_per_store(ndx) {
 
     var stateDim = ndx.dimension(dc.pluck("store_location"));
     
     var amount_earned = ndx.dimension(dc.pluck("earned"));
+    
+    var total_amount_earned = amount_earned.group();
+    
+    var amount_lost = ndx.dimension(dc.pluck("lost"));
+    
+    var total_amount_lost = amount_lost.group();
 
     function add_item(p, v) {
         p.count++;
@@ -54,7 +61,7 @@ function show_amount_earned_per_store(ndx) {
             p.average = 0;
         }
         else {
-            p.total -= v.earned - v.lost; /*- v.lost*/
+            p.total -= v.earned - v.lost; 
             p.average = p.total / p.count;
         }
         return p;
@@ -66,8 +73,6 @@ function show_amount_earned_per_store(ndx) {
 
     var average_earn_by_state = stateDim.group().reduce(add_item, remove_item, initialise);
     
-    
-
     dc.barChart("#amount-gained-lost-per-store")
         .width(800)
         .height(600)
@@ -77,6 +82,7 @@ function show_amount_earned_per_store(ndx) {
         .valueAccessor(function(d) { return d.value.average.toFixed(2); })
         .transitionDuration(1000)
         .x(d3.scale.ordinal())
+        .colors(['red'])
         .y(d3.scale.linear().domain([5000, 26000]))
         .xUnits(dc.units.ordinal)
         .elasticY(false)
@@ -87,6 +93,31 @@ function show_amount_earned_per_store(ndx) {
             return "$" + v;
         })
         
+   
+   dc.numberDisplay("#total-amount-earned")
+        .formatNumber(d3.format(".2"))
+        .valueAccessor(function(d) { return d.value.total.toFixed(2); })
+        .group(average_earn_by_state);
+   
+    dc.numberDisplay("#average-amount-earned")
+        .formatNumber(d3.format(".2"))
+        .valueAccessor(function (d) {
+            return d.value.average.toFixed(2);
+        })
+        .group(average_earn_by_state);
+        
+     /*dc.numberDisplay("#percent-loss")
+        .formatNumber(d3.format(".2"))
+        .valueAccessor(function (d) {
+            
+        })
+        .group();
+        
+      (total_amount_earned / 100) = val
+      
+      (total_amount_lost / val) = %target val
+        
+        */
         
 }
 
@@ -94,57 +125,59 @@ function show_leads_and_appts_per_store(ndx) {
 
     var stateDim = ndx.dimension(dc.pluck("store_location"));
 
-    var totalLeads = stateDim.group().reduceSum(dc.pluck("leads_generated"));
+    var totalLeadsPerState = stateDim.group().reduceSum(dc.pluck("leads_generated"));
 
-    var totalAppts = stateDim.group().reduceSum(dc.pluck("appointments_generated"));
+    var totalApptsPerState = stateDim.group().reduceSum(dc.pluck("appointments_generated"));
+    
+    var leads = ndx.dimension(dc.pluck("leads_generated"));
+    
+    var totalLeads = leads.group();
+    
+    var appts = ndx.dimension(dc.pluck("appointments_generated"));
+    
+    var totalAppts = appts.group();
 
 
     dc.barChart("#leads-and-appts-per-store")
         .width(800)
         .height(500)
-        .margins({ top: 30, right: 150, bottom: 50, left: 50 })
+        .margins({ top: 30, right: 160, bottom: 50, left: 50 })
         .dimension(stateDim)
-        .group(totalLeads, "Total leads")
-        .stack(totalAppts, "Total appointments generated")
-        .legend(dc.legend().x(660).y(250).itemHeight(10).gap(5))
+        .group(totalLeadsPerState, "Total leads")
+        .stack(totalApptsPerState, "Total appointments")
+        .legend(dc.legend().x(670).y(280).itemHeight(10).gap(5))
         .transitionDuration(1000)
         .x(d3.scale.ordinal())
+        .ordinalColors(['red','green'])
         .y(d3.scale.linear().domain([5000, 26000]))
         .xUnits(dc.units.ordinal)
         .elasticY(true)
         .renderHorizontalGridLines(true)
         .xAxisLabel("State")
         .yAxisLabel("Total amount of leads and appointments generated")
-        .ordinalColors(['red','green'])
         .yAxis().tickFormat(function (v) {
             return  v;
-        })
+        });
         
-}
-
-/*function show_employees(ndx) {
-
-    var amount_earned = ndx.dimension(dc.pluck("earned"));
-
-    var total_earned = amount_earned.group();
-    
-    
-    var employeeDim = ndx.dimension(dc.pluck("full_name"));
-
-    dc.dataTable("#employee-table")
-        .width(768)
-        .height(480)
-        .dimension(total_earned)
-        .group(employeeDim)
-        .order(d3.descending);
-
-}*/
-
-
-    
+    dc.numberDisplay("#total-leads")
+        .formatNumber(d3.format(".2"))
+        .group(totalLeads);
    
-    
-    
-    
-    
-    
+    dc.numberDisplay("#total-appts")
+        .formatNumber(d3.format(".2"))
+        .group(totalAppts);
+        
+     /*dc.numberDisplay("#leads-to-appts")
+        .formatNumber(d3.format(".2"))
+        .valueAccessor(function (d) {
+            
+        })
+        .group();
+        
+        
+        (totalLeads /100) = val
+        
+        (totalAppts/ val) = %taregt val
+        
+        */
+}
