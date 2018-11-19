@@ -14,9 +14,8 @@ function makeGraphs(error, salesData) {
     })
 
     show_store_location_selector(ndx);
-    //show_top_ten(ndx);
     show_amount_earned_per_store(ndx);
-    show_number_data(ndx);
+    show_total_earn_and_loss(ndx);
     show_leads_and_appts_per_store(ndx);
     show_number_display_leads_and_appts(ndx);
 
@@ -34,9 +33,6 @@ function show_store_location_selector(ndx) {
         .group(stateSelect);
 }
 
-function show_top_ten(ndx) {
-
-}
 
 
 function show_amount_earned_per_store(ndx) {
@@ -44,7 +40,6 @@ function show_amount_earned_per_store(ndx) {
     var stateDim = ndx.dimension(dc.pluck("store_location"));
 
     var average_earn_by_state = stateDim.group().reduce(
-
         function add_item(p, v) {
             p.count++;
             p.total += v.earned - v.lost;
@@ -72,7 +67,7 @@ function show_amount_earned_per_store(ndx) {
             return { count: 0, total: 0, average: 0 };
         });
 
-    console.log(average_earn_by_state.all());
+
 
     dc.barChart("#amount-gained-lost-per-store")
         .width(800)
@@ -88,99 +83,95 @@ function show_amount_earned_per_store(ndx) {
         .xUnits(dc.units.ordinal)
         .elasticY(false)
         .renderHorizontalGridLines(true)
-        .renderTitle(true) 
-        .title(function (p) {
-            return ["Total earnt per person in" + " " + p.key + " " + " is"+ " " + "$" + p.value.average.toFixed(2)] })
-        .xAxisLabel("State location")
+        .renderTitle(true)
+        .title(function(p) {
+            return ["Total earnt per person in" + " " + p.key + " " + " is" + " " + "$" + p.value.average.toFixed(2)]
+        })
+        .xAxisLabel("State")
         .yAxisLabel("Average amount earned per person")
         .yAxis().tickFormat(function(v) {
             return "$" + v;
         })
+        
+
 }
 
-function show_number_data(ndx) {
+function show_total_earn_and_loss(ndx, location, element) {
 
     var stateDim = ndx.dimension(dc.pluck("store_location"));
-    var total_earned_by_state = stateDim.group().reduceSum(dc.pluck("earned"));
-    var earnedDim = ndx.dimension(dc.pluck("earned"));
+    var total_earned_by_state = stateDim.group().reduceSum(dc.pluck("earned")); //DO NOT DELETE! THIS IS THE ONE THAT SHOWS INDIVIDUAL VALUES WHEN CLICKED
+    var total_lost_by_state = stateDim.group().reduceSum(dc.pluck("lost"));//DO NOT DELETE! THIS IS THE ONE THAT SHOWS INDIVIDUAL VALUES WHEN CLICKED
 
-    dc.numberDisplay("#total-amount-earned") //WORKING BUT ONLY SHOWS CALIFORNIA AS DEFAULT NOT TOTAL
+    var percent_lost = 
+
+
+    dc.numberDisplay("#total-amount-earned")
         .formatNumber(d3.format(".2"))
-        .group(total_earned_by_state); 
+        .group(total_earned_by_state)
 
-   /* dc.numberDisplay("#total-amount-earned-2") 
+    dc.numberDisplay("#total-amount-lost")
         .formatNumber(d3.format(".2"))
-        .valueAccessor(function(d) {
-            return d.value;
-        })
-        .group(total_earned);
+        .group(total_lost_by_state)
+
+   // dc.numberDisplay("#percent-loss")
+       // .formatNumber(d3.format(".2"))
+       // .group(percent_lost)
+       // .valueAccessor(function(d) { return d.value.total.toFixed(2); })
 
 
-              dc.numberDisplay("#percent-loss")
-                .formatNumber(d3.format(".2"))
-                .group(percent_lost); */
-        }
+
+
+}
 
 function show_leads_and_appts_per_store(ndx) {
 
-        var stateDim = ndx.dimension(dc.pluck("store_location"));
-        
-        var leadsPerState = stateDim.group().reduceSum(dc.pluck("leads_generated"));
-        
-        var apptsPerState = stateDim.group().reduceSum(dc.pluck("appointments_generated"));
+    var stateDim = ndx.dimension(dc.pluck("store_location"));
 
-        
+    var leadsPerState = stateDim.group().reduceSum(dc.pluck("leads_generated"));
 
-      dc.barChart("#leads-and-appts-per-store")
-            .width(800)
-            .height(500)
-            .margins({ top: 30, right: 160, bottom: 50, left: 50 })
-            .dimension(stateDim)
-            .group(leadsPerState, "Total leads")
-            .stack(apptsPerState, "Total appointments")
-            .legend(dc.legend().x(670).y(280).itemHeight(10).gap(5))
-            .transitionDuration(1000)
-            .x(d3.scale.ordinal())
-            .ordinalColors(['red', 'green'])
-            .y(d3.scale.linear().domain([5000, 26000]))
-            .xUnits(dc.units.ordinal)
-            .elasticY(true)
-            .renderHorizontalGridLines(true)
-            .xAxisLabel("State")
-            .yAxisLabel("Total amount of leads and appointments generated")
-            .yAxis().tickFormat(function(v) {
-                return v;
-            });
+    var apptsPerState = stateDim.group().reduceSum(dc.pluck("appointments_generated"));
+
+
+
+
+    dc.barChart("#leads-and-appts-per-store")
+        .width(800)
+        .height(500)
+        .margins({ top: 30, right: 160, bottom: 50, left: 50 })
+        .dimension(stateDim)
+        .group(leadsPerState, "Total leads")
+        .stack(apptsPerState, "Total appointments")
+        .legend(dc.legend().x(670).y(280).itemHeight(10).gap(5))
+        .transitionDuration(1000)
+        .x(d3.scale.ordinal())
+        .ordinalColors(['red', 'green'])
+        .y(d3.scale.linear().domain([5000, 26000]))
+        .xUnits(dc.units.ordinal)
+        .elasticY(true)
+        .renderHorizontalGridLines(true)
+        .title(function(p) {
+            return ["Total generated in" + " " + p.key + " " + " is" + " " + p.value]})
+        .xAxisLabel("State")
+        .yAxisLabel("Total amount of leads and appointments generated")
+        .yAxis().tickFormat(function(v) {
+            return v;
+        });
 }
-        
-function show_number_display_leads_and_appts(ndx) {        
-        
-        var stateDim = ndx.dimension(dc.pluck("store_location"));
-        
-        var leadsPerState = stateDim.group().reduceSum(dc.pluck("leads_generated"));
-        
-        var apptsPerState = stateDim.group().reduceSum(dc.pluck("appointments_generated"));
-        
-        dc.numberDisplay("#total-leads")
-            .formatNumber(d3.format(".2"))//WORKING BUT ONLY SHOWS WASHINGTON AS DEFAULT NOT TOTAL
-            .group(leadsPerState);
+
+function show_number_display_leads_and_appts(ndx) {
+
+    var stateDim = ndx.dimension(dc.pluck("store_location"));
+
+    var leadsPerState = stateDim.group().reduceSum(dc.pluck("leads_generated"));
+
+    var apptsPerState = stateDim.group().reduceSum(dc.pluck("appointments_generated"));
+
+    dc.numberDisplay("#total-leads")
+        .formatNumber(d3.format(".2")) //Showing same info as graph! should change to leads to appts %
+        .group(leadsPerState);
 
 
-        dc.numberDisplay("#total-appts")
-            .formatNumber(d3.format(".2"))//WORKING BUT ONLY SHOWS WASHINGTON AS DEFAULT NOT TOTAL
-            .group(apptsPerState);
-
-        /*dc.numberDisplay("#leads-to-appts")
-           .formatNumber(d3.format(".2"))
-           .valueAccessor(function (d) {
-               
-           })
-           .group();
-           
-           
-           ((totalAppts / totalLeads) * 100)
-           
-           
-           
-           */
+    dc.numberDisplay("#total-appts")
+        .formatNumber(d3.format(".2")) 
+        .group(apptsPerState);
 }
