@@ -1,4 +1,4 @@
-"id","full_name","gender","store_location","leads_generated","appointments_generated","earned","lost","month"
+"id","full_name","gender","store_location","leads","appointments","earned","lost","month"
 1,Nonah Lote,Female,Florida,39,17,28073,671,November
 2,Bern Rother,Male,Texas,48,0,3308,8955,November
 3,Viviyan Latchford,Female,California,50,0,17373,696,November
