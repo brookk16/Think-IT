@@ -16,6 +16,7 @@ function makeGraphs(error, salesData) {
     show_store_location_selector(ndx);
     show_amount_earned_per_store(ndx);
     show_earn_and_loss(ndx);
+    show_percent_lost(ndx);
     show_leads_and_appts_per_store(ndx);
     show_number_display_leads_and_appts(ndx);
 
@@ -100,11 +101,27 @@ function show_earn_and_loss(ndx) {
     var total_earned_by_state = stateDim.group().reduceSum(dc.pluck("earned")); //DO NOT DELETE! THIS IS THE ONE THAT SHOWS INDIVIDUAL VALUES WHEN CLICKED
     var total_lost_by_state = stateDim.group().reduceSum(dc.pluck("lost")); //DO NOT DELETE! THIS IS THE ONE THAT SHOWS INDIVIDUAL VALUES WHEN CLICKED
 
+    dc.numberDisplay("#total-amount-earned")
+        .formatNumber(d3.format(".2"))
+        .group(total_earned_by_state)
+
+    dc.numberDisplay("#total-amount-lost")
+        .formatNumber(d3.format(".2"))
+        .group(total_lost_by_state)
+
+
+}
+
+function show_percent_lost(ndx) {
+
+    var stateDim = ndx.dimension(dc.pluck("store_location"));
+
     var percent_lost = stateDim.group().reduce(
         function add_item(p, v) {
             p.count++;
             p.earned += v.earned;
             p.lost += v.lost;
+            p.total = (p.lost / p.earned) * 100
 
             return p;
         },
@@ -118,36 +135,50 @@ function show_earn_and_loss(ndx) {
             else {
                 p.earned -= v.earned;
                 p.lost -= v.lost;
+                p.total = (p.lost / p.earned) * 100
 
             }
             return p;
         },
 
         function initialise() {
-            return { count: 0, earned: 0, lost: 0 };
+            return { count: 0, earned: 0, lost: 0, total: 0 };
         });
 
 
 
-    dc.numberDisplay("#total-amount-earned")
-        .formatNumber(d3.format(".2"))
-        .group(total_earned_by_state)
 
-    dc.numberDisplay("#total-amount-lost")
-        .formatNumber(d3.format(".2"))
-        .group(total_lost_by_state)
-
-    dc.numberDisplay("#percent-lost")
-        .formatNumber(d3.format(".0%"))
+    dc.pieChart("#percent-lost")
+        .width(400)
+        .height(400)
+        .radius(100)
+        .dimension(stateDim)
         .group(percent_lost)
-        .valueAccessor(function(d) { //works! but get NaN for all other states appart from WASHINGTON (last)
+        .valueAccessor(function(d) {
             if (d.count == 0) {
                 return 0;
             }
             else {
-                return (((d.value.lost / d.value.earned) * 100).toFixed(0)) / 100; // need to /100, as formatNumber seems to add two"00" when % is added
+                return (((d.value.lost / d.value.earned) * 100).toFixed(0)) / 100;
             }
-        });
+        })
+        .innerRadius(40)
+        .externalLabels(50)
+        .title(function(p) {
+            return ["Average percent lost in" + " " + p.key + " " + " is" + " " + p.value.total.toFixed(0) + "%"]
+        })
+        .transitionDuration(1000)
+        .colorAccessor(function(d) {
+            if (d.value.total > 25) {
+                return "above_threshold";
+            }
+            else {
+                return "below_threshold";
+            }
+        })
+        .colors(d3.scale.ordinal().domain(["above_threshold", "below_threshold"])
+            .range(["red", "green"]))
+        .minAngleForLabel(0);
 }
 
 function show_leads_and_appts_per_store(ndx) {
@@ -194,7 +225,7 @@ function show_number_display_leads_and_appts(ndx) {
             p.count++;
             p.leads += v.leads;
             p.appts += v.appointments;
-            p.percent = (p.appts/p.leads)*100;
+            p.percent = (p.appts / p.leads) * 100;
             return p;
         },
 
@@ -204,12 +235,12 @@ function show_number_display_leads_and_appts(ndx) {
                 p.leads = 0;
                 p.appts = 0;
                 p.percent = 0;
-                
+
             }
             else {
                 p.leads -= v.leads;
                 p.appts -= v.appointments;
-                p.percent = (p.appts/p.leads)*100;
+                p.percent = (p.appts / p.leads) * 100;
             }
             return p;
         },
@@ -217,8 +248,8 @@ function show_number_display_leads_and_appts(ndx) {
         function initialise() {
             return { count: 0, leads: 0, appts: 0, percent: 0 };
         });
-    
-    
+
+
 
     dc.pieChart("#leads-to-appts")
         .width(400)
@@ -235,22 +266,33 @@ function show_number_display_leads_and_appts(ndx) {
             }
         })
         .innerRadius(40)
-        .externalLabels(50)
+        .externalLabels(40)
         .title(function(p) {
             return ["Average leads to appointments in" + " " + p.key + " " + " is" + " " + p.value.percent.toFixed(0) + "%"]
         })
         .transitionDuration(1000)
-        .ordinalColors(['red', '#blue', 'green', 'yellow', 'black', 'pink'])
-        ;
-        
-    
-        
-        
+        .colorAccessor(function(d) {
+            if (d.value.percent < 40) {
+                return "above_threshold";
+            }
+            else {
+                return "below_threshold";
+            }
+
+        })
+        .colors(d3.scale.ordinal().domain(["above_threshold", "below_threshold"])
+            .range(["red", "green"]))
+        .minAngleForLabel(0);
 
 
 
-   
-        
+
+
+
+
+
+
+
 
 
 
