@@ -14,8 +14,8 @@ function makeGraphs(error, salesData) {
     })
 
     show_store_location_selector(ndx);
+    show_grand_totals(ndx);
     show_amount_earned_per_store(ndx);
-    show_earn_and_loss(ndx);
     show_percent_lost(ndx);
     show_leads_and_appts_per_store(ndx);
     show_number_display_leads_and_appts(ndx);
@@ -32,6 +32,107 @@ function show_store_location_selector(ndx) {
     dc.selectMenu("#store-location-selector")
         .dimension(stateDim)
         .group(stateGroup);
+}
+
+function show_grand_totals(ndx) {
+
+    var monthDim = ndx.dimension(dc.pluck("month"));
+
+    var earn_by_month = monthDim.group().reduceSum(dc.pluck("earned"));
+    
+        dc.numberDisplay("#earn-by-month")
+        .formatNumber(d3.format(".2"))
+        .group(earn_by_month);
+        
+    var lost_by_month = monthDim.group().reduceSum(dc.pluck("lost"));
+    
+        dc.numberDisplay("#lost-by-month")
+        .formatNumber(d3.format(".2"))
+        .group(lost_by_month);
+
+    var leads_by_month = monthDim.group().reduceSum(dc.pluck("leads"));
+    
+         dc.numberDisplay("#leads-by-month")
+        .formatNumber(d3.format(".2"))
+        .group(leads_by_month);
+
+    var appts_by_month = monthDim.group().reduceSum(dc.pluck("appointments"));
+    
+         dc.numberDisplay("#appts-by-month")
+        .formatNumber(d3.format(".2"))
+        .group(appts_by_month);
+
+    
+
+    var leads_to_appts_by_month = monthDim.group().reduce(
+        function add_item(p, v) {
+            p.count++;
+            p.leads += v.leads;
+            p.appts += v.appointments;
+            p.percent = (p.appts / p.leads) * 100;
+            return p;
+        },
+
+        function remove_item(p, v) {
+            p.count--;
+            if (p.count == 0) {
+                p.leads = 0;
+                p.appts = 0;
+                p.percent = 0;
+
+            }
+            else {
+                p.leads -= v.leads;
+                p.appts -= v.appointments;
+                p.percent = (p.appts / p.leads) * 100;
+            }
+            return p;
+        },
+
+        function initialise() {
+            return { count: 0, leads: 0, appts: 0, percent: 0 };
+        });
+    
+    dc.numberDisplay("#leads-to-appts-by-month")
+        .formatNumber(d3.format(".0%"))
+        .group(leads_to_appts_by_month)
+        .valueAccessor(function(d) { return d.value.percent.toFixed(0)/ 100; })
+    
+    var percent_lost_by_month = monthDim.group().reduce(
+        function add_item(p, v) {
+            p.count++;
+            p.earned += v.earned;
+            p.lost += v.lost;
+            p.total = (p.lost / p.earned) * 100
+
+            return p;
+        },
+
+        function remove_item(p, v) {
+            p.count--;
+            if (p.count == 0) {
+                p.earned = 0;
+                p.lost = 0;
+            }
+            else {
+                p.earned -= v.earned;
+                p.lost -= v.lost;
+                p.total = (p.lost / p.earned) * 100
+
+            }
+            return p;
+        },
+
+        function initialise() {
+            return { count: 0, earned: 0, lost: 0, total: 0 };
+
+        });
+        
+     dc.numberDisplay("#percent-lost-by-month")
+        .formatNumber(d3.format(".0%"))
+        .group(percent_lost_by_month)
+        .valueAccessor(function(d) { return d.value.total.toFixed(0)/100; })
+    
 }
 
 function show_amount_earned_per_store(ndx) {
@@ -51,11 +152,8 @@ function show_amount_earned_per_store(ndx) {
             if (p.count == 0) {
                 p.total = 0;
                 p.average = 0;
-
-
             }
             else {
-
                 p.total -= v.earned - v.lost;
                 p.average = p.total / p.count;
             }
@@ -65,7 +163,6 @@ function show_amount_earned_per_store(ndx) {
         function initialise() {
             return { count: 0, total: 0, average: 0 };
         });
-
 
 
     dc.barChart("#amount-gained-lost-per-store")
@@ -91,28 +188,9 @@ function show_amount_earned_per_store(ndx) {
         .yAxis().tickFormat(function(v) {
             return "$" + v;
         })
-
-
 }
 
-function show_earn_and_loss(ndx) {
-
-    var stateDim = ndx.dimension(dc.pluck("store_location"));
-    var total_earned_by_state = stateDim.group().reduceSum(dc.pluck("earned")); //DO NOT DELETE! THIS IS THE ONE THAT SHOWS INDIVIDUAL VALUES WHEN CLICKED
-    var total_lost_by_state = stateDim.group().reduceSum(dc.pluck("lost")); //DO NOT DELETE! THIS IS THE ONE THAT SHOWS INDIVIDUAL VALUES WHEN CLICKED
-
-    dc.numberDisplay("#total-amount-earned")
-        .formatNumber(d3.format(".2"))
-        .group(total_earned_by_state)
-
-    dc.numberDisplay("#total-amount-lost")
-        .formatNumber(d3.format(".2"))
-        .group(total_lost_by_state)
-
-
-}
-
-function show_percent_lost(ndx) {
+function show_percent_lost(ndx) { //NEED TO REWORK TO ONLY SHOW IF ABOVE OR BELOW A THRESHOLD VALUE (SEE DERIVED VALUES)
 
     var stateDim = ndx.dimension(dc.pluck("store_location"));
 
@@ -143,10 +221,8 @@ function show_percent_lost(ndx) {
 
         function initialise() {
             return { count: 0, earned: 0, lost: 0, total: 0 };
+
         });
-
-
-
 
     dc.pieChart("#percent-lost")
         .width(400)
@@ -159,7 +235,7 @@ function show_percent_lost(ndx) {
                 return 0;
             }
             else {
-                return (((d.value.lost / d.value.earned) * 100).toFixed(0)) / 100;
+                return d.value.total.toFixed(0);
             }
         })
         .innerRadius(40)
@@ -214,7 +290,7 @@ function show_leads_and_appts_per_store(ndx) {
         });
 }
 
-function show_number_display_leads_and_appts(ndx) {
+function show_number_display_leads_and_appts(ndx) { //NEED TO REWORK TO ONLY SHOW IF ABOVE OR BELOW A THRESHOLD VALUE (SEE DERIVED VALUES)
 
     var stateDim = ndx.dimension(dc.pluck("store_location"));
 
@@ -262,7 +338,7 @@ function show_number_display_leads_and_appts(ndx) {
                 return 0;
             }
             else {
-                return d.value.percent; //(((d.value.appts / d.value.leads) * 100).toFixed(0)) / 100; // need to /100, as formatNumber seems to add two"00" when % is added
+                return d.value.percent;
             }
         })
         .innerRadius(40)
@@ -283,18 +359,4 @@ function show_number_display_leads_and_appts(ndx) {
         .colors(d3.scale.ordinal().domain(["above_threshold", "below_threshold"])
             .range(["red", "green"]))
         .minAngleForLabel(0);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

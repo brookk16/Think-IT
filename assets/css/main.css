@@ -26,6 +26,9 @@ main {
 .numberDisplay {
   margin: 10px; }
 
+.totals {
+  margin: 10px; }
+
 .footer {
   background-color: rgba(55, 63, 72, 0.43);
   width: 100%;
