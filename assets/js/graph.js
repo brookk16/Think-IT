@@ -19,7 +19,7 @@ function makeGraphs(error, salesData) {
     show_percent_lost(ndx);
     show_leads_and_appts_per_store(ndx);
     show_number_display_leads_and_appts(ndx);
-
+    
 
     dc.renderAll();
 
@@ -39,30 +39,28 @@ function show_grand_totals(ndx) {
     var monthDim = ndx.dimension(dc.pluck("month"));
 
     var earn_by_month = monthDim.group().reduceSum(dc.pluck("earned"));
-    
-        dc.numberDisplay("#earn-by-month")
+
+    dc.numberDisplay("#earn-by-month")
         .formatNumber(d3.format(".2"))
         .group(earn_by_month);
-        
+
     var lost_by_month = monthDim.group().reduceSum(dc.pluck("lost"));
-    
-        dc.numberDisplay("#lost-by-month")
+
+    dc.numberDisplay("#lost-by-month")
         .formatNumber(d3.format(".2"))
         .group(lost_by_month);
 
     var leads_by_month = monthDim.group().reduceSum(dc.pluck("leads"));
-    
-         dc.numberDisplay("#leads-by-month")
+
+    dc.numberDisplay("#leads-by-month")
         .formatNumber(d3.format(".2"))
         .group(leads_by_month);
 
     var appts_by_month = monthDim.group().reduceSum(dc.pluck("appointments"));
-    
-         dc.numberDisplay("#appts-by-month")
+
+    dc.numberDisplay("#appts-by-month")
         .formatNumber(d3.format(".2"))
         .group(appts_by_month);
-
-    
 
     var leads_to_appts_by_month = monthDim.group().reduce(
         function add_item(p, v) {
@@ -92,12 +90,12 @@ function show_grand_totals(ndx) {
         function initialise() {
             return { count: 0, leads: 0, appts: 0, percent: 0 };
         });
-    
+
     dc.numberDisplay("#leads-to-appts-by-month")
         .formatNumber(d3.format(".0%"))
         .group(leads_to_appts_by_month)
-        .valueAccessor(function(d) { return d.value.percent.toFixed(0)/ 100; })
-    
+        .valueAccessor(function(d) { return d.value.percent.toFixed(0) / 100; })
+
     var percent_lost_by_month = monthDim.group().reduce(
         function add_item(p, v) {
             p.count++;
@@ -127,12 +125,12 @@ function show_grand_totals(ndx) {
             return { count: 0, earned: 0, lost: 0, total: 0 };
 
         });
-        
-     dc.numberDisplay("#percent-lost-by-month")
+
+    dc.numberDisplay("#percent-lost-by-month")
         .formatNumber(d3.format(".0%"))
         .group(percent_lost_by_month)
-        .valueAccessor(function(d) { return d.value.total.toFixed(0)/100; })
-    
+        .valueAccessor(function(d) { return d.value.total.toFixed(0) / 100; })
+
 }
 
 function show_amount_earned_per_store(ndx) {
@@ -190,7 +188,7 @@ function show_amount_earned_per_store(ndx) {
         })
 }
 
-function show_percent_lost(ndx) { //NEED TO REWORK TO ONLY SHOW IF ABOVE OR BELOW A THRESHOLD VALUE (SEE DERIVED VALUES)
+function show_percent_lost(ndx) { 
 
     var stateDim = ndx.dimension(dc.pluck("store_location"));
 
@@ -209,6 +207,7 @@ function show_percent_lost(ndx) { //NEED TO REWORK TO ONLY SHOW IF ABOVE OR BELO
             if (p.count == 0) {
                 p.earned = 0;
                 p.lost = 0;
+                p.total = 0;
             }
             else {
                 p.earned -= v.earned;
@@ -223,7 +222,7 @@ function show_percent_lost(ndx) { //NEED TO REWORK TO ONLY SHOW IF ABOVE OR BELO
             return { count: 0, earned: 0, lost: 0, total: 0 };
 
         });
-
+        
     dc.pieChart("#percent-lost")
         .width(400)
         .height(400)
@@ -240,9 +239,6 @@ function show_percent_lost(ndx) { //NEED TO REWORK TO ONLY SHOW IF ABOVE OR BELO
         })
         .innerRadius(40)
         .externalLabels(50)
-        .title(function(p) {
-            return ["Average percent lost in" + " " + p.key + " " + " is" + " " + p.value.total.toFixed(0) + "%"]
-        })
         .transitionDuration(1000)
         .colorAccessor(function(d) {
             if (d.value.total > 25) {
@@ -290,11 +286,9 @@ function show_leads_and_appts_per_store(ndx) {
         });
 }
 
-function show_number_display_leads_and_appts(ndx) { //NEED TO REWORK TO ONLY SHOW IF ABOVE OR BELOW A THRESHOLD VALUE (SEE DERIVED VALUES)
+function show_number_display_leads_and_appts(ndx) { 
 
     var stateDim = ndx.dimension(dc.pluck("store_location"));
-
-    var monthDim = ndx.dimension(dc.pluck("month"));
 
     var leads_to_appts = stateDim.group().reduce(
         function add_item(p, v) {
@@ -360,3 +354,4 @@ function show_number_display_leads_and_appts(ndx) { //NEED TO REWORK TO ONLY SHO
             .range(["red", "green"]))
         .minAngleForLabel(0);
 }
+
