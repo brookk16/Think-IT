@@ -1,5 +1,4 @@
 /////////// Screen sizes //////////////////////////////
-
 $xs-devices: 376px;
 $sm-devices: 576px;
 $md-devices: 768px;
@@ -7,11 +6,10 @@ $lg-devices: 992px;
 $xl-devices: 1200px;
 
 /////////// General variables //////////////////////////////
-
-$bg-grey: rgba(55, 63, 72, 0.43);
+$grey: #a0a0a0;
+$bg-color: rgb(232, 232, 232);
 
 /////////// Mixins //////////////////////////////
-
 %logo {
     color: black;
     font: {
@@ -23,9 +21,9 @@ $bg-grey: rgba(55, 63, 72, 0.43);
 }
 
 /////////// General styles //////////////////////////////
-
 body {
-    line-height: 66px;
+    line-height: 20px;
+    background-color: $bg-color;
 }
 
 main {
@@ -33,9 +31,8 @@ main {
 }
 
 /////////// Header //////////////////////////////
-
 .navbar {
-    background-color: $bg-grey;
+    background-color: $grey;
     max-height: 66px;
     div {
         width: 100%;
@@ -56,14 +53,40 @@ main {
     padding: 17px 0px 0px 0px;
 
 }
+
 /////////// Body //////////////////////////////
 
-.numberDisplay {
-    margin: 10px;
-}
 
 .totals {
-    margin: 10px;
+    margin: 15px;
+    padding: 15px;
+    .number-display {
+        font: {
+            size: 25px;
+            color: #222;
+        };
+    }
+}
+
+.container-box {
+    background-color: white; 
+    margin: 4px;
+    -webkit-box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
+    box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
+}
+
+.section {
+    margin: 5px;
+}
+
+div {
+    h5 {
+        padding: 10px;
+    }
+}
+
+#store-location-selector {
+    max-height: 20px 
 }
 
 
@@ -76,10 +99,8 @@ main {
 
 
 /////////// Footer //////////////////////////////
-
-
 .footer {
-    background-color: $bg-grey;
+    background-color: $grey;
     width: 100%;
     height: 66px;
     position: absolute;
@@ -124,34 +145,34 @@ main {
 
 
 /////////// Media queries ///////////////////
-
-
 @media (max-width: $lg-devices) and (min-width: $md-devices) {
     .logo-footer {
         padding: 0px 0px 0px 0px;
     }
-    
-    }
-    .footer-links > a{
-        padding: 0px 15px 0px 15px;
 
-    }
+}
+
+.footer-links>a {
+    padding: 0px 15px 0px 15px;
+
+}
 
 
 @media (max-width: $md-devices) and (min-width: $sm-devices) {
     .logo-footer {
         padding: 0px 0px 0px 0px;
     }
-    
-    }
-    .footer-links {
-        padding: 0px 0px 0px 0px;
-        a {
-            padding: 0px 10px 0px 10px;
-        }
-        ;
 
+}
+
+.footer-links {
+    padding: 0px 0px 0px 0px;
+    a {
+        padding: 0px 10px 0px 10px;
     }
+    ;
+
+}
 
 
 @media (max-width: $sm-devices) {
@@ -160,18 +181,19 @@ main {
         font-size: 20px;
         width: 40%;
     }
-    
-    }
-    .footer-links {
-        padding: 0px 0px 0px 0px;
-        width: 40%;
-        a {
-            padding: 0px 10px 0px 10px;
-            font-size: 18px;
-        }
-        ;
 
+}
+
+.footer-links {
+    padding: 0px 0px 0px 0px;
+    width: 40%;
+    a {
+        padding: 0px 10px 0px 10px;
+        font-size: 18px;
     }
+    ;
+
+}
 
 
 @media (max-width: $xs-devices) {

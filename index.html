@@ -34,22 +34,45 @@
     </nav>
 
     <main>
-        <section class="section">
+
+        <section class="section totals">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="totals" id="store-location-selector"></div>
 
-                    <div class="totals" id="leads-to-appts-by-month"></div>
+                    <div class="container-box col-2">
+                        <h5>Store Selector</h5>
+                        <span class="totals" id="store-location-selector"></span>
+                    </div>
 
-                    <div class="totals" id="percent-lost-by-month"></div>
+                    <div class="container-box col-1">
+                        <h5>Leads to appts per month</h5>
+                        <span class="totals" id="leads-to-appts-by-month"></span>
+                    </div>
 
-                    <div class="totals" id="earn-by-month"></div>
+                    <div class="container-box col-1">
+                        <h5>Percent lost per month</h5>
+                        <span class="totals" id="percent-lost-by-month"></span>
+                    </div>
 
-                    <div class="totals" id="lost-by-month"></div>
+                    <div class="container-box col-2">
+                        <h5>Total amount earned per month</h5>
+                        <span class="totals" id="earn-by-month"></span>
+                    </div>
 
-                    <div class="totals" id="leads-by-month"></div>
+                    <div class="container-box col-2">
+                        <h5>Total lost per month</h5>
+                        <span class="totals" id="lost-by-month"></span>
+                    </div>
 
-                    <div class="totals" id="appts-by-month"></div>
+                    <div class="container-box col-1">
+                        <h5>Total leads per month</h5>
+                        <span class="totals" id="leads-by-month"></span>
+                    </div>
+
+                    <div class="container-box col-2">
+                        <h5>Total appts per month</h5>
+                        <span class="totals" id="appts-by-month"></span>
+                    </div>
 
 
 
@@ -60,14 +83,15 @@
             <div class="container-fluid">
 
                 <div class="row">
+                    <div class="container-box">
+                        <h5>Total amount gained and lost per store</h5>
+                        <div id="amount-gained-lost-per-store"></div>
+                    </div>
 
-                    <div id="amount-gained-lost-per-store"></div>
-
-                    <div class="numberDisplay" id="total-amount-earned"></div>
-
-                    <div class="numberDisplay" id="total-amount-lost"></div>
-
-                    <div class="numberDisplay" id="percent-lost"></div>
+                    <div class="container-box">
+                        <h5>Stores meeting target minimum 25% loss target</h5>
+                        <div id="percent-lost"></div>
+                    </div>
 
                 </div>
             </div>
@@ -76,16 +100,22 @@
             <div class="container-fluid">
 
                 <div class="row">
-                    <div id="leads-and-appts-per-store"></div>
+                    <div class="container-box">
+                        <h5>Total leads and appts per store</h5>
+                        <div id="leads-and-appts-per-store"></div>
+                    </div>
 
-                    <div class="numberDisplay" id="leads-to-appts"></div>
+                    <div class="container-box">
+                        <h5>Stores meeting target maximum 40% leads to appts conversion</h5>
+                        <div id="leads-to-appts"></div>
+                    </div>
 
 
 
                 </div>
             </div>
         </section>
-        
+
     </main>
     <footer class="footer">
         <div class="container-fluid">

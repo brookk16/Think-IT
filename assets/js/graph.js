@@ -3,6 +3,7 @@ queue()
     .await(makeGraphs);
 
 
+
 function makeGraphs(error, salesData) {
     var ndx = crossfilter(salesData);
 
@@ -249,7 +250,7 @@ function show_percent_lost(ndx) {
             }
         })
         .colors(d3.scale.ordinal().domain(["above_threshold", "below_threshold"])
-            .range(["red", "green"]))
+            .range(["#c80e0e", "#4db50f"]))
         .minAngleForLabel(0);
 }
 
@@ -280,7 +281,7 @@ function show_leads_and_appts_per_store(ndx) {
             return ["Total generated in" + " " + p.key + " " + " is" + " " + p.value]
         })
         .xAxisLabel("State")
-        .yAxisLabel("Total amount of leads and appointments generated")
+        .yAxisLabel("Leads and appointments generated")
         .yAxis().tickFormat(function(v) {
             return v;
         });
@@ -351,7 +352,7 @@ function show_number_display_leads_and_appts(ndx) {
 
         })
         .colors(d3.scale.ordinal().domain(["above_threshold", "below_threshold"])
-            .range(["red", "green"]))
+            .range(["#c80e0e", "#4db50f"]))
         .minAngleForLabel(0);
 }
 
