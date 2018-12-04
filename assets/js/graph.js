@@ -33,6 +33,7 @@ function show_store_location_selector(ndx) {
     dc.selectMenu("#store-location-selector")
         .dimension(stateDim)
         .group(stateGroup);
+        
 }
 
 function show_grand_totals(ndx) {
@@ -42,13 +43,13 @@ function show_grand_totals(ndx) {
     var earn_by_month = monthDim.group().reduceSum(dc.pluck("earned"));
 
     dc.numberDisplay("#earn-by-month")
-        .formatNumber(d3.format(".2"))
+        .formatNumber(d3.format("$.2"))
         .group(earn_by_month);
 
     var lost_by_month = monthDim.group().reduceSum(dc.pluck("lost"));
 
     dc.numberDisplay("#lost-by-month")
-        .formatNumber(d3.format(".2"))
+        .formatNumber(d3.format("$.2"))
         .group(lost_by_month);
 
     var leads_by_month = monthDim.group().reduceSum(dc.pluck("leads"));
@@ -173,7 +174,7 @@ function show_amount_earned_per_store(ndx) {
         .valueAccessor(function(d) { return d.value.average.toFixed(2); })
         .transitionDuration(1000)
         .x(d3.scale.ordinal())
-        .colors(['red'])
+        .colors(['#77cfc9'])
         .y(d3.scale.linear().domain([5000, 26000]))
         .xUnits(dc.units.ordinal)
         .elasticY(false)
@@ -240,6 +241,9 @@ function show_percent_lost(ndx) {
         })
         .innerRadius(40)
         .externalLabels(50)
+        .title(function(p) {
+            return ["Average percent lost in" + " " + p.key + " " + " is" + " " + p.value.total.toFixed(0) + "%"]
+        })
         .transitionDuration(1000)
         .colorAccessor(function(d) {
             if (d.value.total > 25) {
@@ -250,7 +254,7 @@ function show_percent_lost(ndx) {
             }
         })
         .colors(d3.scale.ordinal().domain(["above_threshold", "below_threshold"])
-            .range(["#c80e0e", "#4db50f"]))
+        .range(["#c83524", "#7caf1f"]))
         .minAngleForLabel(0);
 }
 
@@ -272,7 +276,7 @@ function show_leads_and_appts_per_store(ndx) {
         .legend(dc.legend().x(670).y(280).itemHeight(10).gap(5))
         .transitionDuration(1000)
         .x(d3.scale.ordinal())
-        .ordinalColors(['red', 'green'])
+        .ordinalColors(['#77cfc9', '#87ad6b'])
         .y(d3.scale.linear().domain([5000, 26000]))
         .xUnits(dc.units.ordinal)
         .elasticY(true)

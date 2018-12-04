@@ -20,10 +20,20 @@ $bg-color: rgb(232, 232, 232);
     padding: 16px 0px 16px 26px;
 }
 
+%container-box {
+    background-color: white;
+    margin: 4px;
+    -webkit-box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
+    box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
+    
+
+}
+
 /////////// General styles //////////////////////////////
 body {
-    line-height: 20px;
+    line-height: 26px;
     background-color: $bg-color;
+
 }
 
 main {
@@ -58,36 +68,75 @@ main {
 
 
 .totals {
-    margin: 15px;
-    padding: 15px;
+    display: inline-block;
+    padding: 38px 0px 0px 0px;
+    
     .number-display {
         font: {
             size: 25px;
             color: #222;
-        };
+        }
+        ;
+    }
+    
+}
+
+
+
+div.dc-chart {
+    float: right;
+}
+
+button, select {
+    margin-right: 24px;
+}
+
+.store-selector {
+    margin: 15px 0px 11px 36px;
+}
+
+
+.box {
+    @extend %container-box;
+    float: right;
+        h5 {
+        padding: 10px 0px 0px 0px;
+        float: left;
+        max-width: 50%;
+        text-align: left;
     }
 }
 
-.container-box {
-    background-color: white; 
+.box-selector {
+    @extend %container-box;
+    max-height: 60%;
+    float: left;
+}
+
+.container-box-earnings {
+    background-color: white;
     margin: 4px;
     -webkit-box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
     box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
+
+}
+
+.container-box-leads {
+    background-color: white;
+    margin: 4px;
+    -webkit-box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
+    box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
+
 }
 
 .section {
-    margin: 5px;
+    margin: 20px 15px 0px 15px;
 }
 
-div {
-    h5 {
-        padding: 10px;
-    }
-}
 
-#store-location-selector {
-    max-height: 20px 
-}
+
+
+
 
 
 
@@ -131,15 +180,7 @@ div {
 }
 
 
-#myBtn {
-    line-height: 2;
-    border-radius: 25%;
-    font-family: "Teko", sans-serif;
-    font-size: 20px;
-    position: absolute;
-    right: 20px;
-    margin-top: 11px;
-}
+
 
 
 

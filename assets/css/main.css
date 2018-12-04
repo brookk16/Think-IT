@@ -5,8 +5,14 @@
   margin: 0px;
   padding: 16px 0px 16px 26px; }
 
+.box, .box-selector {
+  background-color: white;
+  margin: 4px;
+  -webkit-box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26); }
+
 body {
-  line-height: 20px;
+  line-height: 26px;
   background-color: #e8e8e8; }
 
 main {
@@ -25,26 +31,47 @@ main {
   padding: 17px 0px 0px 0px; }
 
 .totals {
-  margin: 15px;
-  padding: 15px; }
+  display: inline-block;
+  padding: 38px 0px 0px 0px; }
   .totals .number-display {
     font-size: 25px;
     font-color: #222; }
 
-.container-box {
+div.dc-chart {
+  float: right; }
+
+button, select {
+  margin-right: 24px; }
+
+.store-selector {
+  margin: 15px 0px 11px 36px; }
+
+.box {
+  float: right; }
+  .box h5 {
+    padding: 10px 0px 0px 0px;
+    float: left;
+    max-width: 50%;
+    text-align: left; }
+
+.box-selector {
+  max-height: 60%;
+  float: left; }
+
+.container-box-earnings {
+  background-color: white;
+  margin: 4px;
+  -webkit-box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26); }
+
+.container-box-leads {
   background-color: white;
   margin: 4px;
   -webkit-box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
   box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26); }
 
 .section {
-  margin: 5px; }
-
-div h5 {
-  padding: 10px; }
-
-#store-location-selector {
-  max-height: 20px; }
+  margin: 20px 15px 0px 15px; }
 
 .footer {
   background-color: #a0a0a0;
@@ -65,15 +92,6 @@ div h5 {
 
 .logo-footer {
   padding: 6px 0px 0px 88px; }
-
-#myBtn {
-  line-height: 2;
-  border-radius: 25%;
-  font-family: "Teko", sans-serif;
-  font-size: 20px;
-  position: absolute;
-  right: 20px;
-  margin-top: 11px; }
 
 @media (max-width: 992px) and (min-width: 768px) {
   .logo-footer {
