@@ -18,6 +18,9 @@ body {
 main {
   min-height: calc(176vh - 66px); }
 
+.fa-question-circle:before {
+  color: #a0a0a0; }
+
 .navbar {
   background-color: #a0a0a0;
   max-height: 66px; }
@@ -30,6 +33,33 @@ main {
   font-weight: 400;
   padding: 17px 0px 0px 0px; }
 
+.reset-button {
+  padding: 16px 0px 16px 20px;
+  color: black; }
+  .reset-button .fas:before {
+    margin: 0px 0px 0px 5px;
+    font-size: 17px;
+    font-color: black;
+    transition: 0.50s;
+    -webkit-transition: 0.50s;
+    -moz-transition: 0.50s;
+    -ms-transition: 0.50s;
+    -o-transition: 0.50s; }
+
+.reset-button:hover {
+  color: black; }
+  .reset-button:hover .fas {
+    transition: 0.50s;
+    -webkit-transition: 0.50s;
+    -moz-transition: 0.50s;
+    -ms-transition: 0.50s;
+    -o-transition: 0.50s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); }
+
 .totals {
   display: inline-block;
   padding: 38px 0px 0px 0px; }
@@ -37,14 +67,22 @@ main {
     font-size: 25px;
     font-color: #222; }
 
+.legend i {
+  margin: 0px 10px 0px 27px; }
+.legend .fa-check:before {
+  color: #7CAF1F; }
+.legend .fa-times:before {
+  color: #C83524; }
+
 div.dc-chart {
   float: right; }
 
-button, select {
+button,
+select {
   margin-right: 24px; }
 
 .store-selector {
-  margin: 15px 0px 11px 36px; }
+  margin: 15px 0px 11px 12px; }
 
 .box {
   float: right; }
@@ -63,12 +101,32 @@ button, select {
   margin: 4px;
   -webkit-box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
   box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26); }
+  .container-box-earnings h5 {
+    margin: 18px 0px 9px 24px; }
+
+.pie-chart-sizing {
+  max-height: 500px;
+  max-width: 600px; }
+
+#amount-gained-lost-per-store {
+  margin: 3px 0px 0px 9px; }
 
 .container-box-leads {
   background-color: white;
   margin: 4px;
   -webkit-box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
-  box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26); }
+  box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
+  position: relative; }
+  .container-box-leads h5 {
+    margin: 23px 0px 5px 23px;
+    max-width: 90%; }
+
+#leads-to-appts {
+  display: inline-block;
+  padding: 51px 171px 0px 26px; }
+
+#leads-and-appts-per-store {
+  margin: 4px 0px 4px 22px; }
 
 .section {
   margin: 20px 15px 0px 15px; }

@@ -3,7 +3,6 @@ queue()
     .await(makeGraphs);
 
 
-
 function makeGraphs(error, salesData) {
     var ndx = crossfilter(salesData);
 
@@ -16,11 +15,12 @@ function makeGraphs(error, salesData) {
 
     show_store_location_selector(ndx);
     show_grand_totals(ndx);
+    show_group_averages(ndx);
     show_amount_earned_per_store(ndx);
     show_percent_lost(ndx);
     show_leads_and_appts_per_store(ndx);
     show_number_display_leads_and_appts(ndx);
-    
+
 
     dc.renderAll();
 
@@ -33,7 +33,7 @@ function show_store_location_selector(ndx) {
     dc.selectMenu("#store-location-selector")
         .dimension(stateDim)
         .group(stateGroup);
-        
+
 }
 
 function show_grand_totals(ndx) {
@@ -42,27 +42,37 @@ function show_grand_totals(ndx) {
 
     var earn_by_month = monthDim.group().reduceSum(dc.pluck("earned"));
 
-    dc.numberDisplay("#earn-by-month")
-        .formatNumber(d3.format("$.2"))
-        .group(earn_by_month);
-
     var lost_by_month = monthDim.group().reduceSum(dc.pluck("lost"));
+
+    var leads_by_month = monthDim.group().reduceSum(dc.pluck("leads"));
+
+    var appts_by_month = monthDim.group().reduceSum(dc.pluck("appointments"));
 
     dc.numberDisplay("#lost-by-month")
         .formatNumber(d3.format("$.2"))
         .group(lost_by_month);
 
-    var leads_by_month = monthDim.group().reduceSum(dc.pluck("leads"));
+    dc.numberDisplay("#earn-by-month")
+        .formatNumber(d3.format("$.2"))
+        .group(earn_by_month);
 
     dc.numberDisplay("#leads-by-month")
         .formatNumber(d3.format(".2"))
         .group(leads_by_month);
 
-    var appts_by_month = monthDim.group().reduceSum(dc.pluck("appointments"));
+    dc.numberDisplay("#appts-by-month")
+        .formatNumber(d3.format(".2"))
+        .group(appts_by_month);
 
     dc.numberDisplay("#appts-by-month")
         .formatNumber(d3.format(".2"))
         .group(appts_by_month);
+
+}
+
+function show_group_averages(ndx) {
+
+    var monthDim = ndx.dimension(dc.pluck("month"));
 
     var leads_to_appts_by_month = monthDim.group().reduce(
         function add_item(p, v) {
@@ -93,10 +103,7 @@ function show_grand_totals(ndx) {
             return { count: 0, leads: 0, appts: 0, percent: 0 };
         });
 
-    dc.numberDisplay("#leads-to-appts-by-month")
-        .formatNumber(d3.format(".0%"))
-        .group(leads_to_appts_by_month)
-        .valueAccessor(function(d) { return d.value.percent.toFixed(0) / 100; })
+
 
     var percent_lost_by_month = monthDim.group().reduce(
         function add_item(p, v) {
@@ -127,6 +134,11 @@ function show_grand_totals(ndx) {
             return { count: 0, earned: 0, lost: 0, total: 0 };
 
         });
+
+    dc.numberDisplay("#leads-to-appts-by-month")
+        .formatNumber(d3.format(".0%"))
+        .group(leads_to_appts_by_month)
+        .valueAccessor(function(d) { return d.value.percent.toFixed(0) / 100; })
 
     dc.numberDisplay("#percent-lost-by-month")
         .formatNumber(d3.format(".0%"))
@@ -190,7 +202,7 @@ function show_amount_earned_per_store(ndx) {
         })
 }
 
-function show_percent_lost(ndx) { 
+function show_percent_lost(ndx) {
 
     var stateDim = ndx.dimension(dc.pluck("store_location"));
 
@@ -224,10 +236,10 @@ function show_percent_lost(ndx) {
             return { count: 0, earned: 0, lost: 0, total: 0 };
 
         });
-        
+
     dc.pieChart("#percent-lost")
         .width(400)
-        .height(400)
+        .height(350)
         .radius(100)
         .dimension(stateDim)
         .group(percent_lost)
@@ -254,7 +266,7 @@ function show_percent_lost(ndx) {
             }
         })
         .colors(d3.scale.ordinal().domain(["above_threshold", "below_threshold"])
-        .range(["#c83524", "#7caf1f"]))
+            .range(["#c83524", "#7caf1f"]))
         .minAngleForLabel(0);
 }
 
@@ -291,7 +303,7 @@ function show_leads_and_appts_per_store(ndx) {
         });
 }
 
-function show_number_display_leads_and_appts(ndx) { 
+function show_number_display_leads_and_appts(ndx) {
 
     var stateDim = ndx.dimension(dc.pluck("store_location"));
 
@@ -324,11 +336,9 @@ function show_number_display_leads_and_appts(ndx) {
             return { count: 0, leads: 0, appts: 0, percent: 0 };
         });
 
-
-
     dc.pieChart("#leads-to-appts")
-        .width(400)
-        .height(400)
+        .width(325)
+        .height(300)
         .radius(100)
         .dimension(stateDim)
         .group(leads_to_appts)
@@ -353,10 +363,8 @@ function show_number_display_leads_and_appts(ndx) {
             else {
                 return "below_threshold";
             }
-
         })
         .colors(d3.scale.ordinal().domain(["above_threshold", "below_threshold"])
-            .range(["#c80e0e", "#4db50f"]))
+        .range(["#C83524", "#7CAF1F"]))
         .minAngleForLabel(0);
 }
-

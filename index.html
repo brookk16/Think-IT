@@ -28,7 +28,7 @@
         <div class="row">
             <p class="logo-header col-6 col-sm-6 ">Think-IT <i class="far fa-lightbulb"></i></p>
             <div class="col-5 col-sm-5" id="month"></div>
-            <a href="javascript:dc.filterAll(); dc.renderAll();" class="col-1 col-sm-1">Reset All</a>
+            <a href="javascript:dc.filterAll(); dc.renderAll();" class="reset-button col-1 col-sm-1">Reset All<i class="fas reset fa-redo"></i></a>
         </div>
 
     </nav>
@@ -38,38 +38,38 @@
         <section class="section">
             <div class="container-fluid">
                 <div class="row">
-
-                    <div class="box-selector col-2 col-lg-2 col-xl-2">
-                        <h5 class="store-selector">Store Selector</h5>
+                    
+                    <div class="box-selector col-2 col-sm-4 col-md-2 col-lg-2 col-xl-3">
+                        <h5 class="store-selector">Store Selector <i class="fas fa-question-circle"></i></h5>
                         <div id="store-location-selector"></div>
                     </div>
 
-                    <div class="box col-3 col-lg-3 col-xl-3">
-                        <h5>Leads to appointments per month</h5>
+                    <div class="box col-3 col-sm-7 col-md-4 col-lg-3 col-xl-3">
+                        <h5>Leads to appointments per month <i class="fas fa-question-circle"></i></h5>
                         <div class="totals" id="leads-to-appts-by-month"></div>
                     </div>
 
-                    <div class="box col-2 col-lg-2 col-xl-2">
-                        <h5>Percent lost per month</h5>
+                    <div class="box col-2 col-sm-5 col-md-3 col-lg-2 col-xl-2">
+                        <h5>Percent lost per month <i class="fas fa-question-circle"></i></h5>
                         <div class="totals" id="percent-lost-by-month"></div>
                     </div>
 
-                    <div class="box col-4 col-lg-4 col-xl-4">
+                    <div class="box col-4 col-sm-6 col-md-5 col-lg-4 col-xl-3">
                         <h5>Total earned per month</h5>
                         <div class="totals" id="earn-by-month"></div>
                     </div>
 
-                    <div class="box col-3 col-lg-3 col-xl-3">
+                    <div class="box col-3 col-sm-5 col-md-5 col-lg-4 col-xl-3">
                         <h5>Total lost per month</h5>
                         <div class="totals" id="lost-by-month"></div>
                     </div>
 
-                    <div class="box col-3 col-lg-3 col-xl-3">
+                    <div class="box col-3 col-sm-5 col-md-3 col-lg-3 col-xl-3">
                         <h5>Total leads per month</h5>
                         <div class="totals" id="leads-by-month"></div>
                     </div>
 
-                    <div class="box col-3 col-lg-3 col-xl-3">
+                    <div class="box col-3 col-sm-5 col-md-4 col-lg-3 col-xl-3">
                         <h5>Total appointments per month</h5>
                         <div class="totals" id="appts-by-month"></div>
                     </div>
@@ -81,16 +81,18 @@
 
         <section class="section">
             <div class="container-fluid">
-
                 <div class="row">
+                   
                     <div class="container-box-earnings">
-                        <h5>Total amount gained and lost per store</h5>
+                        <h5>Total amount gained and lost per store <i class="fas fa-question-circle"></i></h5>
                         <div id="amount-gained-lost-per-store"></div>
                     </div>
 
-                    <div class="container-box-earnings">
-                        <h5>Stores meeting target minimum 25% loss target</h5>
+                    <div class="container-box-earnings pie-chart-sizing">
+                        <h5>Stores losing less than 25% <i class="fas fa-question-circle"></i></h5>
+                        <div class="legend"><i class="fas fa-check"></i>Pass<i class="fas fa-times"></i>Fail</div>
                         <div id="percent-lost"></div>
+                        
                     </div>
 
                 </div>
@@ -101,12 +103,13 @@
 
                 <div class="row">
                     <div class="container-box-leads">
-                        <h5>Total leads and appts per store</h5>
+                        <h5>Total leads and appts per store <i class="fas fa-question-circle"></i></h5>
                         <div id="leads-and-appts-per-store"></div>
                     </div>
 
-                    <div class="container-box-leads">
-                        <h5>Stores meeting target maximum 40% leads to appts conversion</h5>
+                    <div class="container-box-leads pie-chart-sizing">
+                        <h5>Stores converting at least 40% of leads to appointments <i class="fas fa-question-circle"></i></h5>
+                        <div class="legend"><i class="fas fa-check"></i>Pass<i class="fas fa-times"></i>Fail</div>
                         <div id="leads-to-appts"></div>
                     </div>
 
@@ -126,7 +129,7 @@
                     <a href="index.html" role="link">Homepage</a>
                 </ul>
                 <p class="logo-footer col-sm-5 col-md-5 col-lg-5 col-xl-5 ">Think-IT <i class="far fa-lightbulb"></i></p>
-                
+
             </div>
         </div>
 
