@@ -26,9 +26,10 @@
 
     <nav class="navbar navbar-default container-fluid">
         <div class="row">
-            <p class="logo-header col-6 col-sm-6 ">Think-IT <i class="far fa-lightbulb"></i></p>
-            <div class="col-5 col-sm-5" id="month"></div>
-            <a href="javascript:dc.filterAll(); dc.renderAll();" class="reset-button col-1 col-sm-1">Reset All<i class="fas reset fa-redo"></i></a>
+            <p class="logo-header col-xs-4 col-sm-5 col-md-5 col-lg-5 col-xl-5 ">Think-IT <i class="far fa-lightbulb"></i></p>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-5" id="month"></div>
+            <a href="javascript:dc.filterAll(); dc.renderAll();" class="reset-button col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">Reset All<i class="fas reset fa-redo"></i></a>
+
         </div>
 
     </nav>
@@ -38,38 +39,38 @@
         <section class="section">
             <div class="container-fluid">
                 <div class="row">
-                    
-                    <div class="box-selector col-2 col-sm-4 col-md-2 col-lg-2 col-xl-3">
+
+                    <div class="box-selector col-sm-6 col-md-4 col-lg-3 col-xl-3">
                         <h5 class="store-selector">Store Selector <i class="fas fa-question-circle"></i></h5>
                         <div id="store-location-selector"></div>
                     </div>
 
-                    <div class="box col-3 col-sm-7 col-md-4 col-lg-3 col-xl-3">
+                    <div class="box col-sm-7 col-md-3 col-lg-3 col-xl-3">
                         <h5>Leads to appointments per month <i class="fas fa-question-circle"></i></h5>
                         <div class="totals" id="leads-to-appts-by-month"></div>
                     </div>
 
-                    <div class="box col-2 col-sm-5 col-md-3 col-lg-2 col-xl-2">
+                    <div class="box col-sm-5 col-md-3 col-lg-2 col-xl-2">
                         <h5>Percent lost per month <i class="fas fa-question-circle"></i></h5>
                         <div class="totals" id="percent-lost-by-month"></div>
                     </div>
 
-                    <div class="box col-4 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+                    <div class="box col-sm-6 col-md-5 col-lg-4 col-xl-3">
                         <h5>Total earned per month</h5>
                         <div class="totals" id="earn-by-month"></div>
                     </div>
 
-                    <div class="box col-3 col-sm-5 col-md-5 col-lg-4 col-xl-3">
+                    <div class="box col-sm-5 col-md-5 col-lg-4 col-xl-3">
                         <h5>Total lost per month</h5>
                         <div class="totals" id="lost-by-month"></div>
                     </div>
 
-                    <div class="box col-3 col-sm-5 col-md-3 col-lg-3 col-xl-3">
+                    <div class="box col-sm-5 col-md-3 col-lg-3 col-xl-3">
                         <h5>Total leads per month</h5>
                         <div class="totals" id="leads-by-month"></div>
                     </div>
 
-                    <div class="box col-3 col-sm-5 col-md-4 col-lg-3 col-xl-3">
+                    <div class="box col-sm-5 col-md-4 col-lg-3 col-xl-3">
                         <h5>Total appointments per month</h5>
                         <div class="totals" id="appts-by-month"></div>
                     </div>
@@ -82,38 +83,30 @@
         <section class="section">
             <div class="container-fluid">
                 <div class="row">
-                   
-                    <div class="container-box-earnings">
+
+                    <div class="container-box-earnings col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                         <h5>Total amount gained and lost per store <i class="fas fa-question-circle"></i></h5>
                         <div id="amount-gained-lost-per-store"></div>
                     </div>
 
-                    <div class="container-box-earnings pie-chart-sizing">
+                    <div class="container-box-earnings pie-chart-sizing col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
                         <h5>Stores losing less than 25% <i class="fas fa-question-circle"></i></h5>
                         <div class="legend"><i class="fas fa-check"></i>Pass<i class="fas fa-times"></i>Fail</div>
                         <div id="percent-lost"></div>
-                        
+
                     </div>
 
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container-fluid">
 
-                <div class="row">
-                    <div class="container-box-leads">
+                    <div class="container-box-leads order-3 col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-6">
                         <h5>Total leads and appts per store <i class="fas fa-question-circle"></i></h5>
                         <div id="leads-and-appts-per-store"></div>
                     </div>
 
-                    <div class="container-box-leads pie-chart-sizing">
+                    <div class="container-box-leads pie-chart-sizing col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
                         <h5>Stores converting at least 40% of leads to appointments <i class="fas fa-question-circle"></i></h5>
                         <div class="legend"><i class="fas fa-check"></i>Pass<i class="fas fa-times"></i>Fail</div>
                         <div id="leads-to-appts"></div>
                     </div>
-
-
 
                 </div>
             </div>
@@ -123,12 +116,25 @@
     <footer class="footer">
         <div class="container-fluid">
             <div class="row">
-                <ul class="footer-links col-sm-5 col-md-5 col-lg-4 col-xl-5" role="navbar">
-                    <a href="about.html" role="link">About</a>
-                    <a href="privacy.html" role="link">Privacy</a>
-                    <a href="index.html" role="link">Homepage</a>
-                </ul>
-                <p class="logo-footer col-sm-5 col-md-5 col-lg-5 col-xl-5 ">Think-IT <i class="far fa-lightbulb"></i></p>
+                <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                    class="fa fa-bars fa-1x"></i></span></button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                    <ul class="navbar-nav mr-auto footer-links col-sm-6 col-md-6 col-lg-4 col-xl-5" role="navbar">
+                        <li class="nav-item active">
+                            <a href="about.html" class="nav-link" role="link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="privacy.html" class="nav-link" role="link">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link" role="link">Homepage</a>
+                        </li>
+                    </ul>
+                    
+                    <p class="logo-footer col-sm-6 col-md-6 col-lg-5 col-xl-5 ">Think-IT <i class="far fa-lightbulb"></i></p>
+
+                </div>
 
             </div>
         </div>

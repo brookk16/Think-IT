@@ -16,7 +16,8 @@ body {
   background-color: #e8e8e8; }
 
 main {
-  min-height: calc(176vh - 66px); }
+  min-height: calc(176vh - 66px);
+  margin: 0px 0px 30px 60px; }
 
 .fa-question-circle:before {
   color: #a0a0a0; }
@@ -98,15 +99,12 @@ select {
 
 .container-box-earnings {
   background-color: white;
+  min-width: 827px;
   margin: 4px;
   -webkit-box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
   box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26); }
   .container-box-earnings h5 {
     margin: 18px 0px 9px 24px; }
-
-.pie-chart-sizing {
-  max-height: 500px;
-  max-width: 600px; }
 
 #amount-gained-lost-per-store {
   margin: 3px 0px 0px 9px; }
@@ -114,19 +112,28 @@ select {
 .container-box-leads {
   background-color: white;
   margin: 4px;
+  min-width: 832px;
   -webkit-box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
   box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
   position: relative; }
   .container-box-leads h5 {
-    margin: 23px 0px 5px 23px;
-    max-width: 90%; }
+    margin: 21px -173px 11px 29px;
+    padding: 0px 0px 0px 7px;
+    max-width: 93%; }
 
 #leads-to-appts {
   display: inline-block;
-  padding: 51px 171px 0px 26px; }
+  padding: 26px 0px 0px 12px;
+  float: left; }
 
 #leads-and-appts-per-store {
   margin: 4px 0px 4px 22px; }
+
+.pie-chart-sizing {
+  max-height: 459px;
+  min-width: 386px;
+  max-width: 386px;
+  display: inline-block; }
 
 .section {
   margin: 20px 15px 0px 15px; }
@@ -139,7 +146,7 @@ select {
 
 .footer-links {
   margin: 0px;
-  padding: 9px 45px 0px 0px;
+  padding: 20px 45px 0px 0px;
   text-decoration: none; }
   .footer-links a {
     color: black;
@@ -149,43 +156,16 @@ select {
     padding: 0px 20px 0px 20px; }
 
 .logo-footer {
-  padding: 6px 0px 0px 88px; }
+  padding: 20px 0px 0px 88px; }
 
-@media (max-width: 992px) and (min-width: 768px) {
-  .logo-footer {
-    padding: 0px 0px 0px 0px; } }
-.footer-links > a {
-  padding: 0px 15px 0px 15px; }
-
-@media (max-width: 768px) and (min-width: 576px) {
-  .logo-footer {
-    padding: 0px 0px 0px 0px; } }
-.footer-links {
-  padding: 0px 0px 0px 0px; }
-  .footer-links a {
-    padding: 0px 10px 0px 10px; }
-
-@media (max-width: 576px) {
-  .logo-footer {
-    padding: 0px 0px 0px 0px;
-    font-size: 20px;
-    width: 40%; } }
-.footer-links {
-  padding: 0px 0px 0px 0px;
-  width: 40%; }
-  .footer-links a {
-    padding: 0px 10px 0px 10px;
-    font-size: 18px; }
-
-@media (max-width: 376px) {
-  #month {
-    font-size: 23px;
-    padding: 17px 0px 0px 25px; }
-
+@media (max-width: 1334px) {
+  main {
+    margin: 0px 0px 0px 0px; } }
+@media (max-width: 575px) {
   .logo-header {
-    font-size: 20px; } }
-@media (max-width: 485px) {
-  .footer {
-    height: 115px; } }
+    padding: 0px; }
+
+  .box-selector {
+    max-width: 204px; } }
 
 /*# sourceMappingURL=main.css.map */
