@@ -13,7 +13,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/dc.min.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico|Teko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Archivo+Black" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
 
 
@@ -26,12 +26,10 @@
 
     <nav class="navbar navbar-default container-fluid">
         <div class="row">
-            <p class="logo-header col-xs-4 col-sm-5 col-md-5 col-lg-5 col-xl-5 ">Think-IT <i class="far fa-lightbulb"></i></p>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-5" id="month"></div>
-            <a href="javascript:dc.filterAll(); dc.renderAll();" class="reset-button col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">Reset All<i class="fas reset fa-redo"></i></a>
-
+            <div class="logo-header col-xs-2 col-sm-4 col-md-5 col-lg-5 col-xl-5"><a href="index.html" class="logo-link" role="link">Think-IT<i class="far fa-lightbulb"></i></a></div>
+            <div class="col-xs-2 col-sm-4 col-md-4 col-lg-4 col-xl-5" id="month"></div>
+            <a href="javascript:dc.filterAll(); dc.renderAll();" class="reset-button col-xs-2 col-sm-3 col-md-3 col-lg-2 col-xl-2">Reset All<i class="fas reset fa-redo"></i></a>
         </div>
-
     </nav>
 
     <main>
@@ -40,19 +38,19 @@
             <div class="container-fluid">
                 <div class="row">
 
-                    <div class="box-selector col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="box-selector col-xs-12 col-sm-7 col-md-5 col-lg-4 col-xl-3">
                         <h5 class="store-selector">Store Selector <i class="fas fa-question-circle"></i></h5>
                         <div id="store-location-selector"></div>
                     </div>
 
-                    <div class="box col-sm-7 col-md-3 col-lg-3 col-xl-3">
+                    <div class="box col-sm-7 col-md-4 col-lg-3 col-xl-3">
                         <h5>Leads to appointments per month <i class="fas fa-question-circle"></i></h5>
-                        <div class="totals" id="leads-to-appts-by-month"></div>
+                        <div class="totals spacing" id="leads-to-appts-by-month"></div>
                     </div>
 
-                    <div class="box col-sm-5 col-md-3 col-lg-2 col-xl-2">
+                    <div class="box col-sm-5 col-md-3 col-lg-3 col-xl-2">
                         <h5>Percent lost per month <i class="fas fa-question-circle"></i></h5>
-                        <div class="totals" id="percent-lost-by-month"></div>
+                        <div class="totals spacing" id="percent-lost-by-month"></div>
                     </div>
 
                     <div class="box col-sm-6 col-md-5 col-lg-4 col-xl-3">
@@ -65,14 +63,14 @@
                         <div class="totals" id="lost-by-month"></div>
                     </div>
 
-                    <div class="box col-sm-5 col-md-3 col-lg-3 col-xl-3">
+                    <div class="box col-sm-5 col-md-4 col-lg-3 col-xl-3">
                         <h5>Total leads per month</h5>
                         <div class="totals" id="leads-by-month"></div>
                     </div>
 
                     <div class="box col-sm-5 col-md-4 col-lg-3 col-xl-3">
                         <h5>Total appointments per month</h5>
-                        <div class="totals" id="appts-by-month"></div>
+                        <div class="totals spacing" id="appts-by-month"></div>
                     </div>
 
 
@@ -84,7 +82,7 @@
             <div class="container-fluid">
                 <div class="row">
 
-                    <div class="container-box-earnings col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="container-box-earnings large-chart-resizing col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                         <h5>Total amount gained and lost per store <i class="fas fa-question-circle"></i></h5>
                         <div id="amount-gained-lost-per-store"></div>
                     </div>
@@ -96,13 +94,12 @@
 
                     </div>
 
-
-                    <div class="container-box-leads order-3 col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-6">
+                    <div class="container-box-leads large-chart-resizing order-3 col-xs-12 col-sm-12 col-md-2 col-lg-9 col-xl-6">
                         <h5>Total leads and appts per store <i class="fas fa-question-circle"></i></h5>
                         <div id="leads-and-appts-per-store"></div>
                     </div>
 
-                    <div class="container-box-leads pie-chart-sizing col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+                    <div class="container-box-leads pie-chart-sizing col-xs-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
                         <h5>Stores converting at least 40% of leads to appointments <i class="fas fa-question-circle"></i></h5>
                         <div class="legend"><i class="fas fa-check"></i>Pass<i class="fas fa-times"></i>Fail</div>
                         <div id="leads-to-appts"></div>
@@ -116,26 +113,15 @@
     <footer class="footer">
         <div class="container-fluid">
             <div class="row">
-                <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
-                    class="fa fa-bars fa-1x"></i></span></button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-                    <ul class="navbar-nav mr-auto footer-links col-sm-6 col-md-6 col-lg-4 col-xl-5" role="navbar">
-                        <li class="nav-item active">
-                            <a href="about.html" class="nav-link" role="link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="privacy.html" class="nav-link" role="link">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link" role="link">Homepage</a>
-                        </li>
-                    </ul>
-                    
-                    <p class="logo-footer col-sm-6 col-md-6 col-lg-5 col-xl-5 ">Think-IT <i class="far fa-lightbulb"></i></p>
-
+                <div class="bottomnav col-xs-4 col-sm-1 col-md-5 col-lg-4 col-xl-4 align-self-start flex-container" id="myBottomNav">
+                    <a href="about.html" class="nav-link" role="link">About</a>
+                    <a href="privacy.html" class="nav-link" role="link">Privacy</a>
+                    <a href="index.html" class="nav-link" role="link">Homepage</a>
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerIcon()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </div>
-
+                <span class="logo-footer col-xs-2 col-sm-3 col-md-6 col-lg-6 col-xl-6"><a href="index.html" class="logo-link" role="link">Think-IT<i class="far fa-lightbulb"></i></span>
             </div>
         </div>
 
@@ -151,5 +137,6 @@
 <script type="text/javascript" src="assets/js/dc.min.js"></script>
 <script type="text/javascript" src="assets/js/queue.min.js"></script>
 <script type="text/javascript" src="assets/js/graph.js"></script>
+<script type="text/javascript" src="assets/js/hamburger-menu.js"></script>
 
 </html>

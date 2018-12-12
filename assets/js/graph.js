@@ -11,6 +11,7 @@ function makeGraphs(error, salesData) {
         d.lost = parseInt(d.lost);
         d.leads = parseInt(d.leads);
         d.appointments = parseInt(d.appointments);
+
     })
 
     show_store_location_selector(ndx);
@@ -32,7 +33,10 @@ function show_store_location_selector(ndx) {
 
     dc.selectMenu("#store-location-selector")
         .dimension(stateDim)
-        .group(stateGroup);
+        .group(stateGroup)
+        .title(function(d) {
+            return 'State: ' + d.key + " " + "|" + " " + "Employees: " +d.value;
+        })
 
 }
 
@@ -47,6 +51,7 @@ function show_grand_totals(ndx) {
     var leads_by_month = monthDim.group().reduceSum(dc.pluck("leads"));
 
     var appts_by_month = monthDim.group().reduceSum(dc.pluck("appointments"));
+
 
     dc.numberDisplay("#lost-by-month")
         .formatNumber(d3.format("$.2"))
@@ -288,7 +293,7 @@ function show_leads_and_appts_per_store(ndx) {
         .legend(dc.legend().x(670).y(280).itemHeight(10).gap(5))
         .transitionDuration(1000)
         .x(d3.scale.ordinal())
-        .ordinalColors(['#77cfc9', '#87ad6b'])
+        .ordinalColors(['#77cfc9', '#4F5D75'])       
         .y(d3.scale.linear().domain([5000, 26000]))
         .xUnits(dc.units.ordinal)
         .elasticY(true)
@@ -365,6 +370,6 @@ function show_number_display_leads_and_appts(ndx) {
             }
         })
         .colors(d3.scale.ordinal().domain(["above_threshold", "below_threshold"])
-        .range(["#C83524", "#7CAF1F"]))
+            .range(["#C83524", "#7CAF1F"]))
         .minAngleForLabel(0);
 }
