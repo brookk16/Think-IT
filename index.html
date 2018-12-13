@@ -28,7 +28,9 @@
         <div class="row">
             <div class="logo-header col-xs-2 col-sm-4 col-md-5 col-lg-5 col-xl-5"><a href="index.html" class="logo-link" role="link">Think-IT<i class="far fa-lightbulb"></i></a></div>
             <div class="col-xs-2 col-sm-4 col-md-4 col-lg-4 col-xl-5" id="month"></div>
-            <a href="javascript:dc.filterAll(); dc.renderAll();" class="reset-button col-xs-2 col-sm-3 col-md-3 col-lg-2 col-xl-2">Reset All<i class="fas reset fa-redo"></i></a>
+            <button class="reset-button-style"role="reset button" value="reset" type="reset">
+                <a href="javascript:dc.filterAll(); dc.renderAll();" class="reset-button col-xs-2 col-sm-3 col-md-3 col-lg-2 col-xl-2">Reset All<i class="fas reset fa-redo"></i></a>
+            </button>
         </div>
     </nav>
 
@@ -113,7 +115,7 @@
     <footer class="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="bottomnav col-xs-4 col-sm-1 col-md-5 col-lg-4 col-xl-4 align-self-start flex-container" id="myBottomNav">
+                <div class="bottomnav col-xs-1 col-sm-1 col-md-5 col-lg-4 col-xl-4 align-self-start flex-container" id="myBottomNav">
                     <a href="about.html" class="nav-link" role="link">About</a>
                     <a href="privacy.html" class="nav-link" role="link">Privacy</a>
                     <a href="index.html" class="nav-link" role="link">Homepage</a>
@@ -121,7 +123,7 @@
                         <i class="fa fa-bars"></i>
                     </a>
                 </div>
-                <span class="logo-footer col-xs-2 col-sm-3 col-md-6 col-lg-6 col-xl-6"><a href="index.html" class="logo-link" role="link">Think-IT<i class="far fa-lightbulb"></i></span>
+                <span class="logo-footer col-xs-3 col-sm-3 col-md-6 col-lg-6 col-xl-6"><a href="index.html" class="logo-link" role="link">Think-IT<i class="far fa-lightbulb"></i></span>
             </div>
         </div>
 
@@ -132,11 +134,12 @@
 <!-- JS --------->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/js/month.js"></script>
+<script type="text/javascript" src="assets/js/hamburger.js"></script>
 <script type="text/javascript" src="assets/js/d3.min.js"></script>
 <script type="text/javascript" src="assets/js/crossfilter.min.js"></script>
 <script type="text/javascript" src="assets/js/dc.min.js"></script>
 <script type="text/javascript" src="assets/js/queue.min.js"></script>
 <script type="text/javascript" src="assets/js/graph.js"></script>
-<script type="text/javascript" src="assets/js/hamburger-menu.js"></script>
+
 
 </html>

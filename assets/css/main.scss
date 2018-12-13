@@ -50,14 +50,15 @@ main {
 
 text {
     fill: white;
-    
+
 }
 
 .dc-chart .pie-slice.external {
     fill: white;
 }
 
-.dc-chart .axis line, .dc-chart .axis path {
+.dc-chart .axis line,
+.dc-chart .axis path {
     fill: none;
     stroke: white;
     shape-rendering: crispEdges;
@@ -105,12 +106,11 @@ text {
     ;
     padding: 26px 0px 0px 39px;
     display: inline-block;
-    
+
 }
 
 .reset-button {
-    padding: 26px 0px 16px 97px;
-    color: black;
+    color: $bg-color;
     transition: 0.50s;
     -webkit-transition: 0.50s;
     -moz-transition: 0.50s;
@@ -120,21 +120,22 @@ text {
         margin: 0px 0px 0px 5px;
         font: {
             size: 17px;
-            color: black;
+            color: $bg-color;
         }
         ;
     }
 }
 
 .reset-button:hover {
-    color: $bg-color;
+    color: black;
+    text-decoration: none;
     transition: 0.0s;
     -webkit-transition: 0.50s;
     -moz-transition: 0.50s;
     -ms-transition: 0.50s;
     -o-transition: 0.50s;
     .fas {
-        color: $bg-color;
+        color: black;
         transition: 0.50s;
         -webkit-transition: 0.50s;
         -moz-transition: 0.50s;
@@ -149,6 +150,18 @@ text {
 
 }
 
+.reset-button-style {
+    border: 1px solid #82888e;
+    border-radius: 27%;
+    background-color: #52b913;
+    padding: 0px 8px 0px 0px;
+}
+
+.reset-button-style:hover {
+    //may want to red-do with jquery
+    background-color: $bg-color;
+    color: $grey;
+}
 
 /////////// Body //////////////////////////////
 .totals {
@@ -188,7 +201,7 @@ text {
 
 #store-location-selector {
     max-width: 40%;
-    
+
 }
 
 button,
@@ -341,7 +354,6 @@ select {
     margin: 7px 0px 0px 0px;
     .nav-link {
         background-color: $grey;
-
     }
 
 
@@ -450,7 +462,7 @@ select {
         width: 50%;
     }
     .bottomnav {
-        width: 50%;
+        width: 28%;
     }
 
 
@@ -480,16 +492,16 @@ select {
         margin: 0% auto;
         text-align: center;
     }
-    
+
     #month {
         margin: 0% auto;
         text-align: center;
     }
-    
+
     .reset-button {
         margin: 0% auto;
         text-align: center;
     }
 }
 
-    @media (max-width: $xs-devices) {}
+@media (max-width: $xs-devices) {}

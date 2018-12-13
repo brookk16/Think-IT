@@ -1,6 +1,4 @@
-// Code taken and repurposed from www.w3schools.com website (https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav)
-
-
+//Function taken and modified from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 
 function hamburgerIcon() {
   var x = document.getElementById("myBottomNav");

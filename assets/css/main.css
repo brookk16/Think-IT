@@ -30,7 +30,8 @@ text {
 .dc-chart .pie-slice.external {
   fill: white; }
 
-.dc-chart .axis line, .dc-chart .axis path {
+.dc-chart .axis line,
+.dc-chart .axis path {
   fill: none;
   stroke: white;
   shape-rendering: crispEdges; }
@@ -62,8 +63,7 @@ text {
   display: inline-block; }
 
 .reset-button {
-  padding: 26px 0px 16px 97px;
-  color: black;
+  color: #e8e8e8;
   transition: 0.50s;
   -webkit-transition: 0.50s;
   -moz-transition: 0.50s;
@@ -72,17 +72,18 @@ text {
   .reset-button .fas:before {
     margin: 0px 0px 0px 5px;
     font-size: 17px;
-    font-color: black; }
+    font-color: #e8e8e8; }
 
 .reset-button:hover {
-  color: #e8e8e8;
+  color: black;
+  text-decoration: none;
   transition: 0.0s;
   -webkit-transition: 0.50s;
   -moz-transition: 0.50s;
   -ms-transition: 0.50s;
   -o-transition: 0.50s; }
   .reset-button:hover .fas {
-    color: #e8e8e8;
+    color: black;
     transition: 0.50s;
     -webkit-transition: 0.50s;
     -moz-transition: 0.50s;
@@ -93,6 +94,16 @@ text {
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg); }
+
+.reset-button-style {
+  border: 1px solid #82888e;
+  border-radius: 27%;
+  background-color: #52b913;
+  padding: 0px 8px 0px 0px; }
+
+.reset-button-style:hover {
+  background-color: #e8e8e8;
+  color: #a0a0a0; }
 
 .totals {
   display: inline-block;
@@ -271,7 +282,7 @@ select {
     width: 50%; }
 
   .bottomnav {
-    width: 50%; }
+    width: 28%; }
 
   #month {
     margin: 0% 25%; }
