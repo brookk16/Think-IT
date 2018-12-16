@@ -3,7 +3,8 @@
   font-family: "Pacifico", sans-serif;
   font-size: 25px;
   margin: 0px;
-  padding: 26px 0px 16px 26px; }
+  padding: 26px 0px 16px 26px;
+  max-height: 28px; }
 
 .box, .box-selector {
   background-color: #a0a0a0;
@@ -59,7 +60,7 @@ text {
   font-family: 'Archivo+Black', sans-serif;
   font-size: 27px;
   font-weight: 400;
-  padding: 26px 0px 0px 39px;
+  padding: 24px 0px 0px 0px;
   display: inline-block; }
 
 .reset-button {
@@ -99,7 +100,10 @@ text {
   border: 1px solid #82888e;
   border-radius: 27%;
   background-color: #52b913;
-  padding: 0px 8px 0px 0px; }
+  max-width: 119px;
+  min-width: 119px;
+  margin: 20px 0px 17px 0px;
+  max-height: 28px; }
 
 .reset-button-style:hover {
   background-color: #e8e8e8;
@@ -243,14 +247,11 @@ select {
     margin: 0px 0px 25px 0px; } }
 @media (max-width: 872px) {
   .bottomnav {
-    margin: 7px; } }
+    margin: 0px; } }
 @media (max-width: 850px) {
   .large-chart-resizing {
     min-width: 100%;
     max-width: 100%; } }
-@media (max-width: 662px) and (min-width: 575px) {
-  .reset-button {
-    padding: 27px 0px 0px 71px; } }
 @media screen and (max-width: 768px) {
   .bottomnav a {
     display: none; }
@@ -275,27 +276,20 @@ select {
   padding: 18px 0px 0px 0px; }
 
 @media (max-width: 575px) {
-  .logo-header {
-    padding: 0px 0px 0px 66px; }
+  .reset-button-style {
+    margin: 0px 0px 0px 0px; }
 
   .logo-footer {
     width: 50%; }
+
+  .logo-header {
+    padding: 0px 0px 0px 5px; }
 
   .bottomnav {
     width: 28%; }
 
   #month {
-    margin: 0% 25%; }
-
-  .logo-header {
-    margin: 0% 25%; }
-
-  .reset-button {
-    margin: 0% 25%;
-    padding: 11px 0px 5px 77px; }
-
-  #month {
-    padding: 14px 0px 3px 32px; }
+    padding: 0px 0px 0px 16px; }
 
   .pie-chart-sizing {
     min-width: 0%;
@@ -310,7 +304,6 @@ select {
     text-align: center; }
 
   .reset-button {
-    margin: 0% auto;
     text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
