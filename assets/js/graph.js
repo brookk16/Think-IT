@@ -14,6 +14,8 @@ function makeGraphs(error, salesData) {
 
     })
 
+
+
     show_store_location_selector(ndx);
     show_grand_totals(ndx);
     show_group_averages(ndx);
@@ -24,6 +26,8 @@ function makeGraphs(error, salesData) {
 
 
     dc.renderAll();
+    
+    
 
 }
 

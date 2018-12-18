@@ -19,8 +19,8 @@ $red: #C83524;
         size: 25px;
     }
     margin: 0px;
-    padding: 26px 0px 16px 26px;
-    max-height: 28px;
+
+
 }
 
 %container-box {
@@ -38,6 +38,7 @@ body {
     background-color: $bg-color;
     font-family: "Archivo+Black", sans-serif;
     color: white;
+    
 }
 
 main {
@@ -70,6 +71,17 @@ text {
     background-color: $bg-color;
 }
 
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#161616;
+	border-radius:5px;
+	padding:10px;
+	color:#fff;
+	font-size:12px Arial;
+}
+
 
 
 
@@ -88,8 +100,12 @@ text {
 
 .logo-header {
     @extend %logo
-    
 }
+
+.logo-header a:hover {
+    text-decoration: none;
+}
+
 
 .logo-link {
     color: black;
@@ -106,7 +122,6 @@ text {
         weight: 400;
     }
     ;
-    padding: 24px 0px 0px 0px;
     display: inline-block;
 
 }
@@ -128,7 +143,8 @@ text {
     }
 }
 
-.reset-button:hover {
+.reset-button:hover,
+.reset-button-style:hover {
     color: black;
     text-decoration: none;
     transition: 0.0s;
@@ -149,7 +165,7 @@ text {
         -ms-transform: rotate(360deg);
         transform: rotate(360deg);
     }
-    
+
 
 }
 
@@ -157,17 +173,17 @@ text {
     border: 1px solid #82888e;
     border-radius: 27%;
     background-color: #52b913;
+    margin: 0px 0px 0px 15px;
     max-width: 119px;
     min-width: 119px;
-    margin: 20px 0px 17px 0px;
     max-height: 28px;
 }
 
-.reset-button-style:hover {
-        background-color: $bg-color;
-        color: $grey;
-        
-    }
+.relative {
+    position: relative;
+}
+
+
 
 
 /////////// Body //////////////////////////////
@@ -322,6 +338,10 @@ select {
 
 
 /////////// Footer //////////////////////////////
+.logo-footer a:hover {
+    text-decoration: none;
+}
+
 .footer {
     background-color: $grey;
     width: 100%;
@@ -421,6 +441,12 @@ select {
     }
 }
 
+@media (min-width: 768px) {
+    .offset-md-1 {
+        margin-left: 4.333333%;
+    }
+
+}
 
 @media screen and (max-width: $md-devices) {
     .bottomnav a {
@@ -455,49 +481,43 @@ select {
 
 @media (max-width: $sm-devices) {
 
-    .reset-button-style {
-        margin: 0px 0px 0px 0px;
+    .navbar {
+        min-height: 147px;
+    }
 
+    .reset-button-style {
+        margin: 10px 0px 0px 15px;
+    }
+
+    .relative button {
+        position: absolute;
+        right: 28px;
+        top: 59px;
+    }
+
+    #month {
+        padding: 10px 0px 0px 15px;
+        text-align: center;
     }
 
     .logo-footer {
         width: 50%;
     }
-    
+
     .logo-header {
-        padding: 0px 0px 0px 5px;
+        padding: 0px 0px 0px 15px;
+        text-align: center;
     }
-    
+
     .bottomnav {
         width: 28%;
     }
-    
-    #month {
-        padding: 0px 0px 0px 16px;
-    }
+
+
     .pie-chart-sizing {
         min-width: 0%;
         width: 100%;
-
     }
+
 
 }
-
-@media (max-width: 480px) {
-    .logo-header {
-        margin: 0% auto;
-        text-align: center;
-    }
-
-    #month {
-        margin: 0% auto;
-        text-align: center;
-    }
-
-    .reset-button {
-        
-        text-align: center;
-    }
-}
-
-@media (max-width: $xs-devices) {}
