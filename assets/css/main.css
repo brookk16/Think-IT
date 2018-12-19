@@ -39,29 +39,45 @@ text {
 .section {
   margin: 20px 15px 0px 15px; }
 
-.popup-overlay {
-  display: none;
-  position: relative;
+.ui-tooltip,
+.arrow:after {
   background: #e23030;
-  border: 1px solid #a0a0a0;
-  top: -46px;
-  right: -220px;
-  left: 225px;
-  bottom: 44px;
-  z-index: 1; }
+  border: 1px solid #a0a0a0; }
 
-.popup-overlay.active {
-  visibility: visible;
-  text-align: center; }
+.ui-tooltip {
+  padding: 10px 20px;
+  color: #e8e8e8;
+  border-radius: 20px;
+  font: bold 14px "Archivo+Black", Sans-Serif;
+  box-shadow: 0 0 7px black; }
 
-.popup-content {
-  visibility: hidden; }
+.arrow {
+  width: 70px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+  bottom: -16px;
+  right: 80%; }
 
-.popup-content.active {
-  visibility: visible; }
+.arrow.top {
+  top: -10px;
+  bottom: auto; }
 
-.close {
-  margin: -4px 8px 0px 0px; }
+.arrow:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 6px 5px 9px -9px black;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.arrow.top:after {
+  bottom: auto;
+  top: auto; }
 
 .navbar {
   -webkit-box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
