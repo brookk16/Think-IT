@@ -17,15 +17,12 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Archivo+Black" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
 
-
-
-
-
-
 </head>
 
 
 <body>
+    
+    
 
 
 
@@ -45,20 +42,21 @@
             <div class="container-fluid">
                 <div class="row">
 
-                    <div class="box-selector col-xs-12 col-sm-7 col-md-5 col-lg-4 col-xl-3">
-                        <h5 class="store-selector masterToolTip" title="Choose a location to filter the charts to display that store's data only. The number of employees in that store is also shown.">
-                            Store Selector <i class="fas fa-question-circle"></i>
+                    <div class="box-selector col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-4">
+                        <h5 class="store-selector">Store Selector <i class="fas fa-question-circle"></i>
+                            
+                        </h5>
                         <div id="store-location-selector"></div>
                     </div>
 
                     <div class="box col-sm-7 col-md-4 col-lg-3 col-xl-3">
-                        <h5 class="masterToolTip" title="Shown is the average amount leads being conveted into appointments, by each employee (if a store is selected, the data is only relevant for that store). The average was calculated by taking the total amount of appointments generated, subtracting the total amount of leads generated, and then converting to a percentage by multiplying by 100.">
+                        <h5>
                             Leads to appointments per month <i class="fas fa-question-circle"></i></h5>
                         <div class="totals spacing" id="leads-to-appts-by-month"></div>
                     </div>
 
                     <div class="box col-sm-5 col-md-3 col-lg-3 col-xl-2">
-                        <h5 class="masterToolTip" title="Shown is the average amount of revenue lost each month, by each employee (if a store is selected, the data is only relevant for that store).'Lost' is defined as any revenue that has to be returned to customers for any reason. The average was calculated by taking the total amount lost, subtracting the total amount gained, and then converting to a percentage by mulitplying by 100.">
+                        <h5>
                             Percent lost per month <i class="fas fa-question-circle"></i></h5>
                         <div class="totals spacing" id="percent-lost-by-month"></div>
                     </div>
@@ -91,24 +89,24 @@
                 <div class="row">
 
                     <div class="container-box-earnings large-chart-resizing col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <h5 class="masterToolTip" title="Shown is the average amount each employee earns, for each store. The average was calculated using the same method as described in 'Percent lost per month'.  ">Average amount gained per store <i class="fas fa-question-circle"></i></h5>
+                        <h5>Average amount gained per store <i class="fas fa-question-circle"></i></h5>
                         <div id="amount-gained-lost-per-store"></div>
                     </div>
 
                     <div class="container-box-earnings pie-chart-sizing col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
-                        <h5 class="masterToolTip" title="MESSAGE">Stores losing less than 25% <i class="fas fa-question-circle"></i></h5>
+                        <h5>Stores losing less than 25% <i class="fas fa-question-circle"></i>
                         <div class="legend"><i class="fas fa-check"></i>Pass<i class="fas fa-times"></i>Fail</div>
                         <div id="percent-lost"></div>
 
                     </div>
 
                     <div class="container-box-leads large-chart-resizing order-3 col-xs-12 col-sm-12 col-md-2 col-lg-9 col-xl-6">
-                        <h5 class="masterToolTip" title="MESSAGE">Total leads and appts per store <i class="fas fa-question-circle"></i></h5>
+                        <h5>Total leads and appts per store <i class="fas fa-question-circle"></i></h5>
                         <div id="leads-and-appts-per-store"></div>
                     </div>
 
                     <div class="container-box-leads pie-chart-sizing col-xs-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
-                        <h5 class="masterToolTip" title="MESSAGE">Stores converting at least 40% of leads to appointments <i class="fas fa-question-circle"></i></h5>
+                        <h5>Stores converting at least 40% of leads to appointments <i class="fas fa-question-circle"></i></h5>
                         <div class="legend"><i class="fas fa-check"></i>Pass<i class="fas fa-times"></i>Fail</div>
                         <div id="leads-to-appts"></div>
                     </div>
@@ -138,6 +136,7 @@
 </body>
 
 <!-- JS --------->
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/js/hamburger.js"></script>
 <script type="text/javascript" src="assets/js/d3.min.js"></script>
@@ -145,30 +144,9 @@
 <script type="text/javascript" src="assets/js/dc.min.js"></script>
 <script type="text/javascript" src="assets/js/queue.min.js"></script>
 <script type="text/javascript" src="assets/js/graph.js"></script>
-<script type="text/javascript">
-    //JS code for Tooltip taken from http://www.alessioatzeni.com/blog/simple-tooltip-with-jquery-only-text/
-    $(document).ready(function() {
-        // Tooltip only Text
-        $('.masterTooltip').hover(function() {
-            // Hover over code
-            var title = $(this).attr('title');
-            $(this).data('tipText', title).removeAttr('title');
-            $('<p class="tooltip"></p>')
-                .text(title)
-                .appendTo('body')
-                .fadeIn('slow');
-        }, function() {
-            // Hover out code
-            $(this).attr('title', $(this).data('tipText'));
-            $('.tooltip').remove();
-        }).mousemove(function(e) {
-            var mousex = e.pageX + 20; //Get X coordinates
-            var mousey = e.pageY + 10; //Get Y coordinates
-            $('.tooltip')
-                .css({ top: mousey, left: mousex })
-        });
-    });
-</script>
+<script type="text/javascript" src="assets/js/month.js"></script>
+
+
 
 
 </html>

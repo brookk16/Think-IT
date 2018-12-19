@@ -38,16 +38,12 @@ body {
     background-color: $bg-color;
     font-family: "Archivo+Black", sans-serif;
     color: white;
-    
+
 }
 
 main {
     min-height: calc(176vh - 66px);
     margin: 0px 0px 30px 60px;
-}
-
-.fa-question-circle:before {
-    color: white;
 }
 
 text {
@@ -71,19 +67,10 @@ text {
     background-color: $bg-color;
 }
 
-.tooltip {
-	display:none;
-	position:absolute;
-	border:1px solid #333;
-	background-color:#161616;
-	border-radius:5px;
-	padding:10px;
-	color:#fff;
-	font-size:12px Arial;
+
+.section {
+    margin: 20px 15px 0px 15px;
 }
-
-
-
 
 
 /////////// Header //////////////////////////////
@@ -127,32 +114,23 @@ text {
 }
 
 .reset-button {
-    color: $bg-color;
-    transition: 0.50s;
-    -webkit-transition: 0.50s;
-    -moz-transition: 0.50s;
-    -ms-transition: 0.50s;
-    -o-transition: 0.50s;
+    color: white;
     .fas:before {
         margin: 0px 0px 0px 5px;
-        font: {
-            size: 17px;
-            color: $bg-color;
-        }
-        ;
+        font-size: 17px;
     }
+
 }
 
-.reset-button:hover,
-.reset-button-style:hover {
+.reset-button:hover {
     color: black;
     text-decoration: none;
-    transition: 0.0s;
-    -webkit-transition: 0.50s;
-    -moz-transition: 0.50s;
-    -ms-transition: 0.50s;
-    -o-transition: 0.50s;
-    .fas {
+}
+
+.reset-button-style:hover {
+    color: black;
+    background-color: $bg-color;
+    .reset {
         color: black;
         transition: 0.50s;
         -webkit-transition: 0.50s;
@@ -177,33 +155,33 @@ text {
     max-width: 119px;
     min-width: 119px;
     max-height: 28px;
+    transition: 0.50s;
+    -webkit-transition: 0.50s;
+    -moz-transition: 0.50s;
+    -ms-transition: 0.50s;
+    -o-transition: 0.50s;
 }
 
 .relative {
     position: relative;
 }
 
-
-
-
 /////////// Body //////////////////////////////
 .totals {
     display: inline-block;
     padding: 38px 0px 0px 0px;
-
-
-    .number-display {
-        padding: 0px 0px 0px 0px;
-
-        font: {
-            size: 25px;
-            color: #222;
-
-        }
-        ;
-    }
-
 }
+
+
+
+.number-display {
+    padding: 0px 0px 0px 0px;
+    font-size: 25px;
+}
+
+
+
+
 
 .spacing {
     padding: 38px 0px 0px 30px;
@@ -252,7 +230,7 @@ select {
 
 .box-selector {
     @extend %container-box;
-    max-height: 60%;
+    max-height: 90px;
     float: left;
 }
 
@@ -316,25 +294,6 @@ select {
     overflow: scroll;
     margin: 15px 15px 0px 15px;
 }
-
-
-
-
-.section {
-    margin: 20px 15px 0px 15px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /////////// Footer //////////////////////////////
@@ -405,18 +364,12 @@ select {
     display: none;
     font-size: 33px;
     margin: 2px 0px 0px -13px;
-}
-
-
-
-
-
-
-
+} 
 
 
 /////////// Media queries ///////////////////
-@media(max-width: 1334px) {
+
+@media(max-width: 1000px) {
     main {
         margin: 0px 0px 25px 0px;
     }

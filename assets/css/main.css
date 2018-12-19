@@ -20,9 +20,6 @@ main {
   min-height: calc(176vh - 66px);
   margin: 0px 0px 30px 60px; }
 
-.fa-question-circle:before {
-  color: white; }
-
 text {
   fill: white; }
 
@@ -39,15 +36,8 @@ text {
   color: black;
   background-color: #e8e8e8; }
 
-.tooltip {
-  display: none;
-  position: absolute;
-  border: 1px solid #333;
-  background-color: #161616;
-  border-radius: 5px;
-  padding: 10px;
-  color: #fff;
-  font-size: 12px Arial; }
+.section {
+  margin: 20px 15px 0px 15px; }
 
 .navbar {
   -webkit-box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
@@ -74,28 +64,19 @@ text {
   display: inline-block; }
 
 .reset-button {
-  color: #e8e8e8;
-  transition: 0.50s;
-  -webkit-transition: 0.50s;
-  -moz-transition: 0.50s;
-  -ms-transition: 0.50s;
-  -o-transition: 0.50s; }
+  color: white; }
   .reset-button .fas:before {
     margin: 0px 0px 0px 5px;
-    font-size: 17px;
-    font-color: #e8e8e8; }
+    font-size: 17px; }
 
-.reset-button:hover,
+.reset-button:hover {
+  color: black;
+  text-decoration: none; }
+
 .reset-button-style:hover {
   color: black;
-  text-decoration: none;
-  transition: 0.0s;
-  -webkit-transition: 0.50s;
-  -moz-transition: 0.50s;
-  -ms-transition: 0.50s;
-  -o-transition: 0.50s; }
-  .reset-button:hover .fas,
-  .reset-button-style:hover .fas {
+  background-color: #e8e8e8; }
+  .reset-button-style:hover .reset {
     color: black;
     transition: 0.50s;
     -webkit-transition: 0.50s;
@@ -115,7 +96,12 @@ text {
   margin: 0px 0px 0px 15px;
   max-width: 119px;
   min-width: 119px;
-  max-height: 28px; }
+  max-height: 28px;
+  transition: 0.50s;
+  -webkit-transition: 0.50s;
+  -moz-transition: 0.50s;
+  -ms-transition: 0.50s;
+  -o-transition: 0.50s; }
 
 .relative {
   position: relative; }
@@ -123,10 +109,10 @@ text {
 .totals {
   display: inline-block;
   padding: 38px 0px 0px 0px; }
-  .totals .number-display {
-    padding: 0px 0px 0px 0px;
-    font-size: 25px;
-    font-color: #222; }
+
+.number-display {
+  padding: 0px 0px 0px 0px;
+  font-size: 25px; }
 
 .spacing {
   padding: 38px 0px 0px 30px; }
@@ -158,7 +144,7 @@ select {
     text-align: left; }
 
 .box-selector {
-  max-height: 60%;
+  max-height: 90px;
   float: left; }
 
 #amount-gained-lost-per-store {
@@ -204,9 +190,6 @@ select {
   padding: 0px;
   overflow: scroll;
   margin: 15px 15px 0px 15px; }
-
-.section {
-  margin: 20px 15px 0px 15px; }
 
 .logo-footer a:hover {
   text-decoration: none; }
@@ -256,7 +239,7 @@ select {
   font-size: 33px;
   margin: 2px 0px 0px -13px; }
 
-@media (max-width: 1334px) {
+@media (max-width: 1000px) {
   main {
     margin: 0px 0px 25px 0px; } }
 @media (max-width: 872px) {
