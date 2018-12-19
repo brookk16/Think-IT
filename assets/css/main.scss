@@ -10,6 +10,7 @@ $grey: #a0a0a0;
 $bg-color: rgb(232, 232, 232);
 $green: #7CAF1F;
 $red: #C83524;
+$pop_up_red: #e23030;
 
 /////////// Mixins //////////////////////////////
 %logo {
@@ -71,6 +72,38 @@ text {
 .section {
     margin: 20px 15px 0px 15px;
 }
+
+
+.popup-overlay {
+    display: none;
+    position: relative;
+    background: $pop_up_red;
+    border: 1px solid $grey;
+    top: -46px;
+    right: -220px;
+    left: 225px;
+    bottom: 44px;
+    z-index: 1;
+
+}
+
+.popup-overlay.active {
+    visibility: visible;
+    text-align: center;
+}
+
+.popup-content {
+    visibility: hidden;
+}
+
+.popup-content.active {
+    visibility: visible;
+}
+
+.close {
+    margin: -4px 8px 0px 0px;
+}
+
 
 
 /////////// Header //////////////////////////////
@@ -172,16 +205,10 @@ text {
     padding: 38px 0px 0px 0px;
 }
 
-
-
 .number-display {
     padding: 0px 0px 0px 0px;
     font-size: 25px;
 }
-
-
-
-
 
 .spacing {
     padding: 38px 0px 0px 30px;
@@ -267,7 +294,6 @@ select {
 
 .large-chart-resizing {
     min-width: 840px;
-    overflow: scroll;
     margin: 15px 0px;
 
 
@@ -291,7 +317,6 @@ select {
     min-width: 416px;
     display: inline-block;
     padding: 0px;
-    overflow: scroll;
     margin: 15px 15px 0px 15px;
 }
 
@@ -364,11 +389,10 @@ select {
     display: none;
     font-size: 33px;
     margin: 2px 0px 0px -13px;
-} 
+}
 
 
 /////////// Media queries ///////////////////
-
 @media(max-width: 1000px) {
     main {
         margin: 0px 0px 25px 0px;
@@ -391,6 +415,11 @@ select {
     .large-chart-resizing {
         min-width: 100%;
         max-width: 100%;
+        overflow: scroll;
+    }
+    
+    .pie-chart-sizing {
+        overflow: scroll;
     }
 }
 

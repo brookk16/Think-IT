@@ -39,6 +39,30 @@ text {
 .section {
   margin: 20px 15px 0px 15px; }
 
+.popup-overlay {
+  display: none;
+  position: relative;
+  background: #e23030;
+  border: 1px solid #a0a0a0;
+  top: -46px;
+  right: -220px;
+  left: 225px;
+  bottom: 44px;
+  z-index: 1; }
+
+.popup-overlay.active {
+  visibility: visible;
+  text-align: center; }
+
+.popup-content {
+  visibility: hidden; }
+
+.popup-content.active {
+  visibility: visible; }
+
+.close {
+  margin: -4px 8px 0px 0px; }
+
 .navbar {
   -webkit-box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
   box-shadow: -2px 4px 6px 0px rgba(0, 0, 0, 0.26);
@@ -172,7 +196,6 @@ select {
 
 .large-chart-resizing {
   min-width: 840px;
-  overflow: scroll;
   margin: 15px 0px; }
 
 #leads-to-appts {
@@ -188,7 +211,6 @@ select {
   min-width: 416px;
   display: inline-block;
   padding: 0px;
-  overflow: scroll;
   margin: 15px 15px 0px 15px; }
 
 .logo-footer a:hover {
@@ -248,7 +270,11 @@ select {
 @media (max-width: 850px) {
   .large-chart-resizing {
     min-width: 100%;
-    max-width: 100%; } }
+    max-width: 100%;
+    overflow: scroll; }
+
+  .pie-chart-sizing {
+    overflow: scroll; } }
 @media (min-width: 768px) {
   .offset-md-1 {
     margin-left: 4.333333%; } }
