@@ -2,12 +2,12 @@
 
 $(function() {
     $(document).mouseover().tooltip({
-    position: {
-            my: "center bottom-20",
+        position: {
+            my: "center top-20",
             at: "center top",
             using: function(position, feedback) {
                 $(this).css(position);
-                $("<i>")  //////this was originally <div>!!!!!!
+                $("<div>")  
                     .addClass("arrow")
                     .addClass(feedback.vertical)
                     .addClass(feedback.horizontal)

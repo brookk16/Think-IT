@@ -202,7 +202,7 @@ function show_amount_earned_per_store(ndx) {
         .renderHorizontalGridLines(true)
         .renderTitle(true)
         .title(function(p) {
-            return ["Total earnt per person in" + " " + p.key + " " + " is" + " " + "$" + p.value.average.toFixed(2)]
+            return ["Average earned per person in" + " " + p.key + " " + " is" + " " + "$" + p.value.average.toFixed(2)]
         })
         .xAxisLabel("State")
         .yAxisLabel("Average amount earned per person")

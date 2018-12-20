@@ -18,6 +18,7 @@ $pop_up_red: #e23030;
     font: {
         family: "Pacifico", sans-serif;
         size: 25px;
+        display: auto;
     }
     margin: 0px;
 
@@ -38,6 +39,7 @@ body {
     line-height: 26px;
     background-color: $bg-color;
     font-family: "Archivo+Black", sans-serif;
+    font-display: auto;
     color: white;
 
 }
@@ -73,6 +75,7 @@ text {
     margin: 20px 15px 0px 15px;
 }
 
+
 .ui-tooltip,
 .arrow:after {
     background: $pop_up_red;
@@ -85,17 +88,18 @@ text {
     color: $bg-color;
     border-radius: 20px;
     font: bold 14px "Archivo+Black", Sans-Serif;
-    box-shadow: 0 0 7px black;
+    font-display: auto;
+    box-shadow: 0 0 7px $grey;
     
 }
 
 .arrow {
     width: 70px;
-    height: 16px;
+    height: 10px;
     overflow: hidden;
     position: absolute;
-    bottom: -16px;
-    right: 80%;
+    bottom: -10px;
+    right: 37%;
     
 }
 
@@ -158,6 +162,7 @@ text {
         family: 'Archivo+Black', sans-serif;
         size: 27px;
         weight: 400;
+        display: auto;
     }
     ;
     display: inline-block;
@@ -169,6 +174,7 @@ text {
     .fas:before {
         margin: 0px 0px 0px 5px;
         font-size: 17px;
+        display: auto;
     }
 
 }
@@ -362,6 +368,7 @@ select {
             family: 'Teko', sans-serif;
             size: 22px;
             weight: 400;
+            display: auto;
         }
         ;
         padding: 0px 20px 0px 20px;

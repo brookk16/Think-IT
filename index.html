@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/dc.min.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Archivo+Black" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css"/>
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
 
 </head>
@@ -30,8 +31,8 @@
         <div class="row align-items-center relative">
             <div class="logo-header col-xs-10 col-sm-4 col-md-4 col-lg-4 col-xl-4 "><a href="index.html" class="logo-link" role="link">Think-IT<i class="far fa-lightbulb"></i></a></div>
             <div class="col-xs-10 col-sm-4 col-md-4 offset-md-1 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1" id="month"></div>
-            <button class="reset-button-style col-xs-9 col-sm-4 col-md-4 offset-md-1 col-lg-2 col-xl-2" role="reset button" value="reset" type="reset">
-                <a href="javascript:dc.filterAll(); dc.renderAll();" class="reset-button">Reset All<i class="fas reset fa-redo"></i></a>
+            <button  onclick="javascript:dc.filterAll(); dc.renderAll()" class="reset-button-style col-xs-9 col-sm-4 col-md-4 offset-md-1 col-lg-2 col-xl-2" role="reset button" value="reset" type="reset">
+               Reset All<i class="fas reset fa-redo"></i>
             </button>
         </div>
     </nav>
@@ -54,15 +55,15 @@
 
 
                     <div class="box col-sm-7 col-md-4 col-lg-3 col-xl-3">
-                        <h5>Leads to appointments per month
-                            <i class="fas fa-question-circle" title="HELLOHELO ELOE EOENBVB JJDBCVJSBDCJHBAD KHSD"></i>
+                        <h5>Leads to appointments per month 
+                            <i class="fas fa-question-circle" title="Here is the average amount of leads that are converted to appointments, for the selected store, for the current month. If no store is selected, the average for all employees is shown. This was calculated using the following formula: (total number of appointments &divide total number of leads) &times 100"></i>
                         </h5>
                         <div class="totals spacing" id="leads-to-appts-by-month"></div>
                     </div>
 
                     <div class="box col-sm-5 col-md-3 col-lg-3 col-xl-2">
                         <h5>Percent lost per month
-                            <i class="fas fa-question-circle" title="HELLOHELO ELOE EOENBVB JJDBCVJSBDCJHBAD KHSD"></i>
+                            <i class="fas fa-question-circle" title="Here is the average amount of profit that is lost, for the selected store, for the current month.'Lost profit' is considered to be any customer revenue that is lost. For example: customer returns, salesperson error, e.t.c. This was calculated using the following formula: (total amount lost &divide total amount earned) &times 100"></i>
                         </h5>
                         <div class="totals spacing" id="percent-lost-by-month"></div>
                     </div>
@@ -95,34 +96,38 @@
                 <div class="row">
 
                     <div class="container-box-earnings large-chart-resizing col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <h5>Average amount gained per store
-                            <i class="fas fa-question-circle" title="HELLOHELO ELOE EOENBVB JJDBCVJSBDCJHBAD KHSD"></i>
+                        <h5>Average amount gained per store 
+                            <i class="fas fa-question-circle" title="This chart compares the average amount earned within each store, for the current month. This was calculated by subtracting each employee's total amount earned by their total amount lost, then dividing by the amount of employees in the store"></i>
                         </h5>
                         <div id="amount-gained-lost-per-store"></div>
+                        
                     </div>
 
                     <div class="container-box-earnings pie-chart-sizing col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
-                        <h5>Stores losing less than 25%
-                            <i class="fas fa-question-circle" title="HELLOHELO ELOE EOENBVB JJDBCVJSBDCJHBAD KHSD">
+                        <h5>Stores losing less than 25% 
+                            <i class="fas fa-question-circle" title="This chart compares stores and displays their average amount lost. If the stores segment is green they are losing less than the target maximum of 25%. If it's red, then they are losing more than 25% fo their earnings. The percent lost was calculated using the formula: (total amount lost &divide total amount earned) &times 100"></i>
                         </h5>
-                        <div class="legend"><i class="fas fa-check"></i>Pass<i class="fas fa-times"></i>Fail</div>
+                        <div class="legend"><i class="fas fa-check"></i>Pass<i class="fas fa-times"></i>Fail</div> 
                         <div id="percent-lost"></div>
+                        
 
                     </div>
 
                     <div class="container-box-leads large-chart-resizing order-3 col-xs-12 col-sm-12 col-md-2 col-lg-9 col-xl-6">
-                        <h5>Total leads and appts per store
-                            <i class="fas fa-question-circle" title="HELLOHELO ELOE EOENBVB JJDBCVJSBDCJHBAD KHSD">
+                        <h5>Total leads and appts per store 
+                            <i class="fas fa-question-circle" title="This chart compares the total amount of leads and appointments gathered in each store."></i>
                         </h5>
                         <div id="leads-and-appts-per-store"></div>
+                       
                     </div>
 
                     <div class="container-box-leads pie-chart-sizing col-xs-12 col-sm-12 col-md-5 col-lg-2 col-xl-2">
-                        <h5>Stores converting at least 40% of leads to appointments
-                            <i class="fas fa-question-circle" title="HELLOHELO ELOE EOENBVB JJDBCVJSBDCJHBAD KHSD"></i>
+                        <h5>Stores converting at least 40% of leads to appointments 
+                            <i class="fas fa-question-circle" title="This chart compares each store's conversion average of leads to appointments. A store's segement will be green if they are converting at least 40% of their leads to appointments. If the segment is red, they are converting less than 40% of their leads to appointments."></i>
                         </h5>
-                        <div class="legend"><i class="fas fa-check"></i>Pass<i class="fas fa-times"></i>Fail</div>
+                        <div class="legend"><i class="fas fa-check"></i>Pass<i class="fas fa-times"></i>Fail</div> 
                         <div id="leads-to-appts"></div>
+                        
                     </div>
 
                 </div>
@@ -152,7 +157,6 @@
 <!-- JS --------->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/js/hamburger.js"></script>
 <script type="text/javascript" src="assets/js/d3.min.js"></script>
 <script type="text/javascript" src="assets/js/crossfilter.min.js"></script>
 <script type="text/javascript" src="assets/js/dc.min.js"></script>
@@ -160,6 +164,7 @@
 <script type="text/javascript" src="assets/js/graph.js"></script>
 <script type="text/javascript" src="assets/js/month.js"></script>
 <script type="text/javascript" src="assets/js/hover.js"></script>
+<script type="text/javascript" src="assets/js/hamburger.js"></script>
 
 
 
