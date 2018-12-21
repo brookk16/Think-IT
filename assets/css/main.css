@@ -41,16 +41,15 @@ text {
 
 .ui-tooltip,
 .arrow:after {
-  background: #a0a0a0;
+  background: #e23030;
   border: 2px solid #e8e8e8;
   opacity: 1; }
 
 .ui-tooltip {
   padding: 10px 20px;
-  color: black;
+  color: white;
   border-radius: 20px;
   font: bold 14px "Archivo+Black", Sans-Serif;
-  text-transform: uppercase;
   box-shadow: 0 0 7px #e8e8e8; }
 
 .arrow {

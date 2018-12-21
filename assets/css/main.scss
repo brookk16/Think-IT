@@ -80,18 +80,16 @@ text {
 
 .ui-tooltip,
 .arrow:after {
-    background: $grey;
+    background: $pop_up_red;
     border: 2px solid $bg-color;
     opacity: 1;
 }
 
-
 .ui-tooltip {
     padding: 10px 20px;
-    color: black;
+    color: white;
     border-radius: 20px;
     font: bold 14px "Archivo+Black", Sans-Serif;
-    text-transform: uppercase;
     box-shadow: 0 0 7px $bg-color;
 }
 
@@ -131,6 +129,7 @@ text {
     bottom: -20px;
     top: auto;
 }
+
 
 /////////// Header //////////////////////////////
 .navbar {
