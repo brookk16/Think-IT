@@ -18,7 +18,6 @@ $pop_up_red: #e23030;
     font: {
         family: "Pacifico", sans-serif;
         size: 25px;
-        display: auto;
     }
     margin: 0px;
 
@@ -39,7 +38,6 @@ body {
     line-height: 26px;
     background-color: $bg-color;
     font-family: "Archivo+Black", sans-serif;
-    font-display: auto;
     color: white;
 
 }
@@ -48,6 +46,10 @@ main {
     min-height: calc(176vh - 66px);
     margin: 0px 0px 30px 60px;
 }
+
+
+
+
 
 text {
     fill: white;
@@ -78,37 +80,39 @@ text {
 
 .ui-tooltip,
 .arrow:after {
-    background: $pop_up_red;
-    border: 1px solid $grey;
-    
+    background: $grey;
+    border: 2px solid $bg-color;
+    opacity: 1;
 }
+
 
 .ui-tooltip {
     padding: 10px 20px;
-    color: $bg-color;
+    color: black;
     border-radius: 20px;
     font: bold 14px "Archivo+Black", Sans-Serif;
-    font-display: auto;
-    box-shadow: 0 0 7px $grey;
-    
+    text-transform: uppercase;
+    box-shadow: 0 0 7px $bg-color;
 }
 
 .arrow {
     width: 70px;
-    height: 10px;
+    height: 16px;
     overflow: hidden;
     position: absolute;
-    bottom: -10px;
-    right: 37%;
-    
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
 }
 
 .arrow.top {
-    top: -10px;
+    top: -16px;
     bottom: auto;
 }
 
-
+.arrow.left {
+    left: 20%;
+}
 
 .arrow:after {
     content: "";
@@ -117,14 +121,14 @@ text {
     top: -20px;
     width: 25px;
     height: 25px;
-    box-shadow: 6px 5px 9px -9px black;
+    box-shadow: 6px 5px 9px -9px $bg-color;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .arrow.top:after {
-    bottom: auto;
+    bottom: -20px;
     top: auto;
 }
 
@@ -162,26 +166,10 @@ text {
         family: 'Archivo+Black', sans-serif;
         size: 27px;
         weight: 400;
-        display: auto;
     }
     ;
     display: inline-block;
 
-}
-
-.reset-button {
-    color: white;
-    .fas:before {
-        margin: 0px 0px 0px 5px;
-        font-size: 17px;
-        display: auto;
-    }
-
-}
-
-.reset-button:hover {
-    color: black;
-    text-decoration: none;
 }
 
 .reset-button-style:hover {
@@ -206,6 +194,7 @@ text {
 
 .reset-button-style {
     border: 1px solid #82888e;
+    color: white;
     border-radius: 27%;
     background-color: #52b913;
     margin: 0px 0px 0px 15px;
@@ -217,6 +206,9 @@ text {
     -moz-transition: 0.50s;
     -ms-transition: 0.50s;
     -o-transition: 0.50s;
+    i {
+        margin: 0px 0px 0px 5px;
+    }
 }
 
 .relative {
@@ -263,6 +255,7 @@ select {
 
 .store-selector {
     margin: 15px 0px 11px 12px;
+
 }
 
 
@@ -283,13 +276,11 @@ select {
     @extend %container-box;
     max-height: 90px;
     float: left;
+
 }
 
 #amount-gained-lost-per-store {
     margin: 3px 0px 0px 9px;
-
-
-
 }
 
 .container-box-earnings {
@@ -365,10 +356,9 @@ select {
     a {
         color: black;
         font: {
-            family: 'Teko', sans-serif;
+            family: 'Archivo+Black', sans-serif;
             size: 22px;
             weight: 400;
-            display: auto;
         }
         ;
         padding: 0px 20px 0px 20px;

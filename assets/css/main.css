@@ -2,7 +2,6 @@
   color: black;
   font-family: "Pacifico", sans-serif;
   font-size: 25px;
-  font-display: auto;
   margin: 0px; }
 
 .box, .box-selector {
@@ -15,7 +14,6 @@ body {
   line-height: 26px;
   background-color: #e8e8e8;
   font-family: "Archivo+Black", sans-serif;
-  font-display: auto;
   color: white; }
 
 main {
@@ -43,28 +41,33 @@ text {
 
 .ui-tooltip,
 .arrow:after {
-  background: #e23030;
-  border: 1px solid #a0a0a0; }
+  background: #a0a0a0;
+  border: 2px solid #e8e8e8;
+  opacity: 1; }
 
 .ui-tooltip {
   padding: 10px 20px;
-  color: #e8e8e8;
+  color: black;
   border-radius: 20px;
   font: bold 14px "Archivo+Black", Sans-Serif;
-  font-display: auto;
-  box-shadow: 0 0 7px #a0a0a0; }
+  text-transform: uppercase;
+  box-shadow: 0 0 7px #e8e8e8; }
 
 .arrow {
   width: 70px;
-  height: 10px;
+  height: 16px;
   overflow: hidden;
   position: absolute;
-  bottom: -10px;
-  right: 37%; }
+  left: 50%;
+  margin-left: -35px;
+  bottom: -16px; }
 
 .arrow.top {
-  top: -10px;
+  top: -16px;
   bottom: auto; }
+
+.arrow.left {
+  left: 20%; }
 
 .arrow:after {
   content: "";
@@ -73,13 +76,13 @@ text {
   top: -20px;
   width: 25px;
   height: 25px;
-  box-shadow: 6px 5px 9px -9px black;
+  box-shadow: 6px 5px 9px -9px #e8e8e8;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
 
 .arrow.top:after {
-  bottom: auto;
+  bottom: -20px;
   top: auto; }
 
 .navbar {
@@ -104,19 +107,7 @@ text {
   font-family: 'Archivo+Black', sans-serif;
   font-size: 27px;
   font-weight: 400;
-  font-display: auto;
   display: inline-block; }
-
-.reset-button {
-  color: white; }
-  .reset-button .fas:before {
-    margin: 0px 0px 0px 5px;
-    font-size: 17px;
-    display: auto; }
-
-.reset-button:hover {
-  color: black;
-  text-decoration: none; }
 
 .reset-button-style:hover {
   color: black;
@@ -136,6 +127,7 @@ text {
 
 .reset-button-style {
   border: 1px solid #82888e;
+  color: white;
   border-radius: 27%;
   background-color: #52b913;
   margin: 0px 0px 0px 15px;
@@ -147,6 +139,8 @@ text {
   -moz-transition: 0.50s;
   -ms-transition: 0.50s;
   -o-transition: 0.50s; }
+  .reset-button-style i {
+    margin: 0px 0px 0px 5px; }
 
 .relative {
   position: relative; }
@@ -249,10 +243,9 @@ select {
   text-decoration: none; }
   .footer-links a {
     color: black;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Archivo+Black', sans-serif;
     font-size: 22px;
     font-weight: 400;
-    font-display: auto;
     padding: 0px 20px 0px 20px; }
 
 .logo-footer {
