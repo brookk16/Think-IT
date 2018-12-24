@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#a0a0a0">
     <meta name="keywords" content="Think-IT, data visualisation, revenue statistics, leads, appointments, gender statistics">
-    <meta name="description" content="Think-IT monthly data visualisation dashboard, concerning: sales revenue, losses, lead, appointment and gender statistics">
+    <meta name="description" content="Think-IT monthly data visualisation dashboard, concerning: sales revenue, losses, lead and appointments">
     <title>Think-IT</title>
 
     <!--- CSS ---------->
@@ -19,15 +19,11 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Archivo+Black" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
 
-    
+
 </head>
 
 
 <body>
-
-
-
-
 
     <nav class="navbar navbar-default container-fluid">
         <div class="row align-items-center relative">
@@ -56,14 +52,14 @@
                         <h5>Average leads to appointments per month
                             <i class="inline fas fa-question-circle" title="Here is the average amount of leads that are converted to appointments, for the selected store, for the current month. If no store is selected, the average for all employees is shown. This was calculated using the following formula: (total number of appointments &divide total number of leads) &times 100"></i>
                         </h5>
-                        <div class="totals spacing" id="leads-to-appts-by-month"></div>
+                        <div class="totals spacing-for-number-displays" id="leads-to-appts-by-month"></div>
                     </div>
 
                     <div class="box col-sm-5 col-md-3 col-lg-3 col-xl-2">
                         <h5>Average percent lost per month
                             <i class="fas fa-question-circle" title="Here is the average amount of profit that is lost, for the selected store, for the current month.'Lost profit' is considered to be any customer revenue that is lost. For example: customer returns, salesperson error, e.t.c. This was calculated using the following formula: (total amount lost &divide total amount earned) &times 100"></i>
                         </h5>
-                        <div class="totals spacing" id="percent-lost-by-month"></div>
+                        <div class="totals spacing-for-number-displays" id="percent-lost-by-month"></div>
                     </div>
 
                     <div class="box col-sm-6 col-md-5 col-lg-4 col-xl-3">
@@ -83,7 +79,7 @@
 
                     <div class="box col-sm-5 col-md-4 col-lg-3 col-xl-3">
                         <h5>Total appointments per month</h5>
-                        <div class="totals spacing" id="appts-by-month"></div>
+                        <div class="totals spacing-for-number-displays" id="appts-by-month"></div>
                     </div>
 
                 </div>
@@ -104,7 +100,7 @@
 
                     <div class="container-box-earnings pie-chart-sizing col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
                         <h5>Stores losing less than 25%
-                            <i class="fas fa-question-circle" title="This chart compares stores and displays their average amount lost. If the stores segment is green they are losing less than the target maximum of 25%. If it's red, then they are losing more than 25% fo their earnings. The percent lost was calculated using the formula: (total amount lost &divide total amount earned) &times 100"></i>
+                            <i class="fas fa-question-circle" title="This chart compares stores and displays their average amount lost. If the stores segment is green they are losing less than the target maximum of 25%. If it's red, then they are losing more than 25% of their earnings. The percent lost was calculated using the formula: (total amount lost &divide total amount earned) &times 100"></i>
                         </h5>
                         <div class="legend"><i class="fas fa-check"></i>Pass<i class="fas fa-times"></i>Fail</div>
                         <div id="percent-lost"></div>

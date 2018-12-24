@@ -11,6 +11,9 @@ $bg-color: rgb(232, 232, 232);
 $green: #7CAF1F;
 $red: #C83524;
 $pop_up_red: #e23030;
+$chart-axis-lables-color: white;
+$tooltip-font-colour: white;
+$bottom-nav-link-colour: black;
 
 /////////// Mixins //////////////////////////////
 %logo {
@@ -47,23 +50,28 @@ main {
     margin: 0px 0px 30px 60px;
 }
 
+.section {
+    margin: 20px 15px 0px 15px;
+}
 
+.spacing-for-number-displays {
+    padding: 38px 0px 0px 30px;
+}
 
-
-
+// chart axis and label colouring 
 text {
-    fill: white;
+    fill: $chart-axis-lables-color;
 
 }
 
 .dc-chart .pie-slice.external {
-    fill: white;
+    fill: $chart-axis-lables-color;
 }
 
 .dc-chart .axis line,
 .dc-chart .axis path {
     fill: none;
-    stroke: white;
+    stroke: $chart-axis-lables-color;
     shape-rendering: crispEdges;
 }
 
@@ -73,11 +81,8 @@ text {
 }
 
 
-.section {
-    margin: 20px 15px 0px 15px;
-}
 
-
+//tooltip styling
 .ui-tooltip,
 .arrow:after {
     background: $pop_up_red;
@@ -87,7 +92,7 @@ text {
 
 .ui-tooltip {
     padding: 10px 20px;
-    color: white;
+    color: $tooltip-font-colour;
     border-radius: 20px;
     font: bold 14px "Archivo+Black", Sans-Serif;
     box-shadow: 0 0 7px $bg-color;
@@ -211,7 +216,7 @@ text {
 }
 
 .relative {
-    position: relative;
+    position: relative; // keeps reset-button to the right on smaller screen sizes
 }
 
 /////////// Body //////////////////////////////
@@ -221,13 +226,10 @@ text {
 }
 
 .number-display {
-    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 13px;
     font-size: 25px;
 }
 
-.spacing {
-    padding: 38px 0px 0px 30px;
-}
 
 .legend {
     i {
@@ -380,14 +382,12 @@ select {
     .nav-link {
         background-color: $grey;
     }
-
-
 }
 
 .bottomnav a {
     float: left;
     display: block;
-    color: black;
+    color: $bottom-nav-link-colour;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -407,15 +407,13 @@ select {
 
 
 /////////// Media queries ///////////////////
+
 @media(max-width: 1000px) {
     main {
         margin: 0px 0px 25px 0px;
     }
 
 }
-
-
-@media (max-width: $lg-devices) and (min-width: $md-devices) {}
 
 @media (max-width: 872px) {
     .bottomnav {
@@ -469,12 +467,6 @@ select {
 
 }
 
-.logo-footer {
-    padding: 18px 0px 0px 0px;
-
-}
-
-
 @media (max-width: $sm-devices) {
 
     .navbar {
@@ -514,6 +506,4 @@ select {
         min-width: 0%;
         width: 100%;
     }
-
-
 }
