@@ -5,7 +5,7 @@ $md-devices: 768px;
 $lg-devices: 992px;
 $xl-devices: 1200px;
 
-/////////// General variables //////////////////////////////
+/////////// Colour variables //////////////////////////////
 $grey: #a0a0a0;
 $bg-color: rgb(232, 232, 232);
 $green: #7CAF1F;
@@ -61,11 +61,13 @@ main {
 // chart axis and label colouring 
 text {
     fill: $chart-axis-lables-color;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 }
 
 .dc-chart .pie-slice.external {
     fill: $chart-axis-lables-color;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .dc-chart .axis line,
@@ -73,6 +75,7 @@ text {
     fill: none;
     stroke: $chart-axis-lables-color;
     shape-rendering: crispEdges;
+    
 }
 
 .dc-select-menu {
@@ -220,13 +223,14 @@ text {
 }
 
 /////////// Body //////////////////////////////
+
 .totals {
     display: inline-block;
     padding: 38px 0px 0px 0px;
 }
 
 .number-display {
-    margin: 0px 0px 0px 13px;
+    margin: 0px 0px 0px 30px;
     font-size: 25px;
 }
 
@@ -237,9 +241,11 @@ text {
     }
     .fa-check:before {
         color: $green;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
     .fa-times:before {
         color: $red;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
 
 }
@@ -338,9 +344,7 @@ select {
 
 
 /////////// Footer //////////////////////////////
-.logo-footer a:hover {
-    text-decoration: none;
-}
+
 
 .footer {
     background-color: $grey;
@@ -370,10 +374,12 @@ select {
 .logo-footer {
     @extend %logo;
     margin: 0 auto;
-    padding: 0px 0px 0px 100px;
+    padding: 18px 0px 0px 100px;
     display: inline-block;
+}
 
-
+.logo-footer a:hover {
+    text-decoration: none;
 }
 
 .bottomnav {
@@ -490,6 +496,7 @@ select {
 
     .logo-footer {
         width: 50%;
+        padding: 18px 0px 0px 0px;
     }
 
     .logo-header {

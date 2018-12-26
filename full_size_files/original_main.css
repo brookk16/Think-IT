@@ -27,12 +27,10 @@ main {
   padding: 38px 0px 0px 30px; }
 
 text {
-  fill: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+  fill: white; }
 
 .dc-chart .pie-slice.external {
-  fill: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+  fill: white; }
 
 .dc-chart .axis line,
 .dc-chart .axis path {
@@ -160,11 +158,9 @@ text {
 .legend i {
   margin: 0px 10px 0px 27px; }
 .legend .fa-check:before {
-  color: #7CAF1F;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+  color: #7CAF1F; }
 .legend .fa-times:before {
-  color: #C83524;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+  color: #C83524; }
 
 #store-location-selector {
   max-width: 40%; }
