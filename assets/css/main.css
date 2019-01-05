@@ -179,7 +179,8 @@ select {
 
 .box {
   float: right;
-  max-height: 138px; }
+  max-height: 138px;
+  box-sizing: content-box; }
   .box h5 {
     margin: 10px 0px 10px 0px;
     float: left;

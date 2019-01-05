@@ -271,6 +271,7 @@ select {
     @extend %container-box;
     float: right;
     max-height: 138px;
+    box-sizing: content-box;
     h5 {
         margin: 10px 0px 10px 0px;
         float: left;
