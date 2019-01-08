@@ -35,7 +35,7 @@ _please note that all number displays will show the company totals/averages when
  
    * *__(total amount of appointments / total amount of leads) x 100__*
 
-2. <a name="earnings_formula">Average amount of earnings lost, in that month. This was calculated using the following forumla:</a>
+2. <a name="earnings_formula">Average amount of earnings lost, in that month. This was calculated using the following formula:</a>
  
    * *__(total amount lost / total amount of earned) x 100__*
 
@@ -56,7 +56,7 @@ _please note that all number displays will show the company totals/averages when
 
 ##### Pie charts: 2
 
-1. Shows which stores are loosing less than 25% of their earnings. If a store is loosing more than 25% of their earnings, their segment with be displayed in <span style="color: #7caf1f">green</span>. If they are loosing more than 25% of their earnings, their segment will be <span style="color: #c83524">red</span>. This was calculated using the same formula explained in [bar charts no.2](#earnings_formula).
+1. Shows which stores are losing less than 25% of their earnings. If a store is loosing less than 25% of their earnings, their segment with be displayed in <span style="color: #7caf1f">green</span>. If they are losing more than 25% of their earnings, their segment will be <span style="color: #c83524">red</span>. This was calculated using the same formula explained in [bar charts no.2](#earnings_formula).
 
 2. Shows which stores are converting more than 40% of their leads to appointments. If a store is converting more than 40% their segment will be <span style="color: #7caf1f">green</span>. If they are converting less than 40%, their segment will be <span style="color: #c83524">red</span>. This was calculated using the same formula explained in [bar charts no.1](#leads_to_appts_formula).
 
@@ -90,14 +90,64 @@ The project has the scope to be able to add additional charts and features, quic
 
 ## Technologies used
 
-* Boostrap 4.1.3
+* [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) 4.1.3
   * Used Bootstrap CSS styling to provide grid system structure, and basic styling elements
 
-* Fontawesome 5.5.0
+* [Fontawesome](https://fontawesome.com) 5.5.0
   * Used to provide images for the: hover tooltip, logo, reset button pass and fail icons
 
-* Google fonts 
- * Used the following fonts: [Pacifico](https://fonts.google.com/specimen/Pacifico) and [Archivo](https://fonts.google.com/specimen/Archivo+Black)
+* [Google fonts](https://fonts.google.com)
+  * Used the following fonts:         [Pacifico](https://fonts.google.com/specimen/Pacifico) for the "Think-IT" logo and [Archivo](https://fonts.google.com/specimen/Archivo+Black) for the body text
+
+* [Jquery](https://jquery.com) 3.3.1
+  * Used for the additional javascript functions (located: assets/js): hover.js, hamburger.js and month.js
+  * Also used with [Jquery UI](https://jqueryui.com) 1.12.1 (CSS: 1.11.4), to handle the custom styling on the tooltips.
+
+* [D3](https://d3js.org) 3.5.17 
+  * Used alongside DC and Crossfilter, to genrate the charts
+
+* [DC](https://dc-js.github.io/dc.js/) 2.1.8 (DC CSS 2.1.8) and [Crossfilter](http://square.github.io/crossfilter/) 1.3.12
+  * Used with D3, to generate the charts. Crossfilter handles the loading, grouping and active filtering of the data.
+
+* [Queue](https://github.com/d3/d3-queue) 1.0.7
+  * Used to force D3, DC and Crossfilter to wait until the data is fully loaded before rendering charts.
+
+* To minify HTML, [html minfier](https://github.com/kangax/html-minifier) was used
+
+* To minify JavaScript, [Uglify JS](https://www.npmjs.com/package/uglify-js) was used
+
+* To generate the data for this project, [Mockacroo](https://www.mockaroo.com) was used. Please view the data.csv file (using excel) to view the raw data. Mockaroo generated 500 employee's for the Think-IT company, randomly assigning them to a state/store, and generating their (min value: max value): leads generated (0:50), appointments generated (0:25), amount earned (0:50,000)and their amount lost (0:11000)
+
+
+## Testing
+
+#### How user requests were met
+
+To comply with user requirements, we ensured that all the most data is readily available as number displays at the top of the screen. This is where the select bar is also located, so that users can quickly choose a store/state and see the relevant data.
+
+Also, in addition to the inbuilt filtering capabilites, provided by Crossfilter, a reset button is provided in the header. Which is easily seen and resets the data with a click.
+
+Large format bar charts are provided to provide an easy way to compare store performances. And pie charts with clear colour distinctions, show whether stores are meeting company targets.
+
+Finally, the site is designed to be easiliy reset each month, by uploading and replacing the current "sales-data.csv" file (located: in the "data" folder). The site will automatically reload, performing the same neccessary calculations, to provide the same information for that month.
+
+#### Code testing
+
+[HTML](https://validator.w3.org) and [CSS](https://jigsaw.w3.org/css-validator/) code validators were used to initally check the code once completed.
+
+
+
+
+
+
+
+
+   
+ 
+
+
+
+
 
 
 
