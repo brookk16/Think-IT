@@ -1,1 +1,6 @@
-window.onload=function(){var e=new Date;document.getElementById("month").innerHTML=["January","February","March","April","May","June","July","August","September","October","November","December"][e.getMonth()]+" "+e.getFullYear()};
+window.onload = function() {
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
+    var date = new Date();
+
+    document.getElementById('month').innerHTML = months[date.getMonth()] + ' ' + date.getFullYear();
+};

@@ -84,9 +84,8 @@ The "Think-IT" logos in the header and footer, both link to the Think-IT homepag
 * **Privacy**: link to the company privacy, security and GDPR regulations.
 * **Contact**: link to the company contact page
 
-Finally, the site is fully responsive and functional accross all screen sizes. With each chart reshaping to fit the current screen size, and a collapsable hamburger menu, for the link items in the footer. However, this dashboard is designed primarily to be used on desktop machines. Due to the sizes of some of the charts, and as the charts use svg elements, they do not reshpape themeselves to fit. Thus scrollbars will appear on smaller screen sizes, to compansate for their larger size. 
 
-The project has the scope to be able to add additional charts and features, quickly and efficiently, should the users feel it is required.
+Finally, this project has the scope to be able to add additional charts and features, quickly and efficiently, should the users feel it is required.
 
 ## Technologies used
 
@@ -133,7 +132,42 @@ Finally, the site is designed to be easiliy reset each month, by uploading and r
 
 #### Code testing
 
-[HTML](https://validator.w3.org) and [CSS](https://jigsaw.w3.org/css-validator/) code validators were used to initally check the code once completed.
+#### Site testing
+
+Testing was conducted as follows:
+1. Once all code was written, [HTML](https://validator.w3.org) and [CSS](https://jigsaw.w3.org/css-validator/) code validators were used.
+
+2. Then, all the sites feautuers were used thorughly by several independent testers. All were simply asked to use the site, and asked about the information they were seeing. To ensure that not only was each feature working correctly, but also to ensure they could be used/found instivitvely (i.e: it was easy to achieve their tasks).
+
+3. Once functionality had been established to be working correctly, and sufficiently. Google's developper tools provided an audit, to assess the quality of the website. Achieving high scores in all relevant areas (in the categories covered by current stage of the course)
+
+4. After any revision of code, the testing began again from stage 1, and continues until the final code is reached.
+
+
+#### Data testing
+
+To confirm that the data being rendered in the charts were correct, independent tests were conducted on the data (in excel). The results may be found in the table below (formulas for how leads to appointments and percent lost can be found in the [Features](#leads_to_appts_formula) section) :
+
+| State        | Employees | Total leads | Total appointments | Total earned | Total lost | actual earned (earned - lost) | Leads to appointments(%) | Percent lost(%) |
+|--------------|-----------|-------------|--------------------|--------------|------------|-------------------------------|--------------------------|-----------------|
+| Arizona      | 28        | 742         | 338                | 616749       | 159166     | 457583                        | 45.55256065              | 25.80725709     |
+| California   | 139       | 3768        | 1853               | 3427056      | 801919     | 2625137                       | 49.17728238              | 23.39964681     |
+| Florida      | 98        | 2486        | 1200               | 2431854      | 577808     | 1854046                       | 48.27031376              | 23.75997901     |
+| Maryland     | 13        | 308         | 182                | 274519       | 76110      | 198409                        | 59.09090909              | 27.72485693     |
+| Mississsippi | 5         | 133         | 73                 | 145069       | 15855      | 129214                        | 54.88721805              | 10.92928193     |
+| Nebraska     | 3         | 100         | 18                 | 37361        | 15417      | 21944                         | 18                       | 41.26495543     |
+| New Jersey   | 11        | 295         | 116                | 251611       | 56647      | 194964                        | 39.3220339               | 22.51372158     |
+| Ohio         | 42        | 1143        | 522                | 784284       | 254371     | 529913                        | 45.66929134              | 32.43353173     |
+| Texas        | 144       | 3480        | 1645               | 3419626      | 808496     | 2611130                       | 47.27011494              | 23.64281942     |
+| Washington   | 17        | 444         | 164                | 468215       | 99709      | 368506                        | 36.93693694              | 21.29555866     |
+| Totals       | 500       | 12899       | 6111               | 11856344     | 2865498    | 8990846                       | 47.37576556              | 24.16847892     |
+
+#### Responsiveness
+
+ The site is fully responsive and functional accross all screen sizes. With each chart reshaping to fit the current screen size, and a collapsable hamburger menu, for the link items in the footer. However, this dashboard is designed primarily to be used on desktop machines. Due to the sizes of some of the charts, and as the charts use svg elements, they do not reshpape themeselves to fit. Thus scrollbars will appear on smaller screen sizes, to compansate for their larger size. 
+
+
+
 
 
 
