@@ -6,7 +6,10 @@ revenue, losses, leads and appointments. This dashboard provides the means to qu
 
 ## User Experience
 
->Think-it is a fake company created for the purpose of showcasing interactive-front end design. It is a technology based sales company, specialising in technology solutions (i.e using technology to implement some improvement for home and businesses), that uses stores/calling to assess customer requirements (this is what is referred to as a "lead"). These "leads" are then converted to appointments, if the customer wishes to continue on with the sale and further plan their requirements. "Earnings" are considered to be the total amount of money brought into the company by an employee. Whilst "lost" is considerd to be any money that is returned to a customer, irregardless of the circumstances of that return. For example: returns through both employee fault and customer decision are both considered "lost earnings".
+>#### Background information
+>Think-it is a fake company created for the purpose of showcasing interactive-front end design, including the use of: javascript(jquery, D3, DC and crossfilter) and front end design(HTML, CSS and using associated libraries). Please also note that the use of Jquery UI and SCSS may not be typically required for such a small project, as they can slow down the site. But were used to show their effective implementation in a project.
+
+>It is a technology based sales company, specialising in technology solutions (i.e using technology to implement some improvement for home and businesses), that uses stores/calling to assess customer requirements (this is what is referred to as a "lead"). These "leads" are then converted to appointments, if the customer wishes to continue on with the sale and further plan their requirements. "Earnings" are considered to be the total amount of money brought into the company by an employee. Whilst "lost" is considerd to be any money that is returned to a customer, irregardless of the circumstances of that return. For example: returns through both employee fault and customer decision are both considered "lost earnings".
 
 This dashboard is designed to be linked to a larger site, for management level staff at Think-IT to be able to quickly and effectively view sales data on all 10 stores, and compare their results. Below you can read some specific user requirements, presented for this project:
 
@@ -111,7 +114,11 @@ Finally, this project has the scope to be able to add additional charts and feat
 * [Queue](https://github.com/d3/d3-queue) 1.0.7
   * Used to force D3, DC and Crossfilter to wait until the data is fully loaded before rendering charts.
 
+* [SCSS](https://sass-lang.com) was used to add more progrmatic features to styling (and, as mentioned in "Background information", to demonstrate its effective use) 
+
 * To minify HTML, [html minfier](https://github.com/kangax/html-minifier) was used
+
+* To minify CSS, [cssnano](https://cssnano.co) was used  
 
 * To minify JavaScript, [Uglify JS](https://www.npmjs.com/package/uglify-js) was used
 
@@ -165,6 +172,31 @@ To confirm that the data being rendered in the charts were correct, independent 
 #### Responsiveness
 
  The site is fully responsive and functional accross all screen sizes. With each chart reshaping to fit the current screen size, and a collapsable hamburger menu, for the link items in the footer. However, this dashboard is designed primarily to be used on desktop machines. Due to the sizes of some of the charts, and as the charts use svg elements, they do not reshpape themeselves to fit. Thus scrollbars will appear on smaller screen sizes, to compansate for their larger size. 
+ 
+ 
+ ## Deployment
+ 
+ This website is currently only hosted on Github pages, and can be run by clicking [here](https://brookk16.github.io/Think-IT/).
+ 
+ However, please be aware the repository contains additional files not required for the functionality of the website, but for the purpose of the course. These files are all located in the "Course"folder, and contain: the sales-data summary file, a wireframe of the original concept (think-it_wireframe.png) and a folder containg minifed files of the HTMl and JS files (that run quicker than the full-size versions). 
+ 
+## Credits
+
+The "Think-IT" logo was created by combining the Google font [Pacifico](https://fonts.google.com/specimen/Pacifico) and the fontawesome ["question circle"](https://fontawesome.com/icons/question-circle?style=solid) logo.
+
+#### Acknowledgements
+
+* [Mockacroo](https://www.mockaroo.com) was responisble for generating the data for this project.
+* Inspiration for the design of the website came from [Toutapp](https://www1.toutapp.com/product-2/)
+* The code for the "month.js" file came from the [W3schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) website
+
+
+
+
+ 
+ 
+ 
+ 
 
 
 

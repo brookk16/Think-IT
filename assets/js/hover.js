@@ -1,4 +1,3 @@
-//Hover code was taken and modified from https://jqueryui.com/tooltip/#custom-style
 
 $(function() {
     $(document).tooltip({
