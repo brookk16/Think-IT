@@ -7,7 +7,7 @@ revenue, losses, leads and appointments. This dashboard provides the means to qu
 ## User Experience
 
 >#### Background information
->Think-it is a fake company created for the purpose of showcasing interactive-front end design, including the use of: javascript(jquery, D3, DC and crossfilter) and front end design(HTML, CSS and using associated libraries). Please also note that the use of Jquery UI and SCSS may not be typically required for such a small project, as they can slow down the site. But were used to show their effective implementation in a project.
+>Think-it is a fake company created for the purpose of showcasing interactive-front end design, including the use of: javascript (jquery, D3, DC and crossfilter) and front end design (HTML, CSS and using associated libraries). Please also note that the use of Jquery UI and SCSS may not be typically required for such a small project, as they can slow down the site. But were used to show their effective implementation in a project.
 
 >It is a technology based sales company, specialising in technology solutions (i.e using technology to implement some improvement for home and businesses), that uses stores/calling to assess customer requirements (this is what is referred to as a "lead"). These "leads" are then converted to appointments, if the customer wishes to continue on with the sale and further plan their requirements. "Earnings" are considered to be the total amount of money brought into the company by an employee. Whilst "lost" is considerd to be any money that is returned to a customer, irregardless of the circumstances of that return. For example: returns through both employee fault and customer decision are both considered "lost earnings".
 
@@ -21,7 +21,7 @@ The overall aim therefore, was to design a dashboard with readily available info
 
 Modern styling was used, with brighter colours to clearly display data, along with custom tooltips and descriptive labels to avoid any confusion.  
 
-Please click [here](https://think-it-brookk.c9users.io/Course/think-it_wireframe.png), if you would like to see a wireframe of the orignal requirement.
+A wireframe of the orignal requirement can be found within the "Course" file (think-it_wireframe.png).
 
 ## Features
 
@@ -54,7 +54,7 @@ _please note that all number displays will show the company totals/averages when
 
 1. Average amount earned, in each month. This average was calculated by subtracting each employee's total amount lost from their total amount earned. These values are then totaled for each store, then divided by the amount employees to give us the store average.
 
-2. Total amount of leads and appointments generated in each month. With leads being displayed in <span style="color: #77cfc9">blue</span>, and appointments shown in <span style="color: #4F5D75">dark blue</span>
+2. Total amount of leads and appointments generated in each month. With leads being displayed in <span style="color: #77cfc9">blue</span>, and appointments shown in <span style="color: #4F5D75">dark blue</span>.
 
 
 ##### Pie charts: 2
@@ -73,7 +73,7 @@ Every chart bar/segment can be hovered over to see the exact figure displayed as
 
 Some charts also have a hover over tooltip, indicated by a "**?**" symbol. Simply hover over the "**?**" the see a tooltip appear that provides more detailed information on how the value(s) were calculated.
 
-Finally, as crossfilter.js was used in this project, you can dynamically filter data. This can be achieved by using the aforementioned select bar, or by simply clicking on the segment/bar of the data you want, to filter out all data from the other stores. You can also see multiple store's data at one time, for more precise comparison, by clicking on muliptle bars/segments. To reset the charts, re-click on the same clicked bars/segments. Or simply use the <span style="color: #52b913">"reset"</span> button, which is located at the top right of the screen.
+Finally, as Crossfilter.js was used in this project, you can dynamically filter data. This can be achieved by using the aforementioned select bar, or by simply clicking on the segment/bar of the data you want, to filter out all data from the other stores. You can also see multiple store's data at one time, for more precise comparison, by clicking on muliptle bars/segments. To reset the charts, re-click on the same clicked bars/segments. Or simply use the <span style="color: #52b913">"reset"</span> button, which is located at the top right of the screen.
 
 ### Other features 
 
@@ -93,20 +93,20 @@ Finally, this project has the scope to be able to add additional charts and feat
 ## Technologies used
 
 * [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) 4.1.3
-  * Used Bootstrap CSS styling to provide grid system structure, and basic styling elements
+  * Used Bootstrap CSS styling to provide grid system structure, and basic styling elements.
 
 * [Fontawesome](https://fontawesome.com) 5.5.0
-  * Used to provide images for the: hover tooltip, logo, reset button pass and fail icons
+  * Used to provide icons for the: hover tooltip, logo, reset button pass and fail icons.
 
 * [Google fonts](https://fonts.google.com)
-  * Used the following fonts:         [Pacifico](https://fonts.google.com/specimen/Pacifico) for the "Think-IT" logo and [Archivo](https://fonts.google.com/specimen/Archivo+Black) for the body text
+  * Used the following fonts:         [Pacifico](https://fonts.google.com/specimen/Pacifico) for the "Think-IT" logo and [Archivo](https://fonts.google.com/specimen/Archivo+Black) for the body text.
 
 * [Jquery](https://jquery.com) 3.3.1
   * Used for the additional javascript functions (located: assets/js): hover.js, hamburger.js and month.js
   * Also used with [Jquery UI](https://jqueryui.com) 1.12.1 (CSS: 1.11.4), to handle the custom styling on the tooltips.
 
 * [D3](https://d3js.org) 3.5.17 
-  * Used alongside DC and Crossfilter, to genrate the charts
+  * Used alongside DC and Crossfilter, to genrate the charts.
 
 * [DC](https://dc-js.github.io/dc.js/) 2.1.8 (DC CSS 2.1.8) and [Crossfilter](http://square.github.io/crossfilter/) 1.3.12
   * Used with D3, to generate the charts. Crossfilter handles the loading, grouping and active filtering of the data.
@@ -114,15 +114,15 @@ Finally, this project has the scope to be able to add additional charts and feat
 * [Queue](https://github.com/d3/d3-queue) 1.0.7
   * Used to force D3, DC and Crossfilter to wait until the data is fully loaded before rendering charts.
 
-* [SCSS](https://sass-lang.com) was used to add more progrmatic features to styling (and, as mentioned in "Background information", to demonstrate its effective use) 
+* [SCSS](https://sass-lang.com) was used to add more programmatic features to styling (and, as mentioned in "Background information", to demonstrate its effective use).
 
-* To minify HTML, [html minfier](https://github.com/kangax/html-minifier) was used
+* To minify HTML, [html minfier](https://github.com/kangax/html-minifier) was used.
 
-* To minify CSS, [cssnano](https://cssnano.co) was used  
+* To minify CSS, [cssnano](https://cssnano.co) was used.  
 
-* To minify JavaScript, [Uglify JS](https://www.npmjs.com/package/uglify-js) was used
+* To minify JavaScript, [Uglify JS](https://www.npmjs.com/package/uglify-js) was used.
 
-* To generate the data for this project, [Mockacroo](https://www.mockaroo.com) was used. Please view the data.csv file (using excel) to view the raw data. Mockaroo generated 500 employee's for the Think-IT company, randomly assigning them to a state/store, and generating their (min value: max value): leads generated (0:50), appointments generated (0:25), amount earned (0:50,000)and their amount lost (0:11000)
+* To generate the data for this project, [Mockacroo](https://www.mockaroo.com) was used. Please view the data.csv file (using excel) to view the raw data. Mockaroo generated 500 employee's for the Think-IT company, randomly assigning them to a state/store, and generating their (min value: max value): leads generated (0:50), appointments generated (0:25), amount earned (0:50,000)and their amount lost (0:11000).
 
 
 ## Testing
@@ -144,9 +144,9 @@ Finally, the site is designed to be easiliy reset each month, by uploading and r
 Testing was conducted as follows:
 1. Once all code was written, [HTML](https://validator.w3.org) and [CSS](https://jigsaw.w3.org/css-validator/) code validators were used.
 
-2. Then, all the sites feautuers were used thorughly by several independent testers. All were simply asked to use the site, and asked about the information they were seeing. To ensure that not only was each feature working correctly, but also to ensure they could be used/found instivitvely (i.e: it was easy to achieve their tasks).
+2. Then, all the sites feautuers were used thorughly by several independent testers. All were simply asked to use the site, and asked about the information they were seeing. To ensure that not only was each feature working correctly, but also to ensure they could be used/found instinctively (i.e: it was easy to achieve their tasks).
 
-3. Once functionality had been established to be working correctly, and sufficiently. Google's developper tools provided an audit, to assess the quality of the website. Achieving high scores in all relevant areas (in the categories covered by current stage of the course)
+3. Once functionality had been established to be working correctly and sufficiently, Google's developper tools provided an audit to assess the quality of the website. Achieving high scores in all relevant areas (in the categories covered by current stage of the course).
 
 4. After any revision of code, the testing began again from stage 1, and continues until the final code is reached.
 
@@ -171,14 +171,14 @@ To confirm that the data being rendered in the charts were correct, independent 
 
 #### Responsiveness
 
- The site is fully responsive and functional accross all screen sizes. With each chart reshaping to fit the current screen size, and a collapsable hamburger menu, for the link items in the footer. However, this dashboard is designed primarily to be used on desktop machines. Due to the sizes of some of the charts, and as the charts use svg elements, they do not reshpape themeselves to fit. Thus scrollbars will appear on smaller screen sizes, to compansate for their larger size. 
+ The site is fully responsive and functional across all screen sizes. With each chart reshaping to fit the current screen size, and a collapsable hamburger menu, for the link items in the footer. However, this dashboard is designed primarily to be used on desktop machines. Due to the sizes of some of the charts, and as the charts use svg elements, they do not reshape themselves to fit. Thus scrollbars will appear on smaller screen sizes, to compensate for their larger size. 
  
  
  ## Deployment
  
  This website is currently only hosted on Github pages, and can be run by clicking [here](https://brookk16.github.io/Think-IT/).
  
- However, please be aware the repository contains additional files not required for the functionality of the website, but for the purpose of the course. These files are all located in the "Course"folder, and contain: the sales-data summary file, a wireframe of the original concept (think-it_wireframe.png) and a folder containg minifed files of the HTMl and JS files (that run quicker than the full-size versions). 
+ However, please be aware the repository contains additional files not required for the functionality of the website, but for the purpose of the course. These files are all located in the "Course" folder, and contain: the sales-data summary file and a  wireframe of the original concept (think-it_wireframe.png). A folder containing minified files of the HTML and JS files (that run quicker than the full-size versions), can also be found within the folder "minified_files".
  
 ## Credits
 
@@ -186,9 +186,9 @@ The "Think-IT" logo was created by combining the Google font [Pacifico](https://
 
 #### Acknowledgements
 
-* [Mockacroo](https://www.mockaroo.com) was responisble for generating the data for this project.
-* Inspiration for the design of the website came from [Toutapp](https://www1.toutapp.com/product-2/)
-* The code for the "month.js" file came from the [W3schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) website
+* [Mockaroo](https://www.mockaroo.com) was responisble for generating the data for this project.
+* Inspiration for the design of the website came from [Toutapp](https://www1.toutapp.com/product-2/).
+* The code for the "month.js" file came from the [W3schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) website.
 
 
 
