@@ -15,7 +15,6 @@ function makeGraphs(error, salesData) {
     show_store_location_selector(ndx);
     show_grand_totals(ndx);
     show_group_averages(ndx);
-    show_amount_earned_per_store(ndx);
     show_percent_lost(ndx);
     show_leads_and_appts_per_store(ndx);
     show_average_leads_to_appts(ndx);
@@ -86,72 +85,87 @@ function show_grand_totals(ndx) {
 
 function show_group_averages(ndx) {
 
-    //without filter this data represents all the employees, if filtered it only represents the chosen states data
-
     var monthDim = ndx.dimension(dc.pluck("month"));
+    var stateDim = ndx.dimension(dc.pluck("store_location"));
 
-    // calculates the percentage of leads that are converted to appointments
+    function leads_appointments_averager(dimension) {
 
-    var leads_to_appts_by_month = monthDim.group().reduce(
-        function add_item(p, v) {
-            p.count++;
-            p.leads += v.leads;
-            p.appts += v.appointments;
-            p.percent = (p.appts / p.leads) * 100;
-            return p;
-        },
+        return dimension.group().reduce(
 
-        function remove_item(p, v) {
-            p.count--;
-            if (p.count == 0) {
-                p.leads = 0;
-                p.appts = 0;
-                p.percent = 0;
-
-            }
-            else {
-                p.leads -= v.leads;
-                p.appts -= v.appointments;
+            function(p, v) {
+                p.count++;
+                p.leads += v.leads;
+                p.appts += v.appointments;
                 p.percent = (p.appts / p.leads) * 100;
-            }
-            return p;
-        },
+                return p;
+            },
 
-        function initialise() {
-            return { count: 0, leads: 0, appts: 0, percent: 0 };
-        });
+            function(p, v) {
+                p.count--;
+                if (p.count == 0) {
+                    p.leads = 0;
+                    p.appts = 0;
+                    p.percent = 0;
+
+                }
+                else {
+                    p.leads -= v.leads;
+                    p.appts -= v.appointments;
+                    p.percent = (p.appts / p.leads) * 100;
+                }
+                return p;
+            },
+
+            function() {
+                return { count: 0, leads: 0, appts: 0, percent: 0 };
+            })
+    };
+
+    function earned_lost_averager(dimension) {
+
+        return dimension.group().reduce(
+
+            function(p, v) {
+                p.count++;
+                p.earned += v.earned;
+                p.lost += v.lost;
+                p.total = p.earned - p.lost
+                p.average = p.total / p.count
+                p.percent = (p.lost / p.earned) * 100;
+                return p;
+            },
+
+            function(p, v) {
+                p.count--;
+                if (p.count == 0) {
+                    p.leads = 0;
+                    p.appts = 0;
+                    p.percent = 0;
+
+                }
+                else {
+                    p.earned -= v.earned;
+                    p.lost -= v.lost;
+                    p.total = p.earned - p.lost
+                    p.average = p.total / p.count
+                    p.percent = (p.lost / p.earned) * 100;
+                }
+                return p;
+            },
+
+            function() {
+                return { count: 0, earned: 0, lost: 0, percent: 0, average: 0 };
+            })
+    };
+
+    var leads_to_appts_by_month = leads_appointments_averager(monthDim);
+
+    var percent_lost_by_month = earned_lost_averager(monthDim);
+    
+    var average_earn_by_state = earned_lost_averager(stateDim);
 
 
-    // calculates the average amount of earnings lost
-    var percent_lost_by_month = monthDim.group().reduce(
-        function add_item(p, v) {
-            p.count++;
-            p.earned += v.earned;
-            p.lost += v.lost;
-            p.total = (p.lost / p.earned) * 100
 
-            return p;
-        },
-
-        function remove_item(p, v) {
-            p.count--;
-            if (p.count == 0) {
-                p.earned = 0;
-                p.lost = 0;
-            }
-            else {
-                p.earned -= v.earned;
-                p.lost -= v.lost;
-                p.total = (p.lost / p.earned) * 100
-
-            }
-            return p;
-        },
-
-        function initialise() {
-            return { count: 0, earned: 0, lost: 0, total: 0 };
-
-        });
 
     dc.numberDisplay("#leads-to-appts-by-month") //shows the percentage of leads that are converted to appointments by month
         .formatNumber(d3.format(".0%"))
@@ -161,42 +175,8 @@ function show_group_averages(ndx) {
     dc.numberDisplay("#percent-lost-by-month") //shows the percentage of revenue lost by month
         .formatNumber(d3.format(".0%"))
         .group(percent_lost_by_month)
-        .valueAccessor(function(d) { return d.value.total.toFixed(0) / 100; })
-
-}
-
-function show_amount_earned_per_store(ndx) {
-
-    // shows the average amount earned by store, by totaling each stores employee total amount earned, subtracting their total amount lost, and then divding by the amount of employees, to create the average
-
-    var stateDim = ndx.dimension(dc.pluck("store_location"));
-
-    var average_earn_by_state = stateDim.group().reduce(
-        function add_item(p, v) {
-            p.count++;
-            p.total += v.earned - v.lost;
-            p.average = p.total / p.count;
-            return p;
-        },
-
-        function remove_item(p, v) {
-            p.count--;
-            if (p.count == 0) {
-                p.total = 0;
-                p.average = 0;
-            }
-            else {
-                p.total -= v.earned - v.lost;
-                p.average = p.total / p.count;
-            }
-            return p;
-        },
-
-        function initialise() {
-            return { count: 0, total: 0, average: 0 };
-        });
-
-
+        .valueAccessor(function(d) { return d.value.percent.toFixed(0) / 100; })
+    
     dc.barChart("#amount-gained-lost-per-store") //shows the total amount earned by store, by month
         .width(800)
         .height(600)
@@ -219,8 +199,10 @@ function show_amount_earned_per_store(ndx) {
         .yAxisLabel("Average amount earned per person")
         .yAxis().tickFormat(function(v) {
             return "$" + v;
-        })
+        });
+
 }
+
 
 function show_percent_lost(ndx) {
 

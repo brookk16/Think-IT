@@ -188,45 +188,4 @@ The "Think-IT" logo was created by combining the Google font [Pacifico](https://
 
 * [Mockaroo](https://www.mockaroo.com) was responisble for generating the data for this project.
 * Inspiration for the design of the website came from [Toutapp](https://www1.toutapp.com/product-2/).
-* The code for the "month.js" file came from the [W3schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) website.
-
-
-
-
- 
- 
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-   
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* The code for the "month.js" file came from, and was modified from the [W3schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) website.
