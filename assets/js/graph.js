@@ -1,5 +1,5 @@
 queue()
-    .defer(d3.csv, "data/sales-data.csv")
+    .defer(d3.csv,"data/sales-data.csv")
     .await(makeGraphs);
 
 function makeGraphs(error, salesData) {
@@ -15,10 +15,8 @@ function makeGraphs(error, salesData) {
     show_store_location_selector(ndx);
     show_grand_totals(ndx);
     show_group_averages(ndx);
-    show_percent_lost(ndx);
     show_leads_and_appts_per_store(ndx);
-    show_average_leads_to_appts(ndx);
-
+    
     dc.renderAll();
 
 }
@@ -53,6 +51,7 @@ function show_store_location_selector(ndx) {
 function show_grand_totals(ndx) {
 
     //without filter this data represents all the employees, if filtered it only represents the chosen state's data
+    
     var monthDim = ndx.dimension(dc.pluck("month"));
 
     var earn_by_month = monthDim.group().reduceSum(dc.pluck("earned"));
@@ -84,9 +83,8 @@ function show_grand_totals(ndx) {
 
 
 function show_group_averages(ndx) {
-
-    var monthDim = ndx.dimension(dc.pluck("month"));
-    var stateDim = ndx.dimension(dc.pluck("store_location"));
+    
+    // This function groups data by a chosen dimension, then returns the: amount of data within each group, the total amount of leads, appointments and average amount of leads converted to appointments
 
     function leads_appointments_averager(dimension) {
 
@@ -120,6 +118,8 @@ function show_group_averages(ndx) {
                 return { count: 0, leads: 0, appts: 0, percent: 0 };
             })
     };
+    
+    // This function groups data by a chosen dimension, then returns the: amount of data within each group, the total amount earned, lost, average amount earned and percentage of earned that was lost
 
     function earned_lost_averager(dimension) {
 
@@ -158,14 +158,19 @@ function show_group_averages(ndx) {
             })
     };
 
+    var monthDim = ndx.dimension(dc.pluck("month"));
+    
+    var stateDim = ndx.dimension(dc.pluck("store_location"));
+    
     var leads_to_appts_by_month = leads_appointments_averager(monthDim);
 
     var percent_lost_by_month = earned_lost_averager(monthDim);
-    
+
     var average_earn_by_state = earned_lost_averager(stateDim);
+    
+    var percent_lost = earned_lost_averager(stateDim);
 
-
-
+    var leads_to_appts = leads_appointments_averager(stateDim);
 
     dc.numberDisplay("#leads-to-appts-by-month") //shows the percentage of leads that are converted to appointments by month
         .formatNumber(d3.format(".0%"))
@@ -176,8 +181,8 @@ function show_group_averages(ndx) {
         .formatNumber(d3.format(".0%"))
         .group(percent_lost_by_month)
         .valueAccessor(function(d) { return d.value.percent.toFixed(0) / 100; })
-    
-    dc.barChart("#amount-gained-lost-per-store") //shows the total amount earned by store, by month
+
+    dc.barChart("#amount-gained-lost-per-store") //shows the average amount earned by each employee, in each store, by month
         .width(800)
         .height(600)
         .margins({ top: 20, right: 20, bottom: 50, left: 60 })
@@ -201,46 +206,7 @@ function show_group_averages(ndx) {
             return "$" + v;
         });
 
-}
-
-
-function show_percent_lost(ndx) {
-
-    //shows the percent of the total amount earned that is lost
-
-    var stateDim = ndx.dimension(dc.pluck("store_location"));
-
-    var percent_lost = stateDim.group().reduce(
-        function add_item(p, v) {
-            p.count++;
-            p.earned += v.earned;
-            p.lost += v.lost;
-            p.total = (p.lost / p.earned) * 100
-
-            return p;
-        },
-
-        function remove_item(p, v) {
-            p.count--;
-            if (p.count == 0) {
-                p.earned = 0;
-                p.lost = 0;
-                p.total = 0;
-            }
-            else {
-                p.earned -= v.earned;
-                p.lost -= v.lost;
-                p.total = (p.lost / p.earned) * 100
-
-            }
-            return p;
-        },
-
-        function initialise() {
-            return { count: 0, earned: 0, lost: 0, total: 0 };
-
-        });
-    // shows the average percent lost for each store, by month. If the store scored above the 25% loss maximum, it is indicated in red. If it is below, it will be green
+//if the store is not meeting the 25% target minimum for lost, it is displayed in red, if it is meeting target (or less), it will be green 
     dc.pieChart("#percent-lost")
         .width(400)
         .height(350)
@@ -252,17 +218,50 @@ function show_percent_lost(ndx) {
                 return 0;
             }
             else {
-                return d.value.total.toFixed(0);
+                return d.value.percent.toFixed(0);
             }
         })
         .innerRadius(40)
         .externalLabels(50)
         .title(function(p) {
-            return ["Average percent lost in" + " " + p.key + " " + " is" + " " + p.value.total.toFixed(0) + "%"]
+            return ["Average percent lost in" + " " + p.key + " " + " is" + " " + p.value.percent.toFixed(0) + "%"]
         })
         .transitionDuration(1000)
         .colorAccessor(function(d) {
-            if (d.value.total > 25) {
+            if (d.value.percent > 25) {
+                return "above_threshold";
+            }
+            else {
+                return "below_threshold";
+            }
+        })
+        .colors(d3.scale.ordinal().domain(["above_threshold", "below_threshold"])
+            .range([failColour, passColour]))
+        .minAngleForLabel(0);
+
+//if the store is not meeting the conversion 40% target, it is displayed in red, if it is meeting/exceeding target, it will be green    
+    dc.pieChart("#leads-to-appts") 
+        .width(325)
+        .height(300)
+        .radius(100)
+        .dimension(stateDim)
+        .group(leads_to_appts)
+        .valueAccessor(function(d) {
+            if (d.count == 0) {
+                return 0;
+            }
+            else {
+                return d.value.percent;
+            }
+        })
+        .innerRadius(40)
+        .externalLabels(40)
+        .title(function(p) {
+            return ["Average leads to appointments in" + " " + p.key + " " + " is" + " " + p.value.percent.toFixed(0) + "%"]
+        })
+        .transitionDuration(1000)
+        .colorAccessor(function(d) {
+            if (d.value.percent < 40) {
                 return "above_threshold";
             }
             else {
@@ -273,6 +272,7 @@ function show_percent_lost(ndx) {
             .range([failColour, passColour]))
         .minAngleForLabel(0);
 }
+
 
 function show_leads_and_appts_per_store(ndx) {
 
@@ -309,70 +309,3 @@ function show_leads_and_appts_per_store(ndx) {
         });
 }
 
-function show_average_leads_to_appts(ndx) {
-
-    // shows the average amount of leads that are converted to appointments, for each store
-
-    var stateDim = ndx.dimension(dc.pluck("store_location"));
-
-    var leads_to_appts = stateDim.group().reduce(
-        function add_item(p, v) {
-            p.count++;
-            p.leads += v.leads;
-            p.appts += v.appointments;
-            p.percent = (p.appts / p.leads) * 100;
-            return p;
-        },
-
-        function remove_item(p, v) {
-            p.count--;
-            if (p.count == 0) {
-                p.leads = 0;
-                p.appts = 0;
-                p.percent = 0;
-
-            }
-            else {
-                p.leads -= v.leads;
-                p.appts -= v.appointments;
-                p.percent = (p.appts / p.leads) * 100;
-            }
-            return p;
-        },
-
-        function initialise() {
-            return { count: 0, leads: 0, appts: 0, percent: 0 };
-        });
-
-    dc.pieChart("#leads-to-appts") //if the store is not meeting the conversion 40% target, it is displayed in red, if not it will be green
-        .width(325)
-        .height(300)
-        .radius(100)
-        .dimension(stateDim)
-        .group(leads_to_appts)
-        .valueAccessor(function(d) {
-            if (d.count == 0) {
-                return 0;
-            }
-            else {
-                return d.value.percent;
-            }
-        })
-        .innerRadius(40)
-        .externalLabels(40)
-        .title(function(p) {
-            return ["Average leads to appointments in" + " " + p.key + " " + " is" + " " + p.value.percent.toFixed(0) + "%"]
-        })
-        .transitionDuration(1000)
-        .colorAccessor(function(d) {
-            if (d.value.percent < 40) {
-                return "above_threshold";
-            }
-            else {
-                return "below_threshold";
-            }
-        })
-        .colors(d3.scale.ordinal().domain(["above_threshold", "below_threshold"])
-            .range([failColour, passColour]))
-        .minAngleForLabel(0);
-}
