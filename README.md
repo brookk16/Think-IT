@@ -1,5 +1,7 @@
 # Think-it: data visualization dashboard
 
+This website is currently only hosted on Github pages, and can be run by clicking [here](https://brookk16.github.io/Think-IT/).
+
 This is a monthly sales data visualization dashboard, focusing on providing the data on each of their 10 store's: 
 revenue, losses, leads and appointments. This dashboard provides the means to quickly view summary data for each/all the stores, and to compare their performaces. 
 
@@ -21,7 +23,9 @@ The overall aim therefore, was to design a dashboard with readily available info
 
 Modern styling was used, with brighter colours to clearly display data, along with custom tooltips and descriptive labels to avoid any confusion.  
 
-A wireframe of the orignal requirement can be found within the "Course" file (think-it_wireframe.png).
+A wireframe of the orignal requirement can be found [here](https://github.com/brookk16/Think-IT/blob/master/Course/think-it_wireframe.png)
+
+
 
 ## Features
 
@@ -176,9 +180,11 @@ To confirm that the data being rendered in the charts were correct, independent 
  
  ## Deployment
  
- This website is currently only hosted on Github pages, and can be run by clicking [here](https://brookk16.github.io/Think-IT/).
+ The project is hosted on Github pages.
  
- However, please be aware the repository contains additional files not required for the functionality of the website, but for the purpose of the course. These files are all located in the "Course" folder, and contain: the sales-data summary file and a  wireframe of the original concept (think-it_wireframe.png). A folder containing minified files of the HTML and JS files (that run quicker than the full-size versions), can also be found within the folder "minified_files".
+ However, please be aware the repository contains additional files not required for the functionality of the website, but for the purpose of the course. 
+ 
+ These files are all located in the "Course" folder, and contain: the sales-data summary file and a  wireframe of the original concept (think-it-wireframe.png). A folder containing minified files of the HTML and JS files (that run quicker than the full-size versions), can also be found within the folder "minified_files".
  
 ## Credits
 
