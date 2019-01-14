@@ -23,13 +23,13 @@ function makeGraphs(error, salesData) {
 
 // Chart colours 
 
-var barChartColour = "#77cfc9"
+var barChartColour = "#77cfc9";
 
-var appointmentsColour = "#4F5D75"
+var appointmentsColour = "#4F5D75";
 
-var failColour = "#c83524"
+var failColour = "#c83524";
 
-var passColour = "#7caf1f"
+var passColour = "#7caf1f";
 
 
 function show_store_location_selector(ndx) {
@@ -116,8 +116,8 @@ function show_group_averages(ndx) {
 
             function() {
                 return { count: 0, leads: 0, appts: 0, percent: 0 };
-            })
-    };
+            });
+    }
     
     // This function groups data by a chosen dimension, then returns the: amount of data within each group, the total amount earned, lost, average amount earned and percentage of earned that was lost
 
@@ -129,8 +129,8 @@ function show_group_averages(ndx) {
                 p.count++;
                 p.earned += v.earned;
                 p.lost += v.lost;
-                p.total = p.earned - p.lost
-                p.average = p.total / p.count
+                p.total = p.earned - p.lost;
+                p.average = p.total / p.count;
                 p.percent = (p.lost / p.earned) * 100;
                 return p;
             },
@@ -146,8 +146,8 @@ function show_group_averages(ndx) {
                 else {
                     p.earned -= v.earned;
                     p.lost -= v.lost;
-                    p.total = p.earned - p.lost
-                    p.average = p.total / p.count
+                    p.total = p.earned - p.lost;
+                    p.average = p.total / p.count;
                     p.percent = (p.lost / p.earned) * 100;
                 }
                 return p;
@@ -155,8 +155,8 @@ function show_group_averages(ndx) {
 
             function() {
                 return { count: 0, earned: 0, lost: 0, percent: 0, average: 0 };
-            })
-    };
+            });
+    }
 
     var monthDim = ndx.dimension(dc.pluck("month"));
     
@@ -175,12 +175,12 @@ function show_group_averages(ndx) {
     dc.numberDisplay("#leads-to-appts-by-month") //shows the average amount of leads that are converted to appointments for each store (or all if no filter is applied)
         .formatNumber(d3.format(".0%"))
         .group(leads_to_appts_by_month)
-        .valueAccessor(function(d) { return d.value.percent.toFixed(0) / 100; })
+        .valueAccessor(function(d) { return d.value.percent.toFixed(0) / 100; });
 
     dc.numberDisplay("#percent-lost-by-month") //shows the percentage of revenue lost by month for each store (or all if no filter is applied)
         .formatNumber(d3.format(".0%"))
         .group(percent_lost_by_month)
-        .valueAccessor(function(d) { return d.value.percent.toFixed(0) / 100; })
+        .valueAccessor(function(d) { return d.value.percent.toFixed(0) / 100; });
 
     dc.barChart("#amount-gained-lost-per-store") //shows the average amount earned by each employee, in each store, by month
         .width(800)
@@ -198,7 +198,7 @@ function show_group_averages(ndx) {
         .renderHorizontalGridLines(true)
         .renderTitle(true)
         .title(function(p) {
-            return ["Average earned per person in" + " " + p.key + " " + " is" + " " + "$" + p.value.average.toFixed(2)]
+            return ["Average earned per person in" + " " + p.key + " " + " is" + " " + "$" + p.value.average.toFixed(2)];
         })
         .xAxisLabel("State")
         .yAxisLabel("Average amount earned per person")
@@ -224,7 +224,7 @@ function show_group_averages(ndx) {
         .innerRadius(40)
         .externalLabels(50)
         .title(function(p) {
-            return ["Average percent lost in" + " " + p.key + " " + " is" + " " + p.value.percent.toFixed(0) + "%"]
+            return ["Average percent lost in" + " " + p.key + " " + " is" + " " + p.value.percent.toFixed(0) + "%"];
         })
         .transitionDuration(1000)
         .colorAccessor(function(d) {
@@ -257,7 +257,7 @@ function show_group_averages(ndx) {
         .innerRadius(40)
         .externalLabels(40)
         .title(function(p) {
-            return ["Average leads to appointments in" + " " + p.key + " " + " is" + " " + p.value.percent.toFixed(0) + "%"]
+            return ["Average leads to appointments in" + " " + p.key + " " + " is" + " " + p.value.percent.toFixed(0) + "%"];
         })
         .transitionDuration(1000)
         .colorAccessor(function(d) {
@@ -300,7 +300,7 @@ function show_leads_and_appts_per_store(ndx) {
         .elasticY(true)
         .renderHorizontalGridLines(true)
         .title(function(p) {
-            return ["Total generated in" + " " + p.key + " " + " is" + " " + p.value]
+            return ["Total generated in" + " " + p.key + " " + " is" + " " + p.value];
         })
         .xAxisLabel("State")
         .yAxisLabel("Leads and appointments generated")

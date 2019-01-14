@@ -23,7 +23,7 @@ The overall aim therefore, was to design a dashboard with readily available info
 
 Modern styling was used, with brighter colours to clearly display data, along with custom tooltips and descriptive labels to avoid any confusion.  
 
-A wireframe of the orignal requirement can be found [here](https://github.com/brookk16/Think-IT/blob/master/Course/think-it_wireframe.png)
+A wireframe of the orignal requirement can be found  ![here](Course/think-it_wireframe.png)
 
 
 
