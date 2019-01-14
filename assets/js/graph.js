@@ -172,12 +172,12 @@ function show_group_averages(ndx) {
 
     var leads_to_appts = leads_appointments_averager(stateDim);
 
-    dc.numberDisplay("#leads-to-appts-by-month") //shows the percentage of leads that are converted to appointments by month
+    dc.numberDisplay("#leads-to-appts-by-month") //shows the average amount of leads that are converted to appointments for each store (or all if no filter is applied)
         .formatNumber(d3.format(".0%"))
         .group(leads_to_appts_by_month)
         .valueAccessor(function(d) { return d.value.percent.toFixed(0) / 100; })
 
-    dc.numberDisplay("#percent-lost-by-month") //shows the percentage of revenue lost by month
+    dc.numberDisplay("#percent-lost-by-month") //shows the percentage of revenue lost by month for each store (or all if no filter is applied)
         .formatNumber(d3.format(".0%"))
         .group(percent_lost_by_month)
         .valueAccessor(function(d) { return d.value.percent.toFixed(0) / 100; })
@@ -239,7 +239,7 @@ function show_group_averages(ndx) {
             .range([failColour, passColour]))
         .minAngleForLabel(0);
 
-//if the store is not meeting the conversion 40% target, it is displayed in red, if it is meeting/exceeding target, it will be green    
+//if the store is not meeting the 40% conversion target for leads to appointments, it is displayed in red, if it is meeting/exceeding target, it will be green    
     dc.pieChart("#leads-to-appts") 
         .width(325)
         .height(300)
