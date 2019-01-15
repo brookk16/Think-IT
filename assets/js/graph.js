@@ -21,7 +21,7 @@ function makeGraphs(error, salesData) {
 
 }
 
-// Chart colours 
+/* Chart colours */
 
 var barChartColour = "#77cfc9";
 
@@ -34,7 +34,7 @@ var passColour = "#7caf1f";
 
 function show_store_location_selector(ndx) {
 
-    //generates a list of all the store locations to filter the data, along with employee numbers
+    /*generates a list of all the store locations to filter the data, along with employee numbers */
     var stateDim = ndx.dimension(dc.pluck("store_location"));
 
     var stateGroup = stateDim.group();
@@ -50,7 +50,7 @@ function show_store_location_selector(ndx) {
 
 function show_grand_totals(ndx) {
 
-    //without filter this data represents all the employees, if filtered it only represents the chosen state's data
+    /* without filter this data represents all the employees, if filtered it only represents the chosen state's data */
     
     var monthDim = ndx.dimension(dc.pluck("month"));
 
@@ -64,19 +64,19 @@ function show_grand_totals(ndx) {
 
 
     dc.numberDisplay("#lost-by-month") // total amount of revenue lost per month
-        .formatNumber(d3.format("$.2"))
+        .formatNumber(d3.format("$,f"))
         .group(lost_by_month);
 
     dc.numberDisplay("#earn-by-month") // total amount earned per month
-        .formatNumber(d3.format("$.2"))
+        .formatNumber(d3.format("$,f"))
         .group(earn_by_month);
 
-    dc.numberDisplay("#leads-by-month") // total amount of leads generated per month
-        .formatNumber(d3.format(".2"))
+    dc.numberDisplay("#leads-by-month") /* total amount of leads generated per month */
+        .formatNumber(d3.format(",f"))
         .group(leads_by_month);
 
-    dc.numberDisplay("#appts-by-month") // total amount of appointments generated per month
-        .formatNumber(d3.format(".2"))
+    dc.numberDisplay("#appts-by-month") /* total amount of appointments generated per month */
+        .formatNumber(d3.format(",f"))
         .group(appts_by_month);
 
 }
@@ -84,7 +84,7 @@ function show_grand_totals(ndx) {
 
 function show_group_averages(ndx) {
     
-    // This function groups data by a chosen dimension, then returns the: amount of data within each group, the total amount of leads, appointments and average amount of leads converted to appointments
+    /* This function groups data by a chosen dimension, then returns the: amount of data within each group, the total amount of leads, appointments and average amount of leads converted to appointments */
 
     function leads_appointments_averager(dimension) {
 
@@ -119,7 +119,7 @@ function show_group_averages(ndx) {
             });
     }
     
-    // This function groups data by a chosen dimension, then returns the: amount of data within each group, the total amount earned, lost, average amount earned and percentage of earned that was lost
+    /* This function groups data by a chosen dimension, then returns the: amount of data within each group, the total amount earned, lost, average amount earned and percentage of earned that was lost */
 
     function earned_lost_averager(dimension) {
 
@@ -172,17 +172,19 @@ function show_group_averages(ndx) {
 
     var leads_to_appts = leads_appointments_averager(stateDim);
 
-    dc.numberDisplay("#leads-to-appts-by-month") //shows the average amount of leads that are converted to appointments for each store (or all if no filter is applied)
+/*shows the average amount of leads that are converted to appointments for each store (or all if no filter is applied) */
+    
+    dc.numberDisplay("#leads-to-appts-by-month") 
         .formatNumber(d3.format(".0%"))
         .group(leads_to_appts_by_month)
         .valueAccessor(function(d) { return d.value.percent.toFixed(0) / 100; });
-
-    dc.numberDisplay("#percent-lost-by-month") //shows the percentage of revenue lost by month for each store (or all if no filter is applied)
+/* shows the percentage of revenue lost by month for each store (or all if no filter is applied) */
+    dc.numberDisplay("#percent-lost-by-month") 
         .formatNumber(d3.format(".0%"))
         .group(percent_lost_by_month)
         .valueAccessor(function(d) { return d.value.percent.toFixed(0) / 100; });
-
-    dc.barChart("#amount-gained-lost-per-store") //shows the average amount earned by each employee, in each store, by month
+/* shows the average amount earned by each employee, in each store, by month */
+    dc.barChart("#amount-gained-lost-per-store") 
         .width(800)
         .height(600)
         .margins({ top: 20, right: 20, bottom: 50, left: 60 })
@@ -206,7 +208,7 @@ function show_group_averages(ndx) {
             return "$" + v;
         });
 
-//if the store is not meeting the 25% target minimum for lost, it is displayed in red, if it is meeting target (or less), it will be green 
+/* if the store is not meeting the 25% target minimum for lost, it is displayed in red, if it is meeting target (or less), it will be green */
     dc.pieChart("#percent-lost")
         .width(400)
         .height(350)
@@ -239,7 +241,7 @@ function show_group_averages(ndx) {
             .range([failColour, passColour]))
         .minAngleForLabel(0);
 
-//if the store is not meeting the 40% conversion target for leads to appointments, it is displayed in red, if it is meeting/exceeding target, it will be green    
+/* if the store is not meeting the 40% conversion target for leads to appointments, it is displayed in red, if it is meeting/exceeding target, it will be green */
     dc.pieChart("#leads-to-appts") 
         .width(325)
         .height(300)
@@ -276,7 +278,7 @@ function show_group_averages(ndx) {
 
 function show_leads_and_appts_per_store(ndx) {
 
-    //shows the total amount of leads and appointments generated in each store, by month
+    /* shows the total amount of leads and appointments generated in each store, by month */
 
     var stateDim = ndx.dimension(dc.pluck("store_location"));
 

@@ -21,7 +21,6 @@ This dashboard is designed to be linked to a larger site, for management level s
 
 The overall aim therefore, was to design a dashboard with readily available information that would be of most relevance to the users (i.e: store managers and above). Currently, the dashboard displays the most desired metrics used to assess sales performace, identified by the users.Such as:
 
-Modern styling was used, with brighter colours to clearly display data, along with custom tooltips and descriptive labels to avoid any confusion.  
 
 A wireframe of the orignal requirement can be found  ![here](Course/think-it_wireframe.png)
 
@@ -29,12 +28,11 @@ A wireframe of the orignal requirement can be found  ![here](Course/think-it_wir
 
 ## Features
 
-### Charts
+### Indicators
 
 
-The dashboard consists of **10 charts** in total, with 3 different types:
+The dashboard consists of **6 number displays** in total, which act as quick indicators of the major KPI's:
 
-##### Number displays: 6
 
 _please note that all number displays will show the company totals/averages when not filtered (i.e: all the stores data), and a specific store's data, when said store is selected by the filter_
 
@@ -54,6 +52,11 @@ _please note that all number displays will show the company totals/averages when
 
 6. Total amount of appointments generated in that month.
 
+### Charts
+
+
+The dashboard consists of **4 charts** in total, with 2 different types:
+
 ##### Bar charts: 2
 
 1. Average amount earned, in each month. This average was calculated by subtracting each employee's total amount lost from their total amount earned. These values are then totaled for each store, then divided by the amount employees to give us the store average.
@@ -63,9 +66,9 @@ _please note that all number displays will show the company totals/averages when
 
 ##### Pie charts: 2
 
-1. Shows which stores are losing less than 25% of their earnings. If a store is loosing less than 25% of their earnings, their segment with be displayed in <span style="color: #7caf1f">green</span>. If they are losing more than 25% of their earnings, their segment will be <span style="color: #c83524">red</span>. This was calculated using the same formula explained in [bar charts no.2](#earnings_formula).
+1. Shows which stores are losing less than 25% of their earnings. If a store is loosing less than 25% of their earnings, their segment with be displayed in <span style="color: #7caf1f">green</span>. If they are losing more than 25% of their earnings, their segment will be <span style="color: #c83524">red</span>. This was calculated using the same formula explained in [bar charts no.2](#earnings_formula) above.
 
-2. Shows which stores are converting more than 40% of their leads to appointments. If a store is converting more than 40% their segment will be <span style="color: #7caf1f">green</span>. If they are converting less than 40%, their segment will be <span style="color: #c83524">red</span>. This was calculated using the same formula explained in [bar charts no.1](#leads_to_appts_formula).
+2. Shows which stores are converting more than 40% of their leads to appointments. If a store is converting more than 40% their segment will be <span style="color: #7caf1f">green</span>. If they are converting less than 40%, their segment will be <span style="color: #c83524">red</span>. This was calculated using the same formula explained in [bar charts no.1](#leads_to_appts_formula) above.
 
 There is also a "Store selector" select bar, which allows users to quickly filter out all but the selected store's data. Upon clicking on the select bar, all the store's locations will be displayed (one store for each state) along with their number of employees.
 
@@ -77,7 +80,7 @@ Every chart bar/segment can be hovered over to see the exact figure displayed as
 
 Some charts also have a hover over tooltip, indicated by a "**?**" symbol. Simply hover over the "**?**" the see a tooltip appear that provides more detailed information on how the value(s) were calculated.
 
-Finally, as Crossfilter.js was used in this project, you can dynamically filter data. This can be achieved by using the aforementioned select bar, or by simply clicking on the segment/bar of the data you want, to filter out all data from the other stores. You can also see multiple store's data at one time, for more precise comparison, by clicking on muliptle bars/segments. To reset the charts, re-click on the same clicked bars/segments. Or simply use the <span style="color: #52b913">"reset"</span> button, which is located at the top right of the screen.
+ you can dynamically filter data. This can be achieved by using the aforementioned select bar, or by simply clicking on the segment/bar of the data you want, to filter out all data from the other stores. You can also see multiple store's data at one time, for more precise comparison, by clicking on muliptle bars/segments. To reset the charts, re-click on the same clicked bars/segments. Or simply use the <span style="color: #52b913">"reset"</span> button, which is located at the top right of the screen.
 
 ### Other features 
 
@@ -85,19 +88,12 @@ At the top centre of the screen, there is a date display, which shows the curren
 
 > Please note that this system is designed to accept a new sales-data.csv file every month. This new file would replace the previous file, displaying thst month's data. However, for the purpose of this project, only one data file is used that was generated in November. Therefore, the data will always be for November 2018, whist the data display will always show the current month and year.
 
-The "Think-IT" logos in the header and footer, both link to the Think-IT homepage. And the other links in the footer link to each of the following pages: 
-
-* **About**: link to the company information page 
-* **Privacy**: link to the company privacy, security and GDPR regulations.
-* **Contact**: link to the company contact page
-
-
 Finally, this project has the scope to be able to add additional charts and features, quickly and efficiently, should the users feel it is required.
 
 ## Technologies used
 
 * [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) 4.1.3
-  * Used Bootstrap CSS styling to provide grid system structure, and basic styling elements.
+  
 
 * [Fontawesome](https://fontawesome.com) 5.5.0
   * Used to provide icons for the: hover tooltip, logo, reset button pass and fail icons.
@@ -110,21 +106,16 @@ Finally, this project has the scope to be able to add additional charts and feat
   * Also used with [Jquery UI](https://jqueryui.com) 1.12.1 (CSS: 1.11.4), to handle the custom styling on the tooltips.
 
 * [D3](https://d3js.org) 3.5.17 
-  * Used alongside DC and Crossfilter, to genrate the charts.
+  
 
 * [DC](https://dc-js.github.io/dc.js/) 2.1.8 (DC CSS 2.1.8) and [Crossfilter](http://square.github.io/crossfilter/) 1.3.12
-  * Used with D3, to generate the charts. Crossfilter handles the loading, grouping and active filtering of the data.
+  
 
 * [Queue](https://github.com/d3/d3-queue) 1.0.7
   * Used to force D3, DC and Crossfilter to wait until the data is fully loaded before rendering charts.
 
 * [SCSS](https://sass-lang.com) was used to add more programmatic features to styling (and, as mentioned in "Background information", to demonstrate its effective use).
 
-* To minify HTML, [html minfier](https://github.com/kangax/html-minifier) was used.
-
-* To minify CSS, [cssnano](https://cssnano.co) was used.  
-
-* To minify JavaScript, [Uglify JS](https://www.npmjs.com/package/uglify-js) was used.
 
 * To generate the data for this project, [Mockacroo](https://www.mockaroo.com) was used. Please view the data.csv file (using excel) to view the raw data. Mockaroo generated 500 employee's for the Think-IT company, randomly assigning them to a state/store, and generating their (min value: max value): leads generated (0:50), appointments generated (0:25), amount earned (0:50,000)and their amount lost (0:11000).
 
@@ -185,6 +176,12 @@ To confirm that the data being rendered in the charts were correct, independent 
  However, please be aware the repository contains additional files not required for the functionality of the website, but for the purpose of the course. 
  
  These files are all located in the "Course" folder, and contain: the sales-data summary file and a  wireframe of the original concept (think-it-wireframe.png). A folder containing minified files of the HTML and JS files (that run quicker than the full-size versions), can also be found within the folder "minified_files".
+ 
+* To minify HTML, [html minfier](https://github.com/kangax/html-minifier) was used.
+
+* To minify CSS, [cssnano](https://cssnano.co) was used.  
+
+* To minify JavaScript, [Uglify JS](https://www.npmjs.com/package/uglify-js) was used.
  
 ## Credits
 
