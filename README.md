@@ -1,6 +1,6 @@
 # Think-it: data visualization dashboard
 
-This website is currently only hosted on Github pages, and can be run by clicking [here](https://think-it.co.uk).
+This website is currently only hosted on Github pages, and can be run by clicking [here](https://brookk16.github.io/Think-IT/).
 
 This is a monthly sales data visualization dashboard, focusing on providing the data on each of their 10 store's: 
 revenue, losses, leads and appointments. This dashboard provides the means to quickly view summary data for each/all the stores, and to compare their performaces. 
